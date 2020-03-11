@@ -1,0 +1,40 @@
+---
+title: Misc Functions in R
+author: TF
+date: '2018-07-22'
+slug: misc-functions-in-r
+categories: []
+tags: [R]
+header:
+  caption: ''
+  image: ''
+---
+
+This post is VERY in progress. The point is as a reference for myself for small things I want to refer to in the future, for simulating data and working with probability distributions. Its a hodge podge and always being updated
+
+How to get session info and version information for an R session
+`sessionInfo()`
+
+see loaded packages
+`search()`
+
+see the commands that are contained within a package
+`lsf.str("pakcage:name")`
+
+list all objects in a package
+`ls("package:name")`
+
+if package is not loaded can use
+`help(package = name)`
+
+
+#Probability Distributions: A gentle introduction on how to use the different commands.
+There is a good tutorial here too: http://ww2.coastal.edu/kingw/statistics/R-tutorials/prob.html
+
+Can use `?Distributions` to pull up the list of distributions covered in R
+start with the `dnorm` distribution.
+
+#References:
+http://seankross.com/notes/dpqr/
+http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf
+https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html

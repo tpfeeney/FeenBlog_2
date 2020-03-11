@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Timothy Feeney">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. tidyverse and ggplot in particular are great at incorporating wonderful palettes.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/color-palettes-in-r/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/post/color-palettes-in-r/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@tfeend">
+  <meta property="twitter:creator" content="@tfeend">
+  
+  <meta property="og:site_name" content="The Feeney">
+  <meta property="og:url" content="/post/color-palettes-in-r/">
+  <meta property="og:title" content="Color Palettes in R | The Feeney">
+  <meta property="og:description" content="Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. tidyverse and ggplot in particular are great at incorporating wonderful palettes."><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-07-22T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2018-07-22T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/color-palettes-in-r/"
+  },
+  "headline": "Color Palettes in R",
+  
+  "datePublished": "2018-07-22T00:00:00Z",
+  "dateModified": "2018-07-22T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Timothy Feeney"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Feeney",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. tidyverse and ggplot in particular are great at incorporating wonderful palettes."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Color Palettes in R | The Feeney</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">The Feeney</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">The Feeney</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Color Palettes in R</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jul 22, 2018
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p>Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. <code>tidyverse</code> and <code>ggplot</code> in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the <code>ggsci</code> package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.</p>
+<p>#libraries</p>
+<pre class="r"><code>library(tidyverse)
+library(scales)
+library(RColorBrewer)
+library(ggsci)
+library(wesanderson)
+library(ggthemes)</code></pre>
+<p>#ggsci colors and Hex (not a complete list)</p>
+<p>JAMA</p>
+<pre class="r"><code>show_col(pal_jama(&quot;default&quot;)(7))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>NEJM</p>
+<pre class="r"><code>show_col(pal_nejm(&quot;default&quot;)(7))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>nature publishing group</p>
+<pre class="r"><code>show_col(pal_npg(&quot;nrc&quot;)(10))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Univof Chicago</p>
+<pre class="r"><code>show_col(pal_uchicago(&quot;default&quot;)(9))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>    show_col(pal_uchicago(&quot;light&quot;)(9))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-2.png" width="672" /></p>
+<pre class="r"><code>    show_col(pal_uchicago(&quot;dark&quot;)(9))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-3.png" width="672" /></p>
+<p>J of Clin Oncology</p>
+<pre class="r"><code>show_col(pal_jco(&quot;default&quot;)(10))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Lancet</p>
+<pre class="r"><code>show_col(pal_lancet(&quot;lanonc&quot;)(9))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Star Trek</p>
+<pre class="r"><code>show_col(pal_startrek(&quot;uniform&quot;)(7))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Simpsons</p>
+<pre class="r"><code>show_col(pal_simpsons(&quot;springfield&quot;)(16))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Rick and Morty</p>
+<pre class="r"><code>show_col(pal_rickandmorty(&quot;schwifty&quot;)(12))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>#ggthemes colors
+Stata</p>
+<pre class="r"><code>show_col(stata_pal(&quot;s2color&quot;)(15))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<pre class="r"><code>    show_col(stata_pal(&quot;s1rcolor&quot;)(15))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
+<pre class="r"><code>    show_col(stata_pal(&quot;s1color&quot;)(15))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-3.png" width="672" /></p>
+<pre class="r"><code>    show_col(stata_pal(&quot;mono&quot;)(15))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-4.png" width="672" /></p>
+<p>538 theme colors</p>
+<pre class="r"><code>show_col(fivethirtyeight_pal()(3))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>google docs colors</p>
+<pre class="r"><code>show_col(gdocs_pal()(20))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png" width="672" />
+economist</p>
+<pre class="r"><code>show_col(economist_pal()(6))
+    ## fill palette
+    show_col(economist_pal(fill = TRUE)(6))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p>colorblind</p>
+<pre class="r"><code>show_col(colorblind_pal()(8))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>#Display overall Brewer colors</p>
+<pre class="r"><code>display.brewer.all()</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<pre class="r"><code>brewer.pal.info</code></pre>
+<pre><code>##          maxcolors category colorblind
+## BrBG            11      div       TRUE
+## PiYG            11      div       TRUE
+## PRGn            11      div       TRUE
+## PuOr            11      div       TRUE
+## RdBu            11      div       TRUE
+## RdGy            11      div      FALSE
+## RdYlBu          11      div       TRUE
+## RdYlGn          11      div      FALSE
+## Spectral        11      div      FALSE
+## Accent           8     qual      FALSE
+## Dark2            8     qual       TRUE
+## Paired          12     qual       TRUE
+## Pastel1          9     qual      FALSE
+## Pastel2          8     qual      FALSE
+## Set1             9     qual      FALSE
+## Set2             8     qual       TRUE
+## Set3            12     qual      FALSE
+## Blues            9      seq       TRUE
+## BuGn             9      seq       TRUE
+## BuPu             9      seq       TRUE
+## GnBu             9      seq       TRUE
+## Greens           9      seq       TRUE
+## Greys            9      seq       TRUE
+## Oranges          9      seq       TRUE
+## OrRd             9      seq       TRUE
+## PuBu             9      seq       TRUE
+## PuBuGn           9      seq       TRUE
+## PuRd             9      seq       TRUE
+## Purples          9      seq       TRUE
+## RdPu             9      seq       TRUE
+## Reds             9      seq       TRUE
+## YlGn             9      seq       TRUE
+## YlGnBu           9      seq       TRUE
+## YlOrBr           9      seq       TRUE
+## YlOrRd           9      seq       TRUE</code></pre>
+<p>#Brewer Hex and Color palette
+BrBG
+can use:</p>
+<pre class="r"><code>brewer.pal(n=11,name=&quot;BrBG&quot;)</code></pre>
+<pre><code>##  [1] &quot;#543005&quot; &quot;#8C510A&quot; &quot;#BF812D&quot; &quot;#DFC27D&quot; &quot;#F6E8C3&quot; &quot;#F5F5F5&quot; &quot;#C7EAE5&quot;
+##  [8] &quot;#80CDC1&quot; &quot;#35978F&quot; &quot;#01665E&quot; &quot;#003C30&quot;</code></pre>
+<pre class="r"><code>display.brewer.pal(n=11,name=&quot;BrBG&quot;)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p>or can use <code>show_col</code> command instead</p>
+<pre class="r"><code>show_col(brewer_pal(palette = &quot;BrBG&quot;)(11))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p>#Wes Anderson Movie Color Themes</p>
+<pre class="r"><code>wes_palettes</code></pre>
+<pre><code>## $BottleRocket1
+## [1] &quot;#A42820&quot; &quot;#5F5647&quot; &quot;#9B110E&quot; &quot;#3F5151&quot; &quot;#4E2A1E&quot; &quot;#550307&quot; &quot;#0C1707&quot;
+## 
+## $BottleRocket2
+## [1] &quot;#FAD510&quot; &quot;#CB2314&quot; &quot;#273046&quot; &quot;#354823&quot; &quot;#1E1E1E&quot;
+## 
+## $Rushmore1
+## [1] &quot;#E1BD6D&quot; &quot;#EABE94&quot; &quot;#0B775E&quot; &quot;#35274A&quot; &quot;#F2300F&quot;
+## 
+## $Rushmore
+## [1] &quot;#E1BD6D&quot; &quot;#EABE94&quot; &quot;#0B775E&quot; &quot;#35274A&quot; &quot;#F2300F&quot;
+## 
+## $Royal1
+## [1] &quot;#899DA4&quot; &quot;#C93312&quot; &quot;#FAEFD1&quot; &quot;#DC863B&quot;
+## 
+## $Royal2
+## [1] &quot;#9A8822&quot; &quot;#F5CDB4&quot; &quot;#F8AFA8&quot; &quot;#FDDDA0&quot; &quot;#74A089&quot;
+## 
+## $Zissou1
+## [1] &quot;#3B9AB2&quot; &quot;#78B7C5&quot; &quot;#EBCC2A&quot; &quot;#E1AF00&quot; &quot;#F21A00&quot;
+## 
+## $Darjeeling1
+## [1] &quot;#FF0000&quot; &quot;#00A08A&quot; &quot;#F2AD00&quot; &quot;#F98400&quot; &quot;#5BBCD6&quot;
+## 
+## $Darjeeling2
+## [1] &quot;#ECCBAE&quot; &quot;#046C9A&quot; &quot;#D69C4E&quot; &quot;#ABDDDE&quot; &quot;#000000&quot;
+## 
+## $Chevalier1
+## [1] &quot;#446455&quot; &quot;#FDD262&quot; &quot;#D3DDDC&quot; &quot;#C7B19C&quot;
+## 
+## $FantasticFox1
+## [1] &quot;#DD8D29&quot; &quot;#E2D200&quot; &quot;#46ACC8&quot; &quot;#E58601&quot; &quot;#B40F20&quot;
+## 
+## $Moonrise1
+## [1] &quot;#F3DF6C&quot; &quot;#CEAB07&quot; &quot;#D5D5D3&quot; &quot;#24281A&quot;
+## 
+## $Moonrise2
+## [1] &quot;#798E87&quot; &quot;#C27D38&quot; &quot;#CCC591&quot; &quot;#29211F&quot;
+## 
+## $Moonrise3
+## [1] &quot;#85D4E3&quot; &quot;#F4B5BD&quot; &quot;#9C964A&quot; &quot;#CDC08C&quot; &quot;#FAD77B&quot;
+## 
+## $Cavalcanti1
+## [1] &quot;#D8B70A&quot; &quot;#02401B&quot; &quot;#A2A475&quot; &quot;#81A88D&quot; &quot;#972D15&quot;
+## 
+## $GrandBudapest1
+## [1] &quot;#F1BB7B&quot; &quot;#FD6467&quot; &quot;#5B1A18&quot; &quot;#D67236&quot;
+## 
+## $GrandBudapest2
+## [1] &quot;#E6A0C4&quot; &quot;#C6CDF7&quot; &quot;#D8A499&quot; &quot;#7294D4&quot;
+## 
+## $IsleofDogs1
+## [1] &quot;#9986A5&quot; &quot;#79402E&quot; &quot;#CCBA72&quot; &quot;#0F0D0E&quot; &quot;#D9D0D3&quot; &quot;#8D8680&quot;
+## 
+## $IsleofDogs2
+## [1] &quot;#EAD3BF&quot; &quot;#AA9486&quot; &quot;#B6854D&quot; &quot;#39312F&quot; &quot;#1C1718&quot;</code></pre>
+<p>Bottle Rocket 1</p>
+<pre class="r"><code>show_col(wes_palettes$BottleRocket1,(7))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p>Bottle Rocket 2</p>
+<pre class="r"><code>show_col(wes_palettes$BottleRocket2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p>Rushmore 1</p>
+<pre class="r"><code>show_col(wes_palettes$Rushmore1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p>Royal 1</p>
+<pre class="r"><code>show_col(wes_palettes$Royal1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p>Royal 2</p>
+<pre class="r"><code>show_col(wes_palettes$Royal2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p>Zissou1</p>
+<pre class="r"><code>show_col(wes_palettes$Zissou1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p>Darjeeling1</p>
+<pre class="r"><code>show_col(wes_palettes$Darjeeling1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-28-1.png" width="672" />
+Darjeeling2</p>
+<pre class="r"><code>show_col(wes_palettes$Darjeeling2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p>Fantastic Fox 1</p>
+<pre class="r"><code>show_col(wes_palettes$FantasticFox1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p>Moonrise1</p>
+<pre class="r"><code>show_col(wes_palettes$Moonrise1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p>Moonrise2</p>
+<pre class="r"><code>show_col(wes_palettes$Moonrise2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<p>Moonrise3</p>
+<pre class="r"><code>show_col(wes_palettes$Moonrise3)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
+<p>GrandBudapest1</p>
+<pre class="r"><code>show_col(wes_palettes$GrandBudapest1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<p>GrandBudapest2</p>
+<pre class="r"><code>show_col(wes_palettes$GrandBudapest2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
+<p>IsleofDogs1</p>
+<pre class="r"><code>show_col(wes_palettes$IsleofDogs1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+<p>IsleofDogs2</p>
+<pre class="r"><code>show_col(wes_palettes$IsleofDogs2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
+<p>#References:</p>
+<p><a href="https://rpubs.com/anhld/169514" class="uri">https://rpubs.com/anhld/169514</a>
+<a href="https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf" class="uri">https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf</a>
+<a href="https://cran.r-project.org/web/packages/ggsci/ggsci.pdf" class="uri">https://cran.r-project.org/web/packages/ggsci/ggsci.pdf</a>
+<a href="http://www.sthda.com/english/wiki/colors-in-r" class="uri">http://www.sthda.com/english/wiki/colors-in-r</a>
+<a href="https://github.com/EmilHvitfeldt/r-color-palettes" class="uri">https://github.com/EmilHvitfeldt/r-color-palettes</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/r/">R</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/color-palettes-in-r/&amp;text=Color%20Palettes%20in%20R" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/color-palettes-in-r/&amp;t=Color%20Palettes%20in%20R" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Color%20Palettes%20in%20R&amp;body=/post/color-palettes-in-r/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/color-palettes-in-r/&amp;title=Color%20Palettes%20in%20R" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Color%20Palettes%20in%20R%20/post/color-palettes-in-r/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/color-palettes-in-r/&amp;title=Color%20Palettes%20in%20R" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu3a2eb3e61da3431a98d1a60d50778725_19010_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Timothy Feeney</a></h5>
+      <h6 class="card-subtitle">Post-doctoral Research Fellow in Surgery</h6>
+      <p class="card-text">My research interests include clinical epidemiology of surgery and critical care outcomes, causal inference, and bayesian statistics.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/tfeend" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.ca/citations?user=5ZJUF-UAAAAJ&amp;hl" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/tpfeeney" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/misc-functions-in-r/">Misc Functions in R</a></li>
+      
+      <li><a href="/post/how-to-visualize-binary-outcomes-in-research/">How to Visualize Binary Outcomes in Research</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2018-2020 Tim Feeney &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

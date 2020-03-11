@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data analysis | The Feeney</title>
+    <link>/tags/data-analysis/</link>
+      <atom:link href="/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Data analysis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Sat, 16 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Data analysis</title>
+      <link>/tags/data-analysis/</link>
+    </image>
+    
+    <item>
+      <title>How to Visualize Binary Outcomes in Research</title>
+      <link>/post/how-to-visualize-binary-outcomes-in-research/</link>
+      <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/post/how-to-visualize-binary-outcomes-in-research/</guid>
+      <description>
+
+
+&lt;p&gt;In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.&lt;/p&gt;
+&lt;p&gt;###load libraries&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(ggpubr)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###create the variables&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(15762)
+death&amp;lt;-rbinom(1000,1,0.03)
+readmit &amp;lt;-rbinom(1000,1, 0.1)
+id&amp;lt;-rbinom(1000,5,0.2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###combine into dataframe&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x &amp;lt;- data.frame(death,readmit,id)
+names(x) &amp;lt;- c(&amp;quot;death&amp;quot;, &amp;quot;readmit&amp;quot;, &amp;quot;id&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###check the results&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(x)
+##   death readmit id
+## 1     0       0  2
+## 2     0       0  0
+## 3     0       0  0
+## 4     0       0  3
+## 5     0       0  2
+## 6     0       0  0&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now here is where it was tricky for me. If you, like I typically do, work with large data then you will need to extract the components you want. Typically for the specific outcome I am interested in, i’ll use &lt;code&gt;na.omit(df)&lt;/code&gt; to restrict to only observations with all outcomes observed; excluding NAs&lt;/p&gt;
+&lt;p&gt;So once you do that you want to select out the binary outcome you are interested in, and I will be using death as the outcome to evaluate.&lt;/p&gt;
+&lt;p&gt;###pull out the observations I am interested in the proportion of death across different IDs&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;death_x &amp;lt;-dplyr::select(x, death, id)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###create proportion table to get proportion of deaths across different IDs&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;death_prop &amp;lt;- death_x %&amp;gt;% count(death, id) %&amp;gt;% mutate(prop=prop.table(n))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###now just look at the proportion of those that died; this next step basically makes sure we only visualize the proportion of death&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;death_prop &amp;lt;- dplyr::filter(death_prop, death==1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###then just graph it; ive chosen to use a lollipop plot, because I think that is the best&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(death_prop, aes(x=id, y=prop)) +
+  geom_point() + 
+  geom_segment( aes(x=id, xend=id, y=0, yend=prop))+theme_classic()+geom_hline(aes(yintercept=0))+labs(x=&amp;quot;ID #&amp;quot;, y=&amp;quot;Proportion of Death&amp;quot;, title=&amp;quot;Variability in Death over ID&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-06-16-how-to-visualize-binary-outcomes-in-research_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

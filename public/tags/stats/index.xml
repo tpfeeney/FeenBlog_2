@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stats | The Feeney</title>
+    <link>/tags/stats/</link>
+      <atom:link href="/tags/stats/index.xml" rel="self" type="application/rss+xml" />
+    <description>stats</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Sun, 10 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>stats</title>
+      <link>/tags/stats/</link>
+    </image>
+    
+    <item>
+      <title>Clinical Significance: why there is nothing significant about it</title>
+      <link>/post/clinical-significance-why-there-is-nothing-significant-about-it/</link>
+      <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/post/clinical-significance-why-there-is-nothing-significant-about-it/</guid>
+      <description>&lt;p&gt;I saw a post on twitter recently regarding clinical significance of statistically non-significant findings. You can hear about clinical significance a lot if you go to medical oriented conferences dominated by physicians. It is usually a phrase brought up when presenting results that are not &amp;ldquo;statistically significant.&amp;rdquo; This is a way to justify and lend meaning or import to results that otherwise people would blow off. I argue that this is complete malarkey, and I want to talk about why.&lt;/p&gt;
+&lt;p&gt;Lets put aside the discussion of the use of p-values for a moment. If have results that are not &amp;ldquo;statistically significant,&amp;rdquo; according to your  preset alpha level, you have determined that your results are not very unlikely given that your null hypothesis is true. Hence, what you have is a result from a sample that is slightly more extreme than you would expect, but has not crossed your threshold of unlikely, and what you see in your sample result is just due to chance. Now, at this point people say, &amp;ldquo;but, this is clinically meaningful.&amp;rdquo; For instance, say survival time was 5 months extra in your sample, which you did not find statistically significant. Then while 5 extra months would be meaningful to a patient, you have no data to suggest your treatment in this case does anything&amp;ndash;you just sampled in a way where you observed a survival of five months more.&lt;/p&gt;
+&lt;p&gt;Now this is not to say you cant have a statistically significant result that ISNT clinically meaningful. There are probably many results like this. For instance, is one extra month of life with a treatment meaningful? Or how about a half a day longer surgical stay; is that meaningful?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

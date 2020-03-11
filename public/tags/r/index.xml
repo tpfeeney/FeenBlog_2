@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>r | The Feeney</title>
+    <link>/tags/r/</link>
+      <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>r</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Sun, 22 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>r</title>
+      <link>/tags/r/</link>
+    </image>
+    
+    <item>
+      <title>Color Palettes in R</title>
+      <link>/post/color-palettes-in-r/</link>
+      <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/post/color-palettes-in-r/</guid>
+      <description>
+
+
+&lt;p&gt;Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. &lt;code&gt;tidyverse&lt;/code&gt; and &lt;code&gt;ggplot&lt;/code&gt; in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the &lt;code&gt;ggsci&lt;/code&gt; package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.&lt;/p&gt;
+&lt;p&gt;#libraries&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(scales)
+library(RColorBrewer)
+library(ggsci)
+library(wesanderson)
+library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;#ggsci colors and Hex (not a complete list)&lt;/p&gt;
+&lt;p&gt;JAMA&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_jama(&amp;quot;default&amp;quot;)(7))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;NEJM&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_nejm(&amp;quot;default&amp;quot;)(7))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;nature publishing group&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_npg(&amp;quot;nrc&amp;quot;)(10))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Univof Chicago&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_uchicago(&amp;quot;default&amp;quot;)(9))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    show_col(pal_uchicago(&amp;quot;light&amp;quot;)(9))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    show_col(pal_uchicago(&amp;quot;dark&amp;quot;)(9))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;J of Clin Oncology&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_jco(&amp;quot;default&amp;quot;)(10))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Lancet&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_lancet(&amp;quot;lanonc&amp;quot;)(9))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Star Trek&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_startrek(&amp;quot;uniform&amp;quot;)(7))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Simpsons&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_simpsons(&amp;quot;springfield&amp;quot;)(16))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Rick and Morty&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_rickandmorty(&amp;quot;schwifty&amp;quot;)(12))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;#ggthemes colors
+Stata&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(stata_pal(&amp;quot;s2color&amp;quot;)(15))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    show_col(stata_pal(&amp;quot;s1rcolor&amp;quot;)(15))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    show_col(stata_pal(&amp;quot;s1color&amp;quot;)(15))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    show_col(stata_pal(&amp;quot;mono&amp;quot;)(15))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;538 theme colors&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(fivethirtyeight_pal()(3))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;google docs colors&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(gdocs_pal()(20))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;
+economist&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(economist_pal()(6))
+    ## fill palette
+    show_col(economist_pal(fill = TRUE)(6))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;colorblind&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(colorblind_pal()(8))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;#Display overall Brewer colors&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;display.brewer.all()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brewer.pal.info&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##          maxcolors category colorblind
+## BrBG            11      div       TRUE
+## PiYG            11      div       TRUE
+## PRGn            11      div       TRUE
+## PuOr            11      div       TRUE
+## RdBu            11      div       TRUE
+## RdGy            11      div      FALSE
+## RdYlBu          11      div       TRUE
+## RdYlGn          11      div      FALSE
+## Spectral        11      div      FALSE
+## Accent           8     qual      FALSE
+## Dark2            8     qual       TRUE
+## Paired          12     qual       TRUE
+## Pastel1          9     qual      FALSE
+## Pastel2          8     qual      FALSE
+## Set1             9     qual      FALSE
+## Set2             8     qual       TRUE
+## Set3            12     qual      FALSE
+## Blues            9      seq       TRUE
+## BuGn             9      seq       TRUE
+## BuPu             9      seq       TRUE
+## GnBu             9      seq       TRUE
+## Greens           9      seq       TRUE
+## Greys            9      seq       TRUE
+## Oranges          9      seq       TRUE
+## OrRd             9      seq       TRUE
+## PuBu             9      seq       TRUE
+## PuBuGn           9      seq       TRUE
+## PuRd             9      seq       TRUE
+## Purples          9      seq       TRUE
+## RdPu             9      seq       TRUE
+## Reds             9      seq       TRUE
+## YlGn             9      seq       TRUE
+## YlGnBu           9      seq       TRUE
+## YlOrBr           9      seq       TRUE
+## YlOrRd           9      seq       TRUE&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;#Brewer Hex and Color palette
+BrBG
+can use:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brewer.pal(n=11,name=&amp;quot;BrBG&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;#543005&amp;quot; &amp;quot;#8C510A&amp;quot; &amp;quot;#BF812D&amp;quot; &amp;quot;#DFC27D&amp;quot; &amp;quot;#F6E8C3&amp;quot; &amp;quot;#F5F5F5&amp;quot; &amp;quot;#C7EAE5&amp;quot;
+##  [8] &amp;quot;#80CDC1&amp;quot; &amp;quot;#35978F&amp;quot; &amp;quot;#01665E&amp;quot; &amp;quot;#003C30&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;display.brewer.pal(n=11,name=&amp;quot;BrBG&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;or can use &lt;code&gt;show_col&lt;/code&gt; command instead&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(brewer_pal(palette = &amp;quot;BrBG&amp;quot;)(11))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-20-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;#Wes Anderson Movie Color Themes&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wes_palettes&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $BottleRocket1
+## [1] &amp;quot;#A42820&amp;quot; &amp;quot;#5F5647&amp;quot; &amp;quot;#9B110E&amp;quot; &amp;quot;#3F5151&amp;quot; &amp;quot;#4E2A1E&amp;quot; &amp;quot;#550307&amp;quot; &amp;quot;#0C1707&amp;quot;
+## 
+## $BottleRocket2
+## [1] &amp;quot;#FAD510&amp;quot; &amp;quot;#CB2314&amp;quot; &amp;quot;#273046&amp;quot; &amp;quot;#354823&amp;quot; &amp;quot;#1E1E1E&amp;quot;
+## 
+## $Rushmore1
+## [1] &amp;quot;#E1BD6D&amp;quot; &amp;quot;#EABE94&amp;quot; &amp;quot;#0B775E&amp;quot; &amp;quot;#35274A&amp;quot; &amp;quot;#F2300F&amp;quot;
+## 
+## $Rushmore
+## [1] &amp;quot;#E1BD6D&amp;quot; &amp;quot;#EABE94&amp;quot; &amp;quot;#0B775E&amp;quot; &amp;quot;#35274A&amp;quot; &amp;quot;#F2300F&amp;quot;
+## 
+## $Royal1
+## [1] &amp;quot;#899DA4&amp;quot; &amp;quot;#C93312&amp;quot; &amp;quot;#FAEFD1&amp;quot; &amp;quot;#DC863B&amp;quot;
+## 
+## $Royal2
+## [1] &amp;quot;#9A8822&amp;quot; &amp;quot;#F5CDB4&amp;quot; &amp;quot;#F8AFA8&amp;quot; &amp;quot;#FDDDA0&amp;quot; &amp;quot;#74A089&amp;quot;
+## 
+## $Zissou1
+## [1] &amp;quot;#3B9AB2&amp;quot; &amp;quot;#78B7C5&amp;quot; &amp;quot;#EBCC2A&amp;quot; &amp;quot;#E1AF00&amp;quot; &amp;quot;#F21A00&amp;quot;
+## 
+## $Darjeeling1
+## [1] &amp;quot;#FF0000&amp;quot; &amp;quot;#00A08A&amp;quot; &amp;quot;#F2AD00&amp;quot; &amp;quot;#F98400&amp;quot; &amp;quot;#5BBCD6&amp;quot;
+## 
+## $Darjeeling2
+## [1] &amp;quot;#ECCBAE&amp;quot; &amp;quot;#046C9A&amp;quot; &amp;quot;#D69C4E&amp;quot; &amp;quot;#ABDDDE&amp;quot; &amp;quot;#000000&amp;quot;
+## 
+## $Chevalier1
+## [1] &amp;quot;#446455&amp;quot; &amp;quot;#FDD262&amp;quot; &amp;quot;#D3DDDC&amp;quot; &amp;quot;#C7B19C&amp;quot;
+## 
+## $FantasticFox1
+## [1] &amp;quot;#DD8D29&amp;quot; &amp;quot;#E2D200&amp;quot; &amp;quot;#46ACC8&amp;quot; &amp;quot;#E58601&amp;quot; &amp;quot;#B40F20&amp;quot;
+## 
+## $Moonrise1
+## [1] &amp;quot;#F3DF6C&amp;quot; &amp;quot;#CEAB07&amp;quot; &amp;quot;#D5D5D3&amp;quot; &amp;quot;#24281A&amp;quot;
+## 
+## $Moonrise2
+## [1] &amp;quot;#798E87&amp;quot; &amp;quot;#C27D38&amp;quot; &amp;quot;#CCC591&amp;quot; &amp;quot;#29211F&amp;quot;
+## 
+## $Moonrise3
+## [1] &amp;quot;#85D4E3&amp;quot; &amp;quot;#F4B5BD&amp;quot; &amp;quot;#9C964A&amp;quot; &amp;quot;#CDC08C&amp;quot; &amp;quot;#FAD77B&amp;quot;
+## 
+## $Cavalcanti1
+## [1] &amp;quot;#D8B70A&amp;quot; &amp;quot;#02401B&amp;quot; &amp;quot;#A2A475&amp;quot; &amp;quot;#81A88D&amp;quot; &amp;quot;#972D15&amp;quot;
+## 
+## $GrandBudapest1
+## [1] &amp;quot;#F1BB7B&amp;quot; &amp;quot;#FD6467&amp;quot; &amp;quot;#5B1A18&amp;quot; &amp;quot;#D67236&amp;quot;
+## 
+## $GrandBudapest2
+## [1] &amp;quot;#E6A0C4&amp;quot; &amp;quot;#C6CDF7&amp;quot; &amp;quot;#D8A499&amp;quot; &amp;quot;#7294D4&amp;quot;
+## 
+## $IsleofDogs1
+## [1] &amp;quot;#9986A5&amp;quot; &amp;quot;#79402E&amp;quot; &amp;quot;#CCBA72&amp;quot; &amp;quot;#0F0D0E&amp;quot; &amp;quot;#D9D0D3&amp;quot; &amp;quot;#8D8680&amp;quot;
+## 
+## $IsleofDogs2
+## [1] &amp;quot;#EAD3BF&amp;quot; &amp;quot;#AA9486&amp;quot; &amp;quot;#B6854D&amp;quot; &amp;quot;#39312F&amp;quot; &amp;quot;#1C1718&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bottle Rocket 1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$BottleRocket1,(7))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-22-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Bottle Rocket 2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$BottleRocket2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-23-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Rushmore 1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Rushmore1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Royal 1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Royal1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-25-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Royal 2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Royal2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-26-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Zissou1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Zissou1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-27-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Darjeeling1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Darjeeling1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-28-1.png&#34; width=&#34;672&#34; /&gt;
+Darjeeling2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Darjeeling2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-29-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Fantastic Fox 1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$FantasticFox1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-30-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Moonrise1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Moonrise1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-31-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Moonrise2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Moonrise2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-32-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Moonrise3&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Moonrise3)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-33-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;GrandBudapest1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$GrandBudapest1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-34-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;GrandBudapest2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$GrandBudapest2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-35-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;IsleofDogs1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$IsleofDogs1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-36-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;IsleofDogs2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$IsleofDogs2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-37-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;#References:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/anhld/169514&#34; class=&#34;uri&#34;&gt;https://rpubs.com/anhld/169514&lt;/a&gt;
+&lt;a href=&#34;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&#34; class=&#34;uri&#34;&gt;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&lt;/a&gt;
+&lt;a href=&#34;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&lt;/a&gt;
+&lt;a href=&#34;http://www.sthda.com/english/wiki/colors-in-r&#34; class=&#34;uri&#34;&gt;http://www.sthda.com/english/wiki/colors-in-r&lt;/a&gt;
+&lt;a href=&#34;https://github.com/EmilHvitfeldt/r-color-palettes&#34; class=&#34;uri&#34;&gt;https://github.com/EmilHvitfeldt/r-color-palettes&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Misc Functions in R</title>
+      <link>/post/misc-functions-in-r/</link>
+      <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/post/misc-functions-in-r/</guid>
+      <description>
+
+
+&lt;p&gt;This post is VERY in progress. The point is as a reference for myself for small things I want to refer to in the future, for simulating data and working with probability distributions. Its a hodge podge and always being updated&lt;/p&gt;
+&lt;p&gt;How to get session info and version information for an R session
+&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;see loaded packages
+&lt;code&gt;search()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;see the commands that are contained within a package
+&lt;code&gt;lsf.str(&#34;pakcage:name&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;list all objects in a package
+&lt;code&gt;ls(&#34;package:name&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;if package is not loaded can use
+&lt;code&gt;help(package = name)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;#Probability Distributions: A gentle introduction on how to use the different commands.
+There is a good tutorial here too: &lt;a href=&#34;http://ww2.coastal.edu/kingw/statistics/R-tutorials/prob.html&#34; class=&#34;uri&#34;&gt;http://ww2.coastal.edu/kingw/statistics/R-tutorials/prob.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Can use &lt;code&gt;?Distributions&lt;/code&gt; to pull up the list of distributions covered in R
+start with the &lt;code&gt;dnorm&lt;/code&gt; distribution.&lt;/p&gt;
+&lt;p&gt;#References:
+&lt;a href=&#34;http://seankross.com/notes/dpqr/&#34; class=&#34;uri&#34;&gt;http://seankross.com/notes/dpqr/&lt;/a&gt;
+&lt;a href=&#34;http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf&#34; class=&#34;uri&#34;&gt;http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf&lt;/a&gt;
+&lt;a href=&#34;https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html&#34; class=&#34;uri&#34;&gt;https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Visualize Binary Outcomes in Research</title>
+      <link>/post/how-to-visualize-binary-outcomes-in-research/</link>
+      <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/post/how-to-visualize-binary-outcomes-in-research/</guid>
+      <description>
+
+
+&lt;p&gt;In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.&lt;/p&gt;
+&lt;p&gt;###load libraries&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(ggpubr)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###create the variables&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(15762)
+death&amp;lt;-rbinom(1000,1,0.03)
+readmit &amp;lt;-rbinom(1000,1, 0.1)
+id&amp;lt;-rbinom(1000,5,0.2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###combine into dataframe&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x &amp;lt;- data.frame(death,readmit,id)
+names(x) &amp;lt;- c(&amp;quot;death&amp;quot;, &amp;quot;readmit&amp;quot;, &amp;quot;id&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###check the results&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(x)
+##   death readmit id
+## 1     0       0  2
+## 2     0       0  0
+## 3     0       0  0
+## 4     0       0  3
+## 5     0       0  2
+## 6     0       0  0&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now here is where it was tricky for me. If you, like I typically do, work with large data then you will need to extract the components you want. Typically for the specific outcome I am interested in, i’ll use &lt;code&gt;na.omit(df)&lt;/code&gt; to restrict to only observations with all outcomes observed; excluding NAs&lt;/p&gt;
+&lt;p&gt;So once you do that you want to select out the binary outcome you are interested in, and I will be using death as the outcome to evaluate.&lt;/p&gt;
+&lt;p&gt;###pull out the observations I am interested in the proportion of death across different IDs&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;death_x &amp;lt;-dplyr::select(x, death, id)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###create proportion table to get proportion of deaths across different IDs&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;death_prop &amp;lt;- death_x %&amp;gt;% count(death, id) %&amp;gt;% mutate(prop=prop.table(n))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###now just look at the proportion of those that died; this next step basically makes sure we only visualize the proportion of death&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;death_prop &amp;lt;- dplyr::filter(death_prop, death==1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###then just graph it; ive chosen to use a lollipop plot, because I think that is the best&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(death_prop, aes(x=id, y=prop)) +
+  geom_point() + 
+  geom_segment( aes(x=id, xend=id, y=0, yend=prop))+theme_classic()+geom_hline(aes(yintercept=0))+labs(x=&amp;quot;ID #&amp;quot;, y=&amp;quot;Proportion of Death&amp;quot;, title=&amp;quot;Variability in Death over ID&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-06-16-how-to-visualize-binary-outcomes-in-research_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stats software compared: A n00bs Viewpoint</title>
+      <link>/post/stats-software-compared-a-n00bs-viewpoint/</link>
+      <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/post/stats-software-compared-a-n00bs-viewpoint/</guid>
+      <description>&lt;p&gt;While in my MPH training I had the opportunity to use (in class) both Stata and SAS. They were both great, but it became apparent during that time that serious stat were done with R. Further, visualizations that I saw from R packages like ggplot were just so much prettier than anything I saw in SAS or Stata.&lt;/p&gt;
+&lt;p&gt;There were no specific classes to learn R during my MPH, but I was able to teach myself by taking free online class, googling answer, and just experimenting with my data and comparing it to other software I already knew. It wasnt easy, but it has been worth it.&lt;/p&gt;
+&lt;p&gt;Through this time I have developed a very strong position on the different stats packages and I thought I would go through my thoughts on them now. In short, R is the best, Stata is OK, and SAS should just be avoided.&lt;/p&gt;
+&lt;p&gt;Stata: this was the first stats program I was exposed to, and it was used to help me learn basic biostatistics. It is a good package. It is really easy to learn, particularly for someone without any programming background (like myself). The interface is instuitive, running tests and regressions are strightforward and tend to use natural language syntax instead of more complex syntax of SAS and R. Oh, and it allows for additional pakcages to be added on. I have use these packages for things like multiple testing adjustments and graphing quantile regression output. In essence Stata offers simple straightforward analysis that is advanced, easy to get going in, and with at least some upgradability.&lt;/p&gt;
+&lt;p&gt;SAS. Oh SAS. How I hate thee. I understand that there was a time when SAS was THE SOFTWARE to use to analyze data. R wasnt nearly as developed, Stata didnt exist, and doing things by hand wasnt really an option. So, I understand why previous generations used it, and since they have all this experience with it they continue to hold on. BUT, times have changed, and for a newcomer SAS is terrible. First, its hard as hell to get a hold of. You can get a free education version, but that is severely limited. It isnt native to a unix environment, so those with linux and macs need to virtualize, and it is EXPENSIVE. Couple these &amp;ldquo;features&amp;rdquo; with its steep learning curve, and you have a conflagration of awful. I remember how hard it was to learn SAS AND learn regression&amp;ndash;it was atrocious. The learning curve is just too high for minimal payoff above Stata. If you are going to sacrifice ease of use you might as well just use R.&lt;/p&gt;
+&lt;p&gt;R is an open source (read: free) software package built for data analysis. It is by no means easy to use; far from it in fact. The learning curve is steep, which is similar to SAS. BUT, R is infinitely expandable and VERY powerful. Not to mention it comes with a huge community of users that are helpful, great visualization packages, and tha ability to actually program your own additional functions. Moreover, it can be used for more than just data analysis. I am writing this blog using R and it is a wonderful experience. Last, a feature of R that is often overlooked is that it FORCES you to know what you are doing. In stata, things happen behind the scenes and outputs are given to you without much user thought. For instance, after running a regression you can use the postestimation command: lroc, and voila&amp;rsquo; you get a ROC with a calculated AUROC. It&amp;rsquo;s nice and convenient, but in R you have to do a bit more. You have to run the regression, and then understand that you need to predict the output for each individual and then compare that to the actual outcome in the individual to get and ROC. In that way R teaches while you perform functions, because there is more to success than a simple command.&lt;/p&gt;
+&lt;p&gt;In the end, getting away from SAS will be benefitial for everyone. Start and stick with Stata, and learn R if you want to do more and be even better, but dont even bother with SAS since the cost effectivness of what you can do given time to learn is just not worth it. I have made a little table below to summarize my opinions.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Feature&lt;/th&gt;
+&lt;th&gt;Stata&lt;/th&gt;
+&lt;th&gt;SAS&lt;/th&gt;
+&lt;th&gt;R&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Expense&lt;/td&gt;
+&lt;td&gt;high&lt;/td&gt;
+&lt;td&gt;high&lt;/td&gt;
+&lt;td&gt;FREE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Learning Curve&lt;/td&gt;
+&lt;td&gt;low&lt;/td&gt;
+&lt;td&gt;high&lt;/td&gt;
+&lt;td&gt;very high&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Expandibility&lt;/td&gt;
+&lt;td&gt;moderate&lt;/td&gt;
+&lt;td&gt;low&lt;/td&gt;
+&lt;td&gt;very high&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Power&lt;/td&gt;
+&lt;td&gt;moderate&lt;/td&gt;
+&lt;td&gt;high&lt;/td&gt;
+&lt;td&gt;very high&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

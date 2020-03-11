@@ -1,0 +1,71 @@
+---
+title: "How to Visualize Binary Outcomes in Research"
+author: "TF"
+date: '2018-06-16'
+output:
+  html_document:
+    df_print: paged
+header:
+  caption: ''
+  image: ''
+slug: how-to-visualize-binary-outcomes-in-research
+tags:
+- R
+- Data analysis
+- dplyr
+categories: []
+---
+
+In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+###load libraries
+```{r, results='hide', message=FALSE, warning=FALSE}
+library(tidyverse)
+library(ggpubr)
+```
+
+###create the variables
+```{r}
+set.seed(15762)
+death<-rbinom(1000,1,0.03)
+readmit <-rbinom(1000,1, 0.1)
+id<-rbinom(1000,5,0.2)
+```
+
+###combine into dataframe
+```{r}
+x <- data.frame(death,readmit,id)
+names(x) <- c("death", "readmit", "id")
+```
+###check the results
+```{r}
+head(x)
+```
+Now here is where it was tricky for me. If you, like I typically do, work with large data then you will need to extract the components you want. Typically for the specific outcome I am interested in, i'll use `na.omit(df)` to restrict to only observations with all outcomes observed; excluding NAs
+
+So once you do that you want to select out the binary outcome you are interested in, and I will be using death as the outcome to evaluate. 
+
+###pull out the observations I am interested in the proportion of death across different IDs
+```{r}
+death_x <-dplyr::select(x, death, id)
+```
+###create proportion table to get proportion of deaths across different IDs
+```{r}
+death_prop <- death_x %>% count(death, id) %>% mutate(prop=prop.table(n))
+```
+
+###now just look at the proportion of those that died; this next step basically makes sure we only visualize the proportion of death
+```{r}
+death_prop <- dplyr::filter(death_prop, death==1)
+```
+
+###then just graph it; ive chosen to use a lollipop plot, because I think that is the best
+```{r}
+ggplot(death_prop, aes(x=id, y=prop)) +
+  geom_point() + 
+  geom_segment( aes(x=id, xend=id, y=0, yend=prop))+theme_classic()+geom_hline(aes(yintercept=0))+labs(x="ID #", y="Proportion of Death", title="Variability in Death over ID")
+```

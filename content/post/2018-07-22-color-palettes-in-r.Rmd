@@ -1,0 +1,224 @@
+---
+title: "Color Palettes in R"
+author: "TF"
+date: '2018-07-22'
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+header:
+  caption: ''
+  image: ''
+slug: color-palettes-in-r
+tags: 
+- R
+categories: []
+---
+
+Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. `tidyverse` and `ggplot` in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the `ggsci` package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.
+
+#libraries
+```{r include=TRUE, results='hide', message=FALSE, warning=FALSE}
+library(tidyverse)
+library(scales)
+library(RColorBrewer)
+library(ggsci)
+library(wesanderson)
+library(ggthemes)
+```
+
+#ggsci colors and Hex (not a complete list)
+
+JAMA
+```{r message=FALSE, warning=FALSE}
+show_col(pal_jama("default")(7))
+```
+
+NEJM
+```{r message=FALSE, warning=FALSE}
+show_col(pal_nejm("default")(7))
+```
+
+nature publishing group
+```{r message=FALSE, warning=FALSE}
+show_col(pal_npg("nrc")(10))
+```
+
+Univof Chicago
+```{r message=FALSE, warning=FALSE}
+show_col(pal_uchicago("default")(9))
+    show_col(pal_uchicago("light")(9))
+    show_col(pal_uchicago("dark")(9))
+```
+
+J of Clin Oncology
+```{r message=FALSE, warning=FALSE}
+show_col(pal_jco("default")(10))
+```
+
+Lancet
+```{r message=FALSE, warning=FALSE}
+show_col(pal_lancet("lanonc")(9))
+```
+
+Star Trek
+```{r message=FALSE, warning=FALSE}
+show_col(pal_startrek("uniform")(7))
+```
+
+Simpsons
+```{r message=FALSE, warning=FALSE}
+show_col(pal_simpsons("springfield")(16))
+```
+
+Rick and Morty
+```{r message=FALSE, warning=FALSE}
+show_col(pal_rickandmorty("schwifty")(12))
+```
+
+#ggthemes colors
+Stata
+```{r message=FALSE, warning=FALSE}
+show_col(stata_pal("s2color")(15))
+    show_col(stata_pal("s1rcolor")(15))
+    show_col(stata_pal("s1color")(15))
+    show_col(stata_pal("mono")(15))
+```
+
+538 theme colors
+```{r message=FALSE, warning=FALSE}
+show_col(fivethirtyeight_pal()(3))
+```
+
+google docs colors
+```{r message=FALSE, warning=FALSE}
+show_col(gdocs_pal()(20))
+```
+economist
+```{r message=FALSE, warning=FALSE}
+show_col(economist_pal()(6))
+    ## fill palette
+    show_col(economist_pal(fill = TRUE)(6))
+    ```
+
+
+colorblind
+```{r message=FALSE, warning=FALSE}
+show_col(colorblind_pal()(8))
+```
+
+#Display overall Brewer colors
+```{r message=FALSE, warning=FALSE}
+display.brewer.all()
+```
+```{r message=FALSE, warning=FALSE}
+brewer.pal.info
+```
+
+#Brewer Hex and Color palette
+BrBG
+can use:
+```{r message=FALSE, warning=FALSE}
+brewer.pal(n=11,name="BrBG")
+```
+```{r warning=FALSE}
+display.brewer.pal(n=11,name="BrBG")
+```
+
+or can use `show_col` command instead
+```{r include=TRUE, warning=FALSE}
+show_col(brewer_pal(palette = "BrBG")(11))
+```
+
+#Wes Anderson Movie Color Themes
+```{r include=TRUE, warning=FALSE}
+wes_palettes
+```
+
+Bottle Rocket 1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$BottleRocket1,(7))
+```
+
+Bottle Rocket 2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$BottleRocket2)
+```
+
+Rushmore 1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Rushmore1)
+```
+
+
+Royal 1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Royal1)
+```
+
+Royal 2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Royal2)
+```
+
+Zissou1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Zissou1)
+```
+
+Darjeeling1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Darjeeling1)
+```
+Darjeeling2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Darjeeling2)
+```
+
+Fantastic Fox 1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$FantasticFox1)
+```
+
+Moonrise1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Moonrise1)
+```
+
+Moonrise2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Moonrise2)
+```
+
+Moonrise3
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Moonrise3)
+```
+
+GrandBudapest1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$GrandBudapest1)
+```
+
+GrandBudapest2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$GrandBudapest2)
+```
+
+IsleofDogs1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$IsleofDogs1)
+```
+
+IsleofDogs2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$IsleofDogs2)
+```
+
+#References:
+
+https://rpubs.com/anhld/169514
+https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf
+https://cran.r-project.org/web/packages/ggsci/ggsci.pdf
+http://www.sthda.com/english/wiki/colors-in-r
+https://github.com/EmilHvitfeldt/r-color-palettes
