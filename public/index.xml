@@ -77,6 +77,53 @@
     </item>
     
     <item>
+      <title>Some of my favorite resources</title>
+      <link>/post/some-of-my-favorite-resources/</link>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/some-of-my-favorite-resources/</guid>
+      <description>
+
+
+&lt;p&gt;The internet has a plethora of resources to learn more about science, math, and other interests. I decided to collate all my favorite sites and posts.&lt;/p&gt;
+&lt;div id=&#34;statistical-rethinking&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Statistical Rethinking&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Richard McElreath’s &lt;a href=&#34;https://www.crcpress.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919&#34;&gt;Statistical Rethinking&lt;/a&gt; book is famous (at least is seems to be). Its fantastic for both learning statistical thinking, but also learning bayesian analysis from the ground up. The most wonderful part of it, for those of use who havent taken multivariate calculus, is that he teaches without requring it. It also comes paired with a &lt;a href=&#34;https://www.youtube.com/channel/UCNJK6_DZvcMqNSzQdEkzvzA&#34;&gt;wonderful lecture video series provided for free&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can also follow him on twitter &lt;a href=&#34;https://twitter.com/rlmcelreath&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(@\)&lt;/span&gt;rlmcelreath&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;solomon-kurzs-r-coding&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Solomon Kurz’s R coding&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/SolomonKurz?ref_src=twsrc%5Etfw&#34;&gt;@SolomonKurz&lt;/a&gt; is a gift. &lt;a href=&#34;https://t.co/rzjpPjpK87&#34;&gt;https://t.co/rzjpPjpK87&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tim Feeney (@Tfeend) &lt;a href=&#34;https://twitter.com/Tfeend/status/1220358159593766913?ref_src=twsrc%5Etfw&#34;&gt;January 23, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Solomon’s main page is &lt;a href=&#34;https://solomonkurz.netlify.com/&#34;&gt;here&lt;/a&gt; and he offers many great things. If you go to the &lt;a href=&#34;https://solomonkurz.netlify.com/bookdown/&#34;&gt;book length projects&lt;/a&gt; site you will see that there are many great reanalysis “books” where Solomon uses tidyverse and ggplot to complete aompanion analysis for &lt;a href=&#34;https://bookdown.org/content/3686/&#34;&gt;John Kruschke’s Doing Bayesian Data Analysis&lt;/a&gt;, &lt;a href=&#34;https://bookdown.org/ajkurz/recoding_Hayes_2018/&#34;&gt;Andrew Hayes’ Introduction to Mediation, Moderation, and Conditional Process Analysis&lt;/a&gt;, and of course last but not least the most popular reanalysis, that of &lt;a href=&#34;https://bookdown.org/content/3890/&#34;&gt;Richard McElreath’s (see above) Statistical Rethinking&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Solomon also has a great blog with posts like &lt;a href=&#34;https://solomonkurz.netlify.com/post/make-model-diagrams-kruschke-style/&#34;&gt;Make model diagrams, Kruschke style&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can also follow him on twitter &lt;a href=&#34;https://twitter.com/SolomonKurz&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(@\)&lt;/span&gt;SolomonKurz&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;causal-inference-book&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;a href=&#34;https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/&#34;&gt;&lt;strong&gt;Causal Inference Book&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How could I ignore this resource–I would need to be daft too! I used this book by Robins and Hernan extensively during both my intro epi course and my casual inference course while completing my MPH (luckily Hernan was my causal inference instructor). The link to the webpage is &lt;a href=&#34;https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/&#34;&gt;here&lt;/a&gt; and includes a link to the &lt;a href=&#34;https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2020/02/ci_hernanrobins_21feb20.pdf&#34;&gt;free pdf&lt;/a&gt; and code for SAS, Stata, and R.&lt;/p&gt;
+&lt;p&gt;There is also a nicely done &lt;a href=&#34;https://causalinferencebookr.netlify.com/&#34;&gt;bookdown project&lt;/a&gt; that works through the coding for the book and is a wonderful companion.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-psychologist&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;a href=&#34;https://rpsychologist.com/&#34;&gt;&lt;strong&gt;R Psychologist&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Wonderful &lt;a href=&#34;https://rpsychologist.com/tag/visualization&#34;&gt;visualizations&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;sam-finlaysons-site&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;a href=&#34;https://sgfin.github.io/&#34;&gt;&lt;strong&gt;Sam Finlaysons Site&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://sgfin.github.io/2019/06/19/Causal-Inference-Book-All-DAGs/&#34;&gt;DAGs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sgfin.github.io/2019/06/19/Causal-Inference-Book-Glossary-and-Notes/&#34;&gt;Causal Inference Notes&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;section&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;****&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;petersen-and-balzers-causal-inference-site&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;a href=&#34;https://www.ucbbiostat.com/&#34;&gt;&lt;strong&gt;Petersen and Balzer’s Causal Inference Site&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;More to come.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>An example preprint / working paper</title>
       <link>/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
