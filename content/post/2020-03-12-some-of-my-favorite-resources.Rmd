@@ -1,6 +1,6 @@
 ---
 title: "Some of my favorite resources"
-author: "null"
+author: "TF"
 date: '2020-03-12'
 categories: []
 featured: yes
