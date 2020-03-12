@@ -3,9 +3,9 @@ title: "Color Palettes in R"
 author: "TF"
 date: '2018-07-22'
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 header:
   caption: ''
   image: ''
