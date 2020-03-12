@@ -20,7 +20,7 @@ authors: []
 The internet has a plethora of resources to learn more about science, math, and other interests. I decided to collate all my favorite sites and posts.
 
 
-## **Statistical Rethinking**
+## [**Statistical Rethinking**](https://xcelab.net/rm/)
 
 Richard McElreath's [Statistical Rethinking](https://www.crcpress.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919) book is famous (at least is seems to be). Its fantastic for both learning statistical thinking, but also learning bayesian analysis from the ground up. The most wonderful part of it, for those of use who havent taken multivariate calculus, is that he teaches without requring it. It also comes paired with a [wonderful lecture video series provided for free](https://www.youtube.com/channel/UCNJK6_DZvcMqNSzQdEkzvzA).
 
@@ -47,13 +47,17 @@ There is also a nicely done [bookdown project](https://causalinferencebookr.netl
 
 Wonderful [visualizations](https://rpsychologist.com/tag/visualization)
 
-## [**Sam Finlaysons Site**](https://sgfin.github.io/)
+## [**Sam Finlayson's Site**](https://sgfin.github.io/)
 
 [DAGs](https://sgfin.github.io/2019/06/19/Causal-Inference-Book-All-DAGs/)
 
 [Causal Inference Notes](https://sgfin.github.io/2019/06/19/Causal-Inference-Book-Glossary-and-Notes/)
 
-## ****
+## [**Stat 110 Probability by Joseph Blitzstein**](https://projects.iq.harvard.edu/stat110)
+This is an amazing first course covering probability. Not only does it link to his [amazing youtube videos](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo), [handouts](https://projects.iq.harvard.edu/stat110/handouts), [practice problems and solutions](https://projects.iq.harvard.edu/stat110/strategic-practice-problems), a free copy of [his book](http://probabilitybook.net/), but it also has the added content from his EdX course. Joe is an amazing resource and I cant recommend all this enough.
+
+You can also follow him on twitter
+[$@$stat110](https://twitter.com/stat110)
 
 ## [**Petersen and Balzer's Causal Inference Site**](https://www.ucbbiostat.com/)
 

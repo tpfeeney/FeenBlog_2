@@ -13,6 +13,59 @@
     </image>
     
     <item>
+      <title>List of my favorite books</title>
+      <link>/post/list-of-my-favorite-books/</link>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/list-of-my-favorite-books/</guid>
+      <description>
+
+
+&lt;div id=&#34;epidemiology-biostat&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Epidemiology &amp;amp; Biostat&lt;/h2&gt;
+&lt;div id=&#34;modern-epidmiology-versions-1-3&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Modern Epidmiology, Versions 1-3&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-if-causal-inference&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What If, Causal Inference&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;statistical-rethinking&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Statistical Rethinking&lt;/h3&gt;
+&lt;div id=&#34;probability&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Probability&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mathematics&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Mathematics&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;popular-science-and-math&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Popular Science and Math&lt;/h2&gt;
+&lt;div id=&#34;the-simpsons-and-their-mathematical-secrets&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Simpsons and Their Mathematical Secrets&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;we-have-no-idea&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;We Have no Idea&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-rise-and-fall-of-the-dinosaurs&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Rise and Fall of the Dinosaurs&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-if-serious-scientific-answers-to-absurd-hypothetical-questions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What If?: Serious Scientific Answers to Absurd Hypothetical Questions&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;acedemia-obscura&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Acedemia Obscura&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fiction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Fiction&lt;/h2&gt;
+&lt;div id=&#34;pretty-much-anything-by-terry-pratchett&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Pretty much anything by Terry Pratchett&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Some of my favorite resources</title>
       <link>/post/some-of-my-favorite-resources/</link>
       <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
@@ -22,7 +75,7 @@
 
 &lt;p&gt;The internet has a plethora of resources to learn more about science, math, and other interests. I decided to collate all my favorite sites and posts.&lt;/p&gt;
 &lt;div id=&#34;statistical-rethinking&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;strong&gt;Statistical Rethinking&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a href=&#34;https://xcelab.net/rm/&#34;&gt;&lt;strong&gt;Statistical Rethinking&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Richard McElreath’s &lt;a href=&#34;https://www.crcpress.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919&#34;&gt;Statistical Rethinking&lt;/a&gt; book is famous (at least is seems to be). Its fantastic for both learning statistical thinking, but also learning bayesian analysis from the ground up. The most wonderful part of it, for those of use who havent taken multivariate calculus, is that he teaches without requring it. It also comes paired with a &lt;a href=&#34;https://www.youtube.com/channel/UCNJK6_DZvcMqNSzQdEkzvzA&#34;&gt;wonderful lecture video series provided for free&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can also follow him on twitter &lt;a href=&#34;https://twitter.com/rlmcelreath&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(@\)&lt;/span&gt;rlmcelreath&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -45,12 +98,15 @@
 &lt;p&gt;Wonderful &lt;a href=&#34;https://rpsychologist.com/tag/visualization&#34;&gt;visualizations&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;sam-finlaysons-site&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;&lt;a href=&#34;https://sgfin.github.io/&#34;&gt;&lt;strong&gt;Sam Finlaysons Site&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a href=&#34;https://sgfin.github.io/&#34;&gt;&lt;strong&gt;Sam Finlayson’s Site&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://sgfin.github.io/2019/06/19/Causal-Inference-Book-All-DAGs/&#34;&gt;DAGs&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://sgfin.github.io/2019/06/19/Causal-Inference-Book-Glossary-and-Notes/&#34;&gt;Causal Inference Notes&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;section&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;****&lt;/h2&gt;
+&lt;div id=&#34;stat-110-probability-by-joseph-blitzstein&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;a href=&#34;https://projects.iq.harvard.edu/stat110&#34;&gt;&lt;strong&gt;Stat 110 Probability by Joseph Blitzstein&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This is an amazing first course covering probability. Not only does it link to his &lt;a href=&#34;https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&#34;&gt;amazing youtube videos&lt;/a&gt;, &lt;a href=&#34;https://projects.iq.harvard.edu/stat110/handouts&#34;&gt;handouts&lt;/a&gt;, &lt;a href=&#34;https://projects.iq.harvard.edu/stat110/strategic-practice-problems&#34;&gt;practice problems and solutions&lt;/a&gt;, a free copy of &lt;a href=&#34;http://probabilitybook.net/&#34;&gt;his book&lt;/a&gt;, but it also has the added content from his EdX course. Joe is an amazing resource and I cant recommend all this enough.&lt;/p&gt;
+&lt;p&gt;You can also follow him on twitter
+&lt;a href=&#34;https://twitter.com/stat110&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(@\)&lt;/span&gt;stat110&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;petersen-and-balzers-causal-inference-site&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;a href=&#34;https://www.ucbbiostat.com/&#34;&gt;&lt;strong&gt;Petersen and Balzer’s Causal Inference Site&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
