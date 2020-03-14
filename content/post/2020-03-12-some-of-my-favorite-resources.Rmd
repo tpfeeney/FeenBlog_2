@@ -61,4 +61,16 @@ You can also follow him on twitter
 
 ## [**Petersen and Balzer's Causal Inference Site**](https://www.ucbbiostat.com/)
 
-More to come.
+## [**Noam Ross' GAMs in R tutorial**](https://noamross.github.io/gams-in-r-course/)
+
+## [**Frank Harrell's Discourse site: Datamethods**](https://discourse.datamethods.org/)
+(requires login)
+
+## [**Frank Harrell's Biostatistics Resources**](https://www.fharrell.com/)
+
+[Regression Modeling Strategies](http://hbiostat.org/doc/rms.pdf)
+[Biostatistics for Biomedical Research](http://hbiostat.org/doc/bbr.pdf)
+
+## [**MIT Open Courseware**](https://ocw.mit.edu/index.htm)
+
+...More to come.

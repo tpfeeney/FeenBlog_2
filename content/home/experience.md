@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   location = "London, UK"
   date_start = "2019-04-01"
   date_end = ""
-  description = """Screen, Review, and Make Decisions on Admitted papers. Additionaly responsibilites included outreach with authors and universties.
+  description = """Screen, review, and make decisions on submitted papers. Additional responsibilities include outreach with authors and universities.
   """
   
 [[experience]]

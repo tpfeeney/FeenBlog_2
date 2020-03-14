@@ -17,30 +17,64 @@ image:
 projects: []
 ---
 
-## Epidemiology & Biostat
+## <u>Epidemiology & Biostat</u>
 
-### Modern Epidmiology, Versions 1-3
+#### [Epidemiology: An Introduction](https://global.oup.com/academic/product/epidemiology-9780199754557?cc=ca&lang=en&)
+by Ken Rothman
 
-### What If, Causal Inference
+#### [Modern Epidmiology 3rd Ed](https://shop.lww.com/Modern-Epidemiology/p/9781451190052)
+By Rothman, Greenland and Lash
 
-### Statistical Rethinking
+The [First Edition](https://www.amazon.com/Modern-Epidemiology-Kenneth-J-Rothman/dp/0316757764) [2nd Edition](https://books.google.ca/books/about/Modern_Epidemiology.html?id=cL3zwIFHB7cC&redir_esc=y) are also excellent!
+
+#### [What If, Causal Inference](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)
+by Miguel Hernan and Jamie Robins
+
+[PDF](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2020/02/ci_hernanrobins_21feb20.pdf)
+
+
+#### [Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/)
+by Richard McElreath
 
 #### Probability
+by Joseph Blitzstein and Jessica Hwang
 
-## Mathematics
+Version 1 [PDF](http://dl.rasabourse.com/Harvard%20Statistics.pdf)
+Version [2 PDF](https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view)
 
-## Popular Science and Math
+#### [Regression Modeling Strategies](http://biostat.mc.vanderbilt.edu/wiki/Main/RmS)
+by Frank Harrell
 
-### The Simpsons and Their Mathematical Secrets
+#### [Applied Longitudinal Data Analysis](https://content.sph.harvard.edu/fitzmaur/ala2e/)
+by Fitzmaurice, Laird and Ware
 
-### We Have no Idea
+#### [An introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)
+by James, Witten, Hastie, And Tibshirani
 
-### The Rise and Fall of the Dinosaurs
+[PDF](https://www.ime.unicamp.br/~dias/Intoduction%20to%20Statistical%20Learning.pdf)
 
-### What If?: Serious Scientific Answers to Absurd Hypothetical Questions
+## <u>Mathematics</u>
 
-### Acedemia Obscura
+## <u>Popular Science and Math</u>
 
-## Fiction
+#### [The Simpsons and Their Mathematical Secrets](https://www.simonsingh.net/Simpsons_Mathematics/book/)
+by Simon Singh
 
-### Pretty much anything by Terry Pratchett
+#### [We Have No Idea](http://phdcomics.com/noidea/)
+by Jorge Cham and Daniel Whiteson
+
+#### [The Rise and Fall of the Dinosaurs](https://www.harpercollins.com/9780062490421/the-rise-and-fall-of-the-dinosaurs/)
+by Stephen Brusatte
+
+#### [What If?: Serious Scientific Answers to Absurd Hypothetical Questions](https://what-if.xkcd.com/book/)
+by Randall Munroe
+
+#### [Academia Obscura](http://www.academiaobscura.com/book/)
+by Glen Wright
+
+## <u>Fiction</u>
+
+#### Pretty much anything by [Terry Pratchett](https://www.terrypratchettbooks.com/books/)
+
+
+...more to come

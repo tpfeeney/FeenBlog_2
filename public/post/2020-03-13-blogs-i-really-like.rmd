@@ -1,0 +1,23 @@
+---
+title: Blogs I Really Like
+author: TF
+date: '2020-03-13'
+slug: blogs-i-really-like
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-03-13T20:55:50-04:00'
+featured: yes
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+### [**Zad Chow's Less Likey Blog**](https://lesslikely.com/)
+Such great content here including my favorite, his S Value [post](https://lesslikely.com/statistics/s-values/) and [ S value calculator](https://data.lesslikely.com/s-values/)
+
+...more to come

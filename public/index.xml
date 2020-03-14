@@ -77,6 +77,22 @@
     </item>
     
     <item>
+      <title>Blogs I Really Like</title>
+      <link>/post/blogs-i-really-like/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/blogs-i-really-like/</guid>
+      <description>
+
+
+&lt;div id=&#34;zad-chows-less-likey-blog&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;a href=&#34;https://lesslikely.com/&#34;&gt;&lt;strong&gt;Zad Chow’s Less Likey Blog&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Such great content here including my favorite, his S Value &lt;a href=&#34;https://lesslikely.com/statistics/s-values/&#34;&gt;post&lt;/a&gt; and &lt;a href=&#34;https://data.lesslikely.com/s-values/&#34;&gt;S value calculator&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;…more to come&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>List of my favorite books</title>
       <link>/post/list-of-my-favorite-books/</link>
       <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
@@ -85,45 +101,76 @@
 
 
 &lt;div id=&#34;epidemiology-biostat&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Epidemiology &amp;amp; Biostat&lt;/h2&gt;
-&lt;div id=&#34;modern-epidmiology-versions-1-3&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Modern Epidmiology, Versions 1-3&lt;/h3&gt;
+&lt;h2&gt;&lt;u&gt;Epidemiology &amp;amp; Biostat&lt;/u&gt;&lt;/h2&gt;
+&lt;div id=&#34;epidemiology-an-introduction&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;https://global.oup.com/academic/product/epidemiology-9780199754557?cc=ca&amp;amp;lang=en&amp;amp;&#34;&gt;Epidemiology: An Introduction&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Ken Rothman&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;what-if-causal-inference&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;What If, Causal Inference&lt;/h3&gt;
+&lt;div id=&#34;modern-epidmiology-3rd-ed&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;https://shop.lww.com/Modern-Epidemiology/p/9781451190052&#34;&gt;Modern Epidmiology 3rd Ed&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;By Rothman, Greenland and Lash&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.amazon.com/Modern-Epidemiology-Kenneth-J-Rothman/dp/0316757764&#34;&gt;First Edition&lt;/a&gt; &lt;a href=&#34;https://books.google.ca/books/about/Modern_Epidemiology.html?id=cL3zwIFHB7cC&amp;amp;redir_esc=y&#34;&gt;2nd Edition&lt;/a&gt; are also excellent!&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;statistical-rethinking&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Statistical Rethinking&lt;/h3&gt;
+&lt;div id=&#34;what-if-causal-inference&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/&#34;&gt;What If, Causal Inference&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Miguel Hernan and Jamie Robins&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2020/02/ci_hernanrobins_21feb20.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;statistical-rethinking&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;https://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Richard McElreath&lt;/p&gt;
+&lt;/div&gt;
 &lt;div id=&#34;probability&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Probability&lt;/h4&gt;
+&lt;p&gt;by Joseph Blitzstein and Jessica Hwang&lt;/p&gt;
+&lt;p&gt;Version 1 &lt;a href=&#34;http://dl.rasabourse.com/Harvard%20Statistics.pdf&#34;&gt;PDF&lt;/a&gt;
+Version &lt;a href=&#34;https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view&#34;&gt;2 PDF&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;div id=&#34;regression-modeling-strategies&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;http://biostat.mc.vanderbilt.edu/wiki/Main/RmS&#34;&gt;Regression Modeling Strategies&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Frank Harrell&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;applied-longitudinal-data-analysis&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;https://content.sph.harvard.edu/fitzmaur/ala2e/&#34;&gt;Applied Longitudinal Data Analysis&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Fitzmaurice, Laird and Ware&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;an-introduction-to-statistical-learning&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;http://faculty.marshall.usc.edu/gareth-james/ISL/&#34;&gt;An introduction to Statistical Learning&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by James, Witten, Hastie, And Tibshirani&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ime.unicamp.br/~dias/Intoduction%20to%20Statistical%20Learning.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;mathematics&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Mathematics&lt;/h2&gt;
+&lt;h2&gt;&lt;u&gt;Mathematics&lt;/u&gt;&lt;/h2&gt;
 &lt;/div&gt;
 &lt;div id=&#34;popular-science-and-math&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Popular Science and Math&lt;/h2&gt;
-&lt;div id=&#34;the-simpsons-and-their-mathematical-secrets&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;The Simpsons and Their Mathematical Secrets&lt;/h3&gt;
+&lt;h2&gt;&lt;u&gt;Popular Science and Math&lt;/u&gt;&lt;/h2&gt;
+&lt;div id=&#34;the-simpsons-and-their-mathematical-secrets&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;https://www.simonsingh.net/Simpsons_Mathematics/book/&#34;&gt;The Simpsons and Their Mathematical Secrets&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Simon Singh&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;we-have-no-idea&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;We Have no Idea&lt;/h3&gt;
+&lt;div id=&#34;we-have-no-idea&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;http://phdcomics.com/noidea/&#34;&gt;We Have No Idea&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Jorge Cham and Daniel Whiteson&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;the-rise-and-fall-of-the-dinosaurs&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;The Rise and Fall of the Dinosaurs&lt;/h3&gt;
+&lt;div id=&#34;the-rise-and-fall-of-the-dinosaurs&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;https://www.harpercollins.com/9780062490421/the-rise-and-fall-of-the-dinosaurs/&#34;&gt;The Rise and Fall of the Dinosaurs&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Stephen Brusatte&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;what-if-serious-scientific-answers-to-absurd-hypothetical-questions&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;What If?: Serious Scientific Answers to Absurd Hypothetical Questions&lt;/h3&gt;
+&lt;div id=&#34;what-if-serious-scientific-answers-to-absurd-hypothetical-questions&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;https://what-if.xkcd.com/book/&#34;&gt;What If?: Serious Scientific Answers to Absurd Hypothetical Questions&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Randall Munroe&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;acedemia-obscura&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Acedemia Obscura&lt;/h3&gt;
+&lt;div id=&#34;academia-obscura&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;http://www.academiaobscura.com/book/&#34;&gt;Academia Obscura&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Glen Wright&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;fiction&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Fiction&lt;/h2&gt;
-&lt;div id=&#34;pretty-much-anything-by-terry-pratchett&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Pretty much anything by Terry Pratchett&lt;/h3&gt;
+&lt;h2&gt;&lt;u&gt;Fiction&lt;/u&gt;&lt;/h2&gt;
+&lt;div id=&#34;pretty-much-anything-by-terry-pratchett&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Pretty much anything by &lt;a href=&#34;https://www.terrypratchettbooks.com/books/&#34;&gt;Terry Pratchett&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;…more to come&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -174,7 +221,22 @@
 &lt;/div&gt;
 &lt;div id=&#34;petersen-and-balzers-causal-inference-site&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;a href=&#34;https://www.ucbbiostat.com/&#34;&gt;&lt;strong&gt;Petersen and Balzer’s Causal Inference Site&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;More to come.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;noam-ross-gams-in-r-tutorial&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;a href=&#34;https://noamross.github.io/gams-in-r-course/&#34;&gt;&lt;strong&gt;Noam Ross’ GAMs in R tutorial&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;frank-harrells-discourse-site-datamethods&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;a href=&#34;https://discourse.datamethods.org/&#34;&gt;&lt;strong&gt;Frank Harrell’s Discourse site: Datamethods&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;(requires login)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;frank-harrells-biostatistics-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;a href=&#34;https://www.fharrell.com/&#34;&gt;&lt;strong&gt;Frank Harrell’s Biostatistics Resources&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://hbiostat.org/doc/rms.pdf&#34;&gt;Regression Modeling Strategies&lt;/a&gt;
+&lt;a href=&#34;http://hbiostat.org/doc/bbr.pdf&#34;&gt;Biostatistics for Biomedical Research&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mit-open-courseware&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;a href=&#34;https://ocw.mit.edu/index.htm&#34;&gt;&lt;strong&gt;MIT Open Courseware&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;…More to come.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
