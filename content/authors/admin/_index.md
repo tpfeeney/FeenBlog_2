@@ -54,6 +54,19 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/tpfeeney
+- icon: orcid
+  icon_pack: fab
+  link: https://orcid.org/0000-0001-8139-5830
+- icon: stack-overflow
+  icon_pack: fab
+  link: hhttps://stackoverflow.com/users/9608198/tim-feeney
+- icon: stack-exchange
+  icon_pack: fab
+  link: https://stats.stackexchange.com/users/212088/tim-feeney
+- icon: discourse
+  icon_pack: fab
+  link: https://discourse.datamethods.org/u/tfeend/
+
 superuser: true
 user_groups:
 - Researchers
