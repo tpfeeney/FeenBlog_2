@@ -66,6 +66,9 @@ social:
 - icon: discourse
   icon_pack: fab
   link: https://discourse.datamethods.org/u/tfeend/
+- icon: mendeley
+  icon_pack: fab
+  link: https://www.mendeley.com/profiles/timothy-feeney/
 
 superuser: true
 user_groups:
