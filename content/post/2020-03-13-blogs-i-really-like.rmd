@@ -20,4 +20,17 @@ projects: []
 ### [**Zad Chow's Less Likey Blog**](https://lesslikely.com/)
 Such great content here including my favorite, his S Value [post](https://lesslikely.com/statistics/s-values/) and [ S value calculator](https://data.lesslikely.com/s-values/)
 
+### [**Jonathan Bartlett The Stats Geek Blog**](http://thestatsgeek.com/)
+
+### [**Andrew Gelman's Blog](https://statmodeling.stat.columbia.edu/)
+Short, sweet, thought provoking posts.
+
+### [**Simply Statistics Blog**](https://simplystatistics.org/)
+A statistics blog by Rafa Irizarry, Roger Peng, and Jeff Leek
+
+### [**R Bloggers**](https://www.r-bloggers.com/)
+Great blog that highlights posts that cover new R packages, analysis methods, etc.
+
+### [**Frank Harrell's Blog Posts](https://www.fharrell.com/post/)
+
 ...more to come

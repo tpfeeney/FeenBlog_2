@@ -40,7 +40,7 @@ by Richard McElreath
 by Joseph Blitzstein and Jessica Hwang
 
 Version 1 [PDF](http://dl.rasabourse.com/Harvard%20Statistics.pdf)
-Version [2 PDF](https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view)
+Version 2 [PDF](https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view)
 
 #### [Regression Modeling Strategies](http://biostat.mc.vanderbilt.edu/wiki/Main/RmS)
 by Frank Harrell

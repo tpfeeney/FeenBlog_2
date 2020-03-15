@@ -23,6 +23,24 @@
 &lt;div id=&#34;zad-chows-less-likey-blog&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;&lt;a href=&#34;https://lesslikely.com/&#34;&gt;&lt;strong&gt;Zad Chow’s Less Likey Blog&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Such great content here including my favorite, his S Value &lt;a href=&#34;https://lesslikely.com/statistics/s-values/&#34;&gt;post&lt;/a&gt; and &lt;a href=&#34;https://data.lesslikely.com/s-values/&#34;&gt;S value calculator&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;jonathan-bartlett-the-stats-geek-blog&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;a href=&#34;http://thestatsgeek.com/&#34;&gt;&lt;strong&gt;Jonathan Bartlett The Stats Geek Blog&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;andrew-gelmans-blog&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;a href=&#34;https://statmodeling.stat.columbia.edu/&#34;&gt;**Andrew Gelman’s Blog&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Short, sweet, thought provoking posts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simply-statistics-blog&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;a href=&#34;https://simplystatistics.org/&#34;&gt;&lt;strong&gt;Simply Statistics Blog&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A statistics blog by Rafa Irizarry, Roger Peng, and Jeff Leek&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-bloggers&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;a href=&#34;https://www.r-bloggers.com/&#34;&gt;&lt;strong&gt;R Bloggers&lt;/strong&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Great blog that highlights posts that cover new R packages, analysis methods, etc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;frank-harrells-blog-posts&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;a href=&#34;https://www.fharrell.com/post/&#34;&gt;**Frank Harrell’s Blog Posts&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;…more to come&lt;/p&gt;
 &lt;/div&gt;
 </description>
@@ -60,7 +78,7 @@
 &lt;h4&gt;Probability&lt;/h4&gt;
 &lt;p&gt;by Joseph Blitzstein and Jessica Hwang&lt;/p&gt;
 &lt;p&gt;Version 1 &lt;a href=&#34;http://dl.rasabourse.com/Harvard%20Statistics.pdf&#34;&gt;PDF&lt;/a&gt;
-Version &lt;a href=&#34;https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view&#34;&gt;2 PDF&lt;/a&gt;&lt;/p&gt;
+Version 2 &lt;a href=&#34;https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;regression-modeling-strategies&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;&lt;a href=&#34;http://biostat.mc.vanderbilt.edu/wiki/Main/RmS&#34;&gt;Regression Modeling Strategies&lt;/a&gt;&lt;/h4&gt;
@@ -137,7 +155,7 @@ Version &lt;a href=&#34;https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255
 &lt;/div&gt;
 &lt;div id=&#34;causal-inference-book&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;a href=&#34;https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/&#34;&gt;&lt;strong&gt;Causal Inference Book&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;How could I ignore this resource–I would need to be daft too! I used this book by Robins and Hernan extensively during both my intro epi course and my casual inference course while completing my MPH (luckily Hernan was my causal inference instructor). The link to the webpage is &lt;a href=&#34;https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/&#34;&gt;here&lt;/a&gt; and includes a link to the &lt;a href=&#34;https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2020/02/ci_hernanrobins_21feb20.pdf&#34;&gt;free pdf&lt;/a&gt; and code for SAS, Stata, and R.&lt;/p&gt;
+&lt;p&gt;How could I ignore this resource–I would need to be daft to! I used this book by Robins and Hernan extensively during both my intro epi course and my casual inference course while completing my MPH (luckily Hernan was my causal inference instructor). The link to the webpage is &lt;a href=&#34;https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/&#34;&gt;here&lt;/a&gt; and includes a link to the &lt;a href=&#34;https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2020/02/ci_hernanrobins_21feb20.pdf&#34;&gt;free pdf&lt;/a&gt; and code for SAS, Stata, and R.&lt;/p&gt;
 &lt;p&gt;There is also a nicely done &lt;a href=&#34;https://causalinferencebookr.netlify.com/&#34;&gt;bookdown project&lt;/a&gt; that works through the coding for the book and is a wonderful companion.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;r-psychologist&#34; class=&#34;section level2&#34;&gt;
@@ -167,11 +185,14 @@ Version &lt;a href=&#34;https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255
 &lt;/div&gt;
 &lt;div id=&#34;frank-harrells-biostatistics-resources&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;a href=&#34;https://www.fharrell.com/&#34;&gt;&lt;strong&gt;Frank Harrell’s Biostatistics Resources&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://hbiostat.org/doc/rms.pdf&#34;&gt;Regression Modeling Strategies&lt;/a&gt;
-&lt;a href=&#34;http://hbiostat.org/doc/bbr.pdf&#34;&gt;Biostatistics for Biomedical Research&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://hbiostat.org/doc/rms.pdf&#34;&gt;Regression Modeling Strategies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://hbiostat.org/doc/bbr.pdf&#34;&gt;Biostatistics for Biomedical Research&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;mit-open-courseware&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;a href=&#34;https://ocw.mit.edu/index.htm&#34;&gt;&lt;strong&gt;MIT Open Courseware&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;statquest-by-josh-starmer&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw&#34;&gt;&lt;strong&gt;StatQuest by Josh Starmer&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;…More to come.&lt;/p&gt;
 &lt;/div&gt;
 </description>

@@ -39,7 +39,7 @@ You can also follow him on twitter [$@$SolomonKurz](https://twitter.com/SolomonK
 
 ## [**Causal Inference Book**](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)
 
-How could I ignore this resource--I would need to be daft too! I used this book by Robins and Hernan  extensively during both my intro epi course and my casual inference course while completing my MPH (luckily Hernan was my causal inference instructor). The link to the webpage is [here](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/) and includes a link to the [free pdf](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2020/02/ci_hernanrobins_21feb20.pdf) and code for SAS, Stata, and R.
+How could I ignore this resource--I would need to be daft to! I used this book by Robins and Hernan  extensively during both my intro epi course and my casual inference course while completing my MPH (luckily Hernan was my causal inference instructor). The link to the webpage is [here](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/) and includes a link to the [free pdf](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2020/02/ci_hernanrobins_21feb20.pdf) and code for SAS, Stata, and R.
 
 There is also a nicely done [bookdown project](https://causalinferencebookr.netlify.com/) that works through the coding for the book and is a wonderful companion.
 
@@ -69,8 +69,11 @@ You can also follow him on twitter
 ## [**Frank Harrell's Biostatistics Resources**](https://www.fharrell.com/)
 
 [Regression Modeling Strategies](http://hbiostat.org/doc/rms.pdf)
+
 [Biostatistics for Biomedical Research](http://hbiostat.org/doc/bbr.pdf)
 
 ## [**MIT Open Courseware**](https://ocw.mit.edu/index.htm)
+
+## [**StatQuest by Josh Starmer**](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw)
 
 ...More to come.
