@@ -59,11 +59,16 @@
 &lt;div id=&#34;epidemiology-an-introduction&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;&lt;a href=&#34;https://global.oup.com/academic/product/epidemiology-9780199754557?cc=ca&amp;amp;lang=en&amp;amp;&#34;&gt;Epidemiology: An Introduction&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;by Ken Rothman&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://global.oup.com/us/companion.websites/9780199754557/&#34;&gt;Companion Site&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;epidemiology-by-design-a-causal-appoach-to-the-health-sciences&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;a href=&#34;https://global.oup.com/academic/product/epidemiology-by-design-9780190665760?cc=us&amp;amp;lang=en&amp;amp;&#34;&gt;Epidemiology By Design: A Causal Appoach to the Health Sciences&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;by Daniel Westreich&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;modern-epidmiology-3rd-ed&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;&lt;a href=&#34;https://shop.lww.com/Modern-Epidemiology/p/9781451190052&#34;&gt;Modern Epidmiology 3rd Ed&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;By Rothman, Greenland and Lash&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://www.amazon.com/Modern-Epidemiology-Kenneth-J-Rothman/dp/0316757764&#34;&gt;First Edition&lt;/a&gt; &lt;a href=&#34;https://books.google.ca/books/about/Modern_Epidemiology.html?id=cL3zwIFHB7cC&amp;amp;redir_esc=y&#34;&gt;2nd Edition&lt;/a&gt; are also excellent!&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.amazon.com/Modern-Epidemiology-Kenneth-J-Rothman/dp/0316757764&#34;&gt;First Edition&lt;/a&gt; and &lt;a href=&#34;https://books.google.ca/books/about/Modern_Epidemiology.html?id=cL3zwIFHB7cC&amp;amp;redir_esc=y&#34;&gt;2nd Edition&lt;/a&gt; are also excellent!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;what-if-causal-inference&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;&lt;a href=&#34;https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/&#34;&gt;What If, Causal Inference&lt;/a&gt;&lt;/h4&gt;
@@ -96,6 +101,15 @@ Version 2 &lt;a href=&#34;https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy2
 &lt;/div&gt;
 &lt;div id=&#34;mathematics&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;u&gt;Mathematics&lt;/u&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;physics&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;u&gt;Physics&lt;/u&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chemistry&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;u&gt;Chemistry&lt;/u&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;biology&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;u&gt;Biology&lt;/u&gt;&lt;/h2&gt;
 &lt;/div&gt;
 &lt;div id=&#34;popular-science-and-math&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;u&gt;Popular Science and Math&lt;/u&gt;&lt;/h2&gt;
@@ -156,7 +170,7 @@ Version 2 &lt;a href=&#34;https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy2
 &lt;div id=&#34;causal-inference-book&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;a href=&#34;https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/&#34;&gt;&lt;strong&gt;Causal Inference Book&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;How could I ignore this resource–I would need to be daft to! I used this book by Robins and Hernan extensively during both my intro epi course and my casual inference course while completing my MPH (luckily Hernan was my causal inference instructor). The link to the webpage is &lt;a href=&#34;https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/&#34;&gt;here&lt;/a&gt; and includes a link to the &lt;a href=&#34;https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2020/02/ci_hernanrobins_21feb20.pdf&#34;&gt;free pdf&lt;/a&gt; and code for SAS, Stata, and R.&lt;/p&gt;
-&lt;p&gt;There is also a nicely done &lt;a href=&#34;https://causalinferencebookr.netlify.com/&#34;&gt;bookdown project&lt;/a&gt; that works through the coding for the book and is a wonderful companion.&lt;/p&gt;
+&lt;p&gt;There is also a nicely done &lt;a href=&#34;https://causalinferencebookr.netlify.com/&#34;&gt;bookdown project&lt;/a&gt; by &lt;a href=&#34;https://malco.io/&#34;&gt;Malcolm Barrett&lt;/a&gt; that works through the coding for the book and is a wonderful companion.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;r-psychologist&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;a href=&#34;https://rpsychologist.com/&#34;&gt;&lt;strong&gt;R Psychologist&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
@@ -193,6 +207,14 @@ Version 2 &lt;a href=&#34;https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy2
 &lt;/div&gt;
 &lt;div id=&#34;statquest-by-josh-starmer&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw&#34;&gt;&lt;strong&gt;StatQuest by Josh Starmer&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;directed-acyclic-graph-dag-resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Directed Acyclic Graph (DAG) Resources:&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/eleanormurray/causalgraphs_latex&#34;&gt;Ellie Murray’s DAGs in LaTex&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/files/glymourdags.pdf&#34;&gt;Maria Glymour’s Paper on DAGs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Malcom Barrett’s &lt;a href=&#34;https://github.com/malcolmbarrett/dagtex&#34;&gt;DAGTEX&lt;/a&gt; and &lt;a href=&#34;https://ggdag.malco.io/&#34;&gt;GGDAG&lt;/a&gt; packages&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://online-learning.harvard.edu/course/causal-diagrams-draw-your-assumptions-your-conclusions&#34;&gt;Miguel Hernan’s Causal Diagrams: Draw You Assumptions Before Your Conclusions Course&lt;/a&gt;
+(note this is on EdX and requires signing up, which is free)&lt;/p&gt;
 &lt;p&gt;…More to come.&lt;/p&gt;
 &lt;/div&gt;
 </description>

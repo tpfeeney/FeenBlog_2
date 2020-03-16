@@ -22,10 +22,15 @@ projects: []
 #### [Epidemiology: An Introduction](https://global.oup.com/academic/product/epidemiology-9780199754557?cc=ca&lang=en&)
 by Ken Rothman
 
+[Companion Site](https://global.oup.com/us/companion.websites/9780199754557/)
+
+#### [Epidemiology By Design: A Causal Appoach to the Health Sciences](https://global.oup.com/academic/product/epidemiology-by-design-9780190665760?cc=us&lang=en&)
+by Daniel Westreich
+
 #### [Modern Epidmiology 3rd Ed](https://shop.lww.com/Modern-Epidemiology/p/9781451190052)
 By Rothman, Greenland and Lash
 
-The [First Edition](https://www.amazon.com/Modern-Epidemiology-Kenneth-J-Rothman/dp/0316757764) [2nd Edition](https://books.google.ca/books/about/Modern_Epidemiology.html?id=cL3zwIFHB7cC&redir_esc=y) are also excellent!
+The [First Edition](https://www.amazon.com/Modern-Epidemiology-Kenneth-J-Rothman/dp/0316757764) and [2nd Edition](https://books.google.ca/books/about/Modern_Epidemiology.html?id=cL3zwIFHB7cC&redir_esc=y) are also excellent!
 
 #### [What If, Causal Inference](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)
 by Miguel Hernan and Jamie Robins
@@ -54,6 +59,12 @@ by James, Witten, Hastie, And Tibshirani
 [PDF](https://www.ime.unicamp.br/~dias/Intoduction%20to%20Statistical%20Learning.pdf)
 
 ## <u>Mathematics</u>
+
+## <u>Physics</u>
+
+## <u>Chemistry</u>
+
+## <u>Biology</u>
 
 ## <u>Popular Science and Math</u>
 
