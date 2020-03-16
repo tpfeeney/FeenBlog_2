@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>The Feeney</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0100</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>The Feeney</title>
@@ -202,13 +202,13 @@ Version 2 &lt;a href=&#34;https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy2
 &lt;h2&gt;&lt;u&gt;Fiction&lt;/u&gt;&lt;/h2&gt;
 &lt;div id=&#34;douglas-adams-books-in-general&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;&lt;a href=&#34;https://douglasadams.com/&#34;&gt;Douglas Adams&lt;/a&gt; books in general&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;[The Hitchiker&amp;#39;s Guide to the Galaxy](https://douglasadams.com/creations/hhgg.html)
-[Dirk Gently Series](https://douglasadams.com/creations/dirk.html)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://douglasadams.com/creations/hhgg.html&#34;&gt;The Hitchiker’s Guide to the Galaxy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://douglasadams.com/creations/dirk.html&#34;&gt;Dirk Gently Series&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;terry-pratchett-books-in-general-too&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;&lt;a href=&#34;https://www.terrypratchettbooks.com/books/&#34;&gt;Terry Pratchett&lt;/a&gt; books in general, too&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;[Discworld Series](https://www.terrypratchettbooks.com/book-series/discworld/)
-[Good Omens](https://www.terrypratchettbooks.com/books/good-omens/)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.terrypratchettbooks.com/book-series/discworld/&#34;&gt;Discworld Series&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.terrypratchettbooks.com/books/good-omens/&#34;&gt;Good Omens&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;…more to come&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -704,6 +704,24 @@ start with the &lt;code&gt;dnorm&lt;/code&gt; distribution.&lt;/p&gt;
 &lt;a href=&#34;http://seankross.com/notes/dpqr/&#34; class=&#34;uri&#34;&gt;http://seankross.com/notes/dpqr/&lt;/a&gt;
 &lt;a href=&#34;http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf&#34; class=&#34;uri&#34;&gt;http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf&lt;/a&gt;
 &lt;a href=&#34;https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html&#34; class=&#34;uri&#34;&gt;https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/terms/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
