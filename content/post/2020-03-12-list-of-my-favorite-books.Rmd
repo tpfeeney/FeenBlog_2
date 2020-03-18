@@ -19,44 +19,17 @@ projects: []
 
 ## <u>Epidemiology & Biostat</u>
 
-#### [Epidemiology: An Introduction](https://global.oup.com/academic/product/epidemiology-9780199754557?cc=ca&lang=en&)
-by Ken Rothman
-
-[Companion Site](https://global.oup.com/us/companion.websites/9780199754557/)
-
-#### [Epidemiology By Design: A Causal Appoach to the Health Sciences](https://global.oup.com/academic/product/epidemiology-by-design-9780190665760?cc=us&lang=en&)
-by Daniel Westreich
-
-#### [Modern Epidmiology 3rd Ed](https://shop.lww.com/Modern-Epidemiology/p/9781451190052)
-By Rothman, Greenland and Lash
-
-The [First Edition](https://www.amazon.com/Modern-Epidemiology-Kenneth-J-Rothman/dp/0316757764) and [2nd Edition](https://books.google.ca/books/about/Modern_Epidemiology.html?id=cL3zwIFHB7cC&redir_esc=y) are also excellent!
-
-#### [What If, Causal Inference](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)
-by Miguel Hernan and Jamie Robins
-
-[PDF](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2020/02/ci_hernanrobins_21feb20.pdf)
-
-
-#### [Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/)
-by Richard McElreath
-
-#### Probability
-by Joseph Blitzstein and Jessica Hwang
-
-Version 1 [PDF](http://dl.rasabourse.com/Harvard%20Statistics.pdf)
-Version 2 [PDF](https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view)
-
-#### [Regression Modeling Strategies](http://biostat.mc.vanderbilt.edu/wiki/Main/RmS)
-by Frank Harrell
-
-#### [Applied Longitudinal Data Analysis](https://content.sph.harvard.edu/fitzmaur/ala2e/)
-by Fitzmaurice, Laird and Ware
-
-#### [An introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)
-by James, Witten, Hastie, And Tibshirani
-
-[PDF](https://www.ime.unicamp.br/~dias/Intoduction%20to%20Statistical%20Learning.pdf)
+Title and Author | Extra Material
+-----------|----
+[Epidemiology: An Introduction](https://global.oup.com/academic/product/epidemiology-9780199754557?cc=ca&lang=en&) <br> by Ken Rothman|[Companion Site](https://global.oup.com/us/companion.websites/9780199754557/)|
+|[Epidemiology By Design: A Causal Appoach to the Health Sciences](https://global.oup.com/academic/product/epidemiology-by-design-9780190665760?cc=us&lang=en&)<br>by Daniel Westreich|
+|[Modern Epidmiology 3rd Ed](https://shop.lww.com/Modern-Epidemiology/p/9781451190052)<br>By Rothman, Greenland and Lash|The [First Edition](https://www.amazon.com/Modern-Epidemiology-Kenneth-J-Rothman/dp/0316757764) and [2nd Edition](https://books.google.ca/books/about/Modern_Epidemiology.html?id=cL3zwIFHB7cC&redir_esc=y) are also excellent!|
+[What If, Causal Inference](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)<br>by Miguel Hernan and Jamie Robins|[PDF](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2020/02/ci_hernanrobins_21feb20.pdf)|
+|[Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/)<br>by Richard McElreath|
+|Probability<br>by Joseph Blitzstein and Jessica Hwang|Version 1 [PDF](http://dl.rasabourse.com/Harvard%20Statistics.pdf)<br>Version 2 [PDF](https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view)|
+|[Regression Modeling Strategies](http://biostat.mc.vanderbilt.edu/wiki/Main/RmS)<br>by Frank Harrell|
+|[Applied Longitudinal Data Analysis](https://content.sph.harvard.edu/fitzmaur/ala2e/)<br>by Fitzmaurice, Laird and Ware|
+|[An Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)<br>by James, Witten, Hastie, And Tibshirani|[PDF](https://www.ime.unicamp.br/~dias/Intoduction%20to%20Statistical%20Learning.pdf)|
 
 ## <u>Mathematics</u>
 
@@ -68,36 +41,20 @@ by James, Witten, Hastie, And Tibshirani
 
 ## <u>Popular Science and Math</u>
 
-#### [The Simpsons and Their Mathematical Secrets](https://www.simonsingh.net/Simpsons_Mathematics/book/)
-by Simon Singh
-
-#### [We Have No Idea](http://phdcomics.com/noidea/)
-by Jorge Cham and Daniel Whiteson
-
-#### [The Rise and Fall of the Dinosaurs](https://www.harpercollins.com/9780062490421/the-rise-and-fall-of-the-dinosaurs/)
-by Stephen Brusatte
-
-#### [What If?: Serious Scientific Answers to Absurd Hypothetical Questions](https://what-if.xkcd.com/book/)
-by Randall Munroe
-
-#### [Academia Obscura](http://www.academiaobscura.com/book/)
-by Glen Wright
+Title and Author | Extra Material
+-----------|----
+[The Simpsons and Their Mathematical Secrets](https://www.simonsingh.net/Simpsons_Mathematics/book/)<br>by Simon Singh||
+|[We Have No Idea](http://phdcomics.com/noidea/)<br>by Jorge Cham and Daniel Whiteson||
+|[The Rise and Fall of the Dinosaurs](https://www.harpercollins.com/9780062490421/the-rise-and-fall-of-the-dinosaurs/)<br>by Stephen Brusatte||
+|[What If?: Serious Scientific Answers to Absurd Hypothetical Questions](https://what-if.xkcd.com/book/)<br>by Randall Munroe||
+|[Academia Obscura](http://www.academiaobscura.com/book/)<br>by Glen Wright||
 
 ## <u>Fiction</u>
 
-#### [Douglas Adams](https://douglasadams.com/) books in general
-[The Hitchiker's Guide to the Galaxy](https://douglasadams.com/creations/hhgg.html)
+Title and Author | Extra Material
+-----------|--
+[Douglas Adams](https://douglasadams.com/) books in general<br>[The Hitchiker's Guide to the Galaxy](https://douglasadams.com/creations/hhgg.html)<br>[Dirk Gently Series](https://douglasadams.com/creations/dirk.html)| |
+|[Terry Pratchett](https://www.terrypratchettbooks.com/books/) books in general, too<br>[Discworld Series](https://www.terrypratchettbooks.com/book-series/discworld/)<br>[Good Omens](https://www.terrypratchettbooks.com/books/good-omens/)||
 
-[Dirk Gently Series](https://douglasadams.com/creations/dirk.html)
-
-#### [Terry Pratchett](https://www.terrypratchettbooks.com/books/) books in general, too
-[Discworld Series](https://www.terrypratchettbooks.com/book-series/discworld/)
-
-[Good Omens](https://www.terrypratchettbooks.com/books/good-omens/)
     
-
-
-
-
-
 ...more to come
