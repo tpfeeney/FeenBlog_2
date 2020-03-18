@@ -25,5 +25,6 @@ Title and Author | Description and/or Extra Material
 |[**Simply Statistics Blog**](https://simplystatistics.org/)|A statistics blog by Rafa Irizarry, Roger Peng, and Jeff Leek|
 |[**R Bloggers**](https://www.r-bloggers.com/)|Great blog that highlights posts that cover new R packages, analysis methods, etc.|
 |[**Frank Harrell's Blog Posts**](https://www.fharrell.com/post/)||
+|[**Doing Bayesian Data Analysis**](http://doingbayesiandataanalysis.blogspot.com/)|Great blog but hasnt been updated in awhile|
 
 ...more to come

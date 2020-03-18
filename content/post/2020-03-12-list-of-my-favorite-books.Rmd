@@ -16,11 +16,13 @@ image:
   preview_only: no
 projects: []
 ---
+This is pretty self explanatory, but these are my fav books that Ive used throughout my education. I think they are spectacular resources for learning and in addition to sharing them with readers, it is nice to keep a list all in one place. What better place than on my web site?
+
 
 ## <u>Epidemiology & Biostat</u>
 
-Title and Author | Extra Material
------------|----
+Title and Author | Description and/or Extra Material
+-----|---
 [Epidemiology: An Introduction](https://global.oup.com/academic/product/epidemiology-9780199754557?cc=ca&lang=en&) <br> by Ken Rothman|[Companion Site](https://global.oup.com/us/companion.websites/9780199754557/)|
 |[Epidemiology By Design: A Causal Appoach to the Health Sciences](https://global.oup.com/academic/product/epidemiology-by-design-9780190665760?cc=us&lang=en&)<br>by Daniel Westreich|
 |[Modern Epidmiology 3rd Ed](https://shop.lww.com/Modern-Epidemiology/p/9781451190052)<br>By Rothman, Greenland and Lash|The [First Edition](https://www.amazon.com/Modern-Epidemiology-Kenneth-J-Rothman/dp/0316757764) and [2nd Edition](https://books.google.ca/books/about/Modern_Epidemiology.html?id=cL3zwIFHB7cC&redir_esc=y) are also excellent!|
@@ -30,19 +32,46 @@ Title and Author | Extra Material
 |[Regression Modeling Strategies](http://biostat.mc.vanderbilt.edu/wiki/Main/RmS)<br>by Frank Harrell|
 |[Applied Longitudinal Data Analysis](https://content.sph.harvard.edu/fitzmaur/ala2e/)<br>by Fitzmaurice, Laird and Ware|
 |[An Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)<br>by James, Witten, Hastie, And Tibshirani|[PDF](https://www.ime.unicamp.br/~dias/Intoduction%20to%20Statistical%20Learning.pdf)|
+|[Doing Bayesian Data Analysis](https://sites.google.com/site/doingbayesiandataanalysis/)<br>by John Kruschke|[Whats new in the 2nd Ed.](https://sites.google.com/site/doingbayesiandataanalysis/what-s-new-in-2nd-ed)|
+
 
 ## <u>Mathematics</u>
+Title and Author | Description and/or Extra Material
+---|---
+[Calculus 9th ed.]()<br>By Thomas and Finney|Wonderfully lucid exposition of calculus|
+|[Intro. to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/)<br>by Gilbert Strang|Might be best paired with the [MIT OCW Course](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)|
 
 ## <u>Physics</u>
+Title and Author | Description and/or Extra Material
+---|---
 
 ## <u>Chemistry</u>
+Title and Author | Description and/or Extra Material
+---|---
+[Biochemistry]()<br>by Matthews and Van holde|Best Intro Biochem book, and better than Lehninger IMO|
+|[Biochemistry]()<br>by Voet and Voet|The tome; side note: I got to meet Drs. Voet and Voet and have my 3rd Ed signed|
+|
 
 ## <u>Biology</u>
+Title and Author | Description and/or Extra Material
+---|---
+[Molecular Biology of the Cell](https://www.ncbi.nlm.nih.gov/books/NBK21054/)<br>by Bruce Alberts|I used the 4th ed. (linked) but Im sure the [5th]() & [6th](https://www.crcpress.com/Molecular-Biology-of-the-Cell/Alberts/p/book/9781315735368) eds. are great too!|
+|[Physical Biology of the Cell](https://www.crcpress.com/Physical-Biology-of-the-Cell/Phillips-Kondev-Theriot-Garcia-Phillips-Kondev-Theriot-Garcia/p/book/9780815344506)<br>by Philips <i>et al.<i>||
+|[Molecular Cell Biology]()<br>by Lodish and Baltimore||
+
+## <u>Medical</u>
+Favorites from medical school and training. Included basic science books and might be a good reference for med students looking for **the best** references
+
+Title and Author | Description and/or Extra Material
+---|---
+[Medical Physiology]()<br>by Boron and Boulpaep||
+|[Best and Taylor's Physiologic Basis of Medical Practice]()||
+|[Marino's The ICU Book](https://shop.lww.com/Marino-s-The-ICU-Book--Print---Ebook-with-Updates/p/9781451121186)<br> by Paul Marino||
 
 ## <u>Popular Science and Math</u>
 
-Title and Author | Extra Material
------------|----
+Title and Author | Description and/or Extra Material
+-------|---
 [The Simpsons and Their Mathematical Secrets](https://www.simonsingh.net/Simpsons_Mathematics/book/)<br>by Simon Singh||
 |[We Have No Idea](http://phdcomics.com/noidea/)<br>by Jorge Cham and Daniel Whiteson||
 |[The Rise and Fall of the Dinosaurs](https://www.harpercollins.com/9780062490421/the-rise-and-fall-of-the-dinosaurs/)<br>by Stephen Brusatte||
@@ -51,8 +80,8 @@ Title and Author | Extra Material
 
 ## <u>Fiction</u>
 
-Title and Author | Extra Material
------------|--
+Title and Author | Description and/or Extra Material
+-------|---
 [Douglas Adams](https://douglasadams.com/) books in general<br>[The Hitchiker's Guide to the Galaxy](https://douglasadams.com/creations/hhgg.html)<br>[Dirk Gently Series](https://douglasadams.com/creations/dirk.html)| |
 |[Terry Pratchett](https://www.terrypratchettbooks.com/books/) books in general, too<br>[Discworld Series](https://www.terrypratchettbooks.com/book-series/discworld/)<br>[Good Omens](https://www.terrypratchettbooks.com/books/good-omens/)||
 
