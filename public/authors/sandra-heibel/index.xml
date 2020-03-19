@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sandra Heibel | The Feeney</title>
+    <link>/authors/sandra-heibel/</link>
+      <atom:link href="/authors/sandra-heibel/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sandra Heibel</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Sandra Heibel</title>
+      <link>/authors/sandra-heibel/</link>
+    </image>
+    
+    <item>
+      <title>Analysis of Urea Cycle Gene Transcription Regulation Using Bioinformatic Software and Patient Sequences</title>
+      <link>/publication/2011-01-01_labella_analysis_2011/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_labella_analysis_2011/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

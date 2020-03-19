@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manuel Castillo-Angeles | The Feeney</title>
+    <link>/authors/manuel-castillo-angeles/</link>
+      <atom:link href="/authors/manuel-castillo-angeles/index.xml" rel="self" type="application/rss+xml" />
+    <description>Manuel Castillo-Angeles</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Manuel Castillo-Angeles</title>
+      <link>/authors/manuel-castillo-angeles/</link>
+    </image>
+    
+    <item>
+      <title>Transferred Emergency General Surgery Patients Are at Increased Risk of Death: A NSQIP Propensity Score Matched Analysis</title>
+      <link>/publication/2019-01-01_castillo-angeles_transferred_2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_castillo-angeles_transferred_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Independent Effect of Emergency General Surgery on Outcomes Varies Depending on Case Type: A NSQIP Outcomes Study</title>
+      <link>/publication/2018-01-01_feeney_independent_2018-2/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/2018-01-01_feeney_independent_2018-2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

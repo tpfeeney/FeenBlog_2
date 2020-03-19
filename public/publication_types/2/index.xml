@@ -5,7 +5,7 @@
     <link>/publication_types/2/</link>
       <atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>2</title>
@@ -13,23 +13,107 @@
     </image>
     
     <item>
-      <title>An example journal article</title>
-      <link>/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/journal-article/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>Association of Primary Language with Outcomes After Operations Typically Performed to Treat Cancer: Analysis of a Statewide Database</title>
+      <link>/publication/2019-01-01_feeney_association_2019-1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_feeney_association_2019-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Differential Utilization of Palliative Care Consultation Between Medical and Surgical Services</title>
+      <link>/publication/2019-01-01_nguyen_differential_2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_nguyen_differential_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluation of Incidental Adrenal Masses at a Tertiary Referral and Trauma Center</title>
+      <link>/publication/2019-01-01_feeney_evaluation_2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_feeney_evaluation_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Association of Primary Language With Emergency General Surgery Outcomes Using a Statewide Database</title>
+      <link>/publication/2019-01-01_feeney_association_2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_feeney_association_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transferred Emergency General Surgery Patients Are at Increased Risk of Death: A NSQIP Propensity Score Matched Analysis</title>
+      <link>/publication/2019-01-01_castillo-angeles_transferred_2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_castillo-angeles_transferred_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Disease-Causing Mutations in the Promoter and Enhancer of the Ornithine Transcarbamylase Gene</title>
+      <link>/publication/2018-01-01_jang_disease-causing_2018-1/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/2018-01-01_jang_disease-causing_2018-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laparoscopic Adrenalectomy for Metastatic Disease: Retrospective Cohort with Long-Term, Comprehensive Follow-Up</title>
+      <link>/publication/2018-01-01_drake_laparoscopic_2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/2018-01-01_drake_laparoscopic_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prophylactic Use of Alpha-1 Adrenergic Blocking Agents for Prevention of Postoperative Urinary Retention: A Review \&amp; Meta-Analysis of Randomized Clinical Trials</title>
+      <link>/publication/2018-01-01_ghuman_prophylactic_2018-1/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/2018-01-01_ghuman_prophylactic_2018-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Independent Effect of Emergency General Surgery on Outcomes Varies Depending on Case Type: A NSQIP Outcomes Study</title>
+      <link>/publication/2018-01-01_feeney_independent_2018-2/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/2018-01-01_feeney_independent_2018-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resident and Fellow Participation in Thyroid and Parathyroid Surgery: An ACS-NSQIP Clinical Outcomes Analysis</title>
+      <link>/publication/2017-01-01_feeney_resident_2017-1/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/2017-01-01_feeney_resident_2017-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Long-Term Follow-up of Blunt Cerebrovascular Injuries: Does Time Heal All Wounds?</title>
+      <link>/publication/2016-01-01_laser_long-term_2016-1/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/2016-01-01_laser_long-term_2016-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lethal Now or Lethal Later: The Natural History of Grade 4 Blunt Cerebrovascular Injury</title>
+      <link>/publication/2015-01-01_lauerman_lethal_2015-1/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_lauerman_lethal_2015-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of Urea Cycle Gene Transcription Regulation Using Bioinformatic Software and Patient Sequences</title>
+      <link>/publication/2011-01-01_labella_analysis_2011/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_labella_analysis_2011/</guid>
+      <description></description>
     </item>
     
   </channel>

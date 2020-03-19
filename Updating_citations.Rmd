@@ -1,0 +1,32 @@
+---
+title: "How to Update Citations"
+author: "Tim Feeney"
+date: "3/18/2020"
+output: html_document
+---
+
+Citations have been added using bib2acadmic
+
+Reference this:https://github.com/gcushen/hugo-academic/issues/146
+
+#first convert based on updated .bib files
+```{r}
+bib2academic::bib2acad("/Users/timf/Dropbox/CVs/bibtex\ files/First_authors.bib",overwrite = TRUE)
+bib2academic::bib2acad("/Users/timf/Dropbox/CVs/bibtex\ files/Coauthors.bib", overwrite = TRUE)
+```
+
+##In terminal
+cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/static/files/citations/; cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/content/publication; rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/; rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/
+
+#These are the individual commands below; separated by semi-colon
+##cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/static/files/citations/
+
+##cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/content/publication
+
+##rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/
+
+##rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/
+
+##cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/static/files/citations/; cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/content/publication; rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/; rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/
+
+

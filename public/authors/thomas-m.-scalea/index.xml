@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thomas M. Scalea | The Feeney</title>
+    <link>/authors/thomas-m.-scalea/</link>
+      <atom:link href="/authors/thomas-m.-scalea/index.xml" rel="self" type="application/rss+xml" />
+    <description>Thomas M. Scalea</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Thomas M. Scalea</title>
+      <link>/authors/thomas-m.-scalea/</link>
+    </image>
+    
+    <item>
+      <title>Long-Term Follow-up of Blunt Cerebrovascular Injuries: Does Time Heal All Wounds?</title>
+      <link>/publication/2016-01-01_laser_long-term_2016-1/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/2016-01-01_laser_long-term_2016-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lethal Now or Lethal Later: The Natural History of Grade 4 Blunt Cerebrovascular Injury</title>
+      <link>/publication/2015-01-01_lauerman_lethal_2015-1/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_lauerman_lethal_2015-1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

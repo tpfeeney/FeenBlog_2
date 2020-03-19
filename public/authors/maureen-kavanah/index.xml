@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maureen Kavanah | The Feeney</title>
+    <link>/authors/maureen-kavanah/</link>
+      <atom:link href="/authors/maureen-kavanah/index.xml" rel="self" type="application/rss+xml" />
+    <description>Maureen Kavanah</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Maureen Kavanah</title>
+      <link>/authors/maureen-kavanah/</link>
+    </image>
+    
+    <item>
+      <title>Association of Primary Language with Outcomes After Operations Typically Performed to Treat Cancer: Analysis of a Statewide Database</title>
+      <link>/publication/2019-01-01_feeney_association_2019-1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_feeney_association_2019-1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ljubica Caldovic | The Feeney</title>
+    <link>/authors/ljubica-caldovic/</link>
+      <atom:link href="/authors/ljubica-caldovic/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ljubica Caldovic</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Ljubica Caldovic</title>
+      <link>/authors/ljubica-caldovic/</link>
+    </image>
+    
+    <item>
+      <title>Disease-Causing Mutations in the Promoter and Enhancer of the Ornithine Transcarbamylase Gene</title>
+      <link>/publication/2018-01-01_jang_disease-causing_2018-1/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/2018-01-01_jang_disease-causing_2018-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of Urea Cycle Gene Transcription Regulation Using Bioinformatic Software and Patient Sequences</title>
+      <link>/publication/2011-01-01_labella_analysis_2011/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_labella_analysis_2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comprehensive Bioinformatic Analysis of Urea Cycle Gene Transcription Regulation Using Cis-Element over Representation (CLOVER) Software and Patient Sequences to Identify Disease Causing Mutations</title>
+      <link>/publication/2011-01-01_labella_comprehensive_2011/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_labella_comprehensive_2011/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

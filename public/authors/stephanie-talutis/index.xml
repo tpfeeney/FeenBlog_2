@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stephanie Talutis | The Feeney</title>
+    <link>/authors/stephanie-talutis/</link>
+      <atom:link href="/authors/stephanie-talutis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Stephanie Talutis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Stephanie Talutis</title>
+      <link>/authors/stephanie-talutis/</link>
+    </image>
+    
+    <item>
+      <title>Evaluation of Incidental Adrenal Masses at a Tertiary Referral and Trauma Center</title>
+      <link>/publication/2019-01-01_feeney_evaluation_2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_feeney_evaluation_2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

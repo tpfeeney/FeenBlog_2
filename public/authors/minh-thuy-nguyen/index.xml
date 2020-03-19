@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minh-Thuy Nguyen | The Feeney</title>
+    <link>/authors/minh-thuy-nguyen/</link>
+      <atom:link href="/authors/minh-thuy-nguyen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Minh-Thuy Nguyen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Minh-Thuy Nguyen</title>
+      <link>/authors/minh-thuy-nguyen/</link>
+    </image>
+    
+    <item>
+      <title>Differential Utilization of Palliative Care Consultation Between Medical and Surgical Services</title>
+      <link>/publication/2019-01-01_nguyen_differential_2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_nguyen_differential_2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

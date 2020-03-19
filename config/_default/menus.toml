@@ -19,10 +19,10 @@
   url = "#posts"
   weight = 30
 
-#[[main]]
-#  name = "Publications"
-#  url = "#featured"
-#  weight = 40
+[[main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 40
 
 #[[main]]
 #  name = "Courses"
