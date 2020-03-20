@@ -16,7 +16,22 @@ bib2academic::bib2acad("/Users/timf/Dropbox/CVs/bibtex\ files/Coauthors.bib", ov
 ```
 
 ##In terminal
-cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/static/files/citations/; cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/content/publication; rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/; rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/
+cd /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder;
+for file in *.md; do
+  mkdir "/Users/timf/Documents/GitHub/FeenBlog_2/content/publication/${file%.*}";
+  mv "$file" "/Users/timf/Documents/GitHub/FeenBlog_2/content/publication/${file%.*}/index.md";
+done;cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/static/files/citations/
+
+cd /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder;
+for file in *.bib; do
+  mv "$file" "/Users/timf/Documents/GitHub/FeenBlog_2/content/publication/${file%.*}/cite.bib";
+done
+
+rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/; rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/
+
+
+
+#cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/static/files/citations/; cp -a #/Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/content/publication; rm -r #/Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/; rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/
 
 #These are the individual commands below; separated by semi-colon
 ##cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/static/files/citations/
