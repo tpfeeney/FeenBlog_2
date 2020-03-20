@@ -87,4 +87,15 @@ Malcom Barrett's [DAGTEX](https://github.com/malcolmbarrett/dagtex)  and [GGDAG]
 [Miguel Hernan's Causal Diagrams: Draw You Assumptions Before Your Conclusions Course](https://online-learning.harvard.edu/course/causal-diagrams-draw-your-assumptions-your-conclusions)
 (note this is on EdX and requires signing up, which is free)
 
+## **Git Resources**
+Stuff to help you learn git, which is something I didn't find easy.
+
+Title | Description
+---|---
+[An Intro to Git and GitHub for Beginners (Tutorial)](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)<br> by Meghan Nelson|Great intro tutorial that walks you through basics of using Git|
+|[List of Git Commands](https://git-scm.com/docs)|Reference for all Git Commands|
+|[Git Visual Cheatsheet](https://ndpsoftware.com/git-cheatsheet.html#loc=workspace;)|Visual refence to help understand  the git commands|
+|[Git cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)|Classic cheatsheet of commands|
+
+
 ...More to come.
