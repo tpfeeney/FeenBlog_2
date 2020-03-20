@@ -34,44 +34,27 @@ Title and Author | Description and/or Extra Material
 |[An Introduction to Statistical Learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)<br>by James, Witten, Hastie, And Tibshirani|[PDF](https://www.ime.unicamp.br/~dias/Intoduction%20to%20Statistical%20Learning.pdf)|
 |[Doing Bayesian Data Analysis](https://sites.google.com/site/doingbayesiandataanalysis/)<br>by John Kruschke|[Whats new in the 2nd Ed.](https://sites.google.com/site/doingbayesiandataanalysis/what-s-new-in-2nd-ed)|
 
-
-## <u>Mathematics</u>
-Title and Author | Description and/or Extra Material
----|---
-[Calculus 9th ed.]()<br>By Thomas and Finney|Wonderfully lucid exposition of calculus|
-|[Intro. to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/)<br>by Gilbert Strang|Might be best paired with the [MIT OCW Course](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)|
-
-## <u>Physics</u>
-Title and Author | Description and/or Extra Material
----|---
-
-## <u>Chemistry</u>
-Title and Author | Description and/or Extra Material
----|---
-[Biochemistry]()<br>by Matthews and Van holde|Best Intro Biochem book, and better than Lehninger IMO|
-|[Biochemistry]()<br>by Voet and Voet|The tome; side note: I got to meet Drs. Voet and Voet and have my 3rd Ed signed|
-|
-
-## <u>Biology</u>
-Title and Author | Description and/or Extra Material
----|---
-[Molecular Biology of the Cell](https://www.ncbi.nlm.nih.gov/books/NBK21054/)<br>by Bruce Alberts|I used the 4th ed. (linked) but Im sure the [5th]() & [6th](https://www.crcpress.com/Molecular-Biology-of-the-Cell/Alberts/p/book/9781315735368) eds. are great too!|
-|[Physical Biology of the Cell](https://www.crcpress.com/Physical-Biology-of-the-Cell/Phillips-Kondev-Theriot-Garcia-Phillips-Kondev-Theriot-Garcia/p/book/9780815344506)<br>by Philips <i>et al.<i>||
-|[Molecular Cell Biology]()<br>by Lodish and Baltimore||
-
 ## <u>Medical</u>
-Favorites from medical school and training. Included basic science books and might be a good reference for med students looking for **the best** references
+Favorites from medical school and training. Included basic science books and might be a good reference for med students looking for **the best** references. Cince my focus is surgery and critical care you will get books slanting that way (eg, anatomy, physiology, pathophys, surgical)
 
 Title and Author | Description and/or Extra Material
 ---|---
-[Medical Physiology]()<br>by Boron and Boulpaep||
-|[Best and Taylor's Physiologic Basis of Medical Practice]()||
+[Medical Physiology](https://www.elsevier.com/books/medical-physiology/boron/978-1-4557-4377-3)<br>by Boron and Boulpaep||
+|[Best and Taylor's Physiologic Basis of Medical Practice](https://www.goodreads.com/book/show/26013382-best-taylors-physiological-basis-of-medical-practice)<br>by Tandon and Tripathi||
 |[Marino's The ICU Book](https://shop.lww.com/Marino-s-The-ICU-Book--Print---Ebook-with-Updates/p/9781451121186)<br> by Paul Marino||
+|[West's Respiratory Physiology](https://shop.lww.com/West-s-Respiratory-Physiology/p/9781496310118)<br>by West|Wonderful [companion lectures at UCSD](https://meded.ucsd.edu/ifp/jwest/resp_phys/) to go with it|
+|[West's Pulmonary Pathophysiology]()<br>by West|Wonderful [companion lectures at UCSD](https://meded.ucsd.edu/ifp/jwest/pulm_path/index.html)|
+|[Gray's Anatomy: The Anatomical Basis of Clinical Practice](https://www.us.elsevierhealth.com/grays-anatomy-9780702052309.html)<br>By Standring ||
+|[Anatomy: A Photographic Atlas](https://shop.lww.com/Anatomy/p/9781451193183) |Wonderful book that includes real dissection photographs|
+|[Toronto Notes](https://uoftbookstore.com/shop_product_detail.asp?catalog_group_id=MTMxXFwgNjE&catalog_group_name=TWVkaWNhbFxcIE1lZGljYWwgUmVmZXJlbmNl&catalog_id=474&catalog_name=UmV2aWV3IE5vdGVz&pf_id=442184&product_name=VG9yb250byBOb3RlcyAyMDIwIChCb29rIE9ubHkp&type=3&target=shop_product_list.asp) |Fabulous summaries of medical information you will need|
+|[First Aid for the Basic Sciences: General Principles](https://www.mhprofessional.com/9781259587016-usa-first-aid-for-the-basic-sciences-general-principles-third-edition-group)<br>and<br>[First Aid for the Bacis Sciences: Organ Systems](https://www.mhprofessional.com/9781259587030-usa-first-aid-for-the-basic-sciences-organ-systems-third-edition-group)|These are both wonderful resources to summarize the "first two years" of med school curriculum and should accompany study of lecture and material (imo)| 
+|[Atlas of Human Anatomy ](https://www.elsevier.com/books/atlas-of-human-anatomy/netter/978-1-4557-0418-7)<br>by Frank Netter |Didnt appreciate how awesome this is until I was in surgery residency. Its a great reference|
+|[Essentials of General Surgery](https://shop.lww.com/Essentials-of-General-Surgery-and-Surgical-Specialties/p/9781975107123)<br>by Lawrence|Excellent intro summary for medical students going into MS4 rotations|
 
 ## <u>Popular Science and Math</u>
 
 Title and Author | Description and/or Extra Material
--------|---
+--------|----
 [The Simpsons and Their Mathematical Secrets](https://www.simonsingh.net/Simpsons_Mathematics/book/)<br>by Simon Singh||
 |[We Have No Idea](http://phdcomics.com/noidea/)<br>by Jorge Cham and Daniel Whiteson||
 |[The Rise and Fall of the Dinosaurs](https://www.harpercollins.com/9780062490421/the-rise-and-fall-of-the-dinosaurs/)<br>by Stephen Brusatte||
@@ -84,6 +67,37 @@ Title and Author | Description and/or Extra Material
 -------|---
 [Douglas Adams](https://douglasadams.com/) books in general<br>[The Hitchiker's Guide to the Galaxy](https://douglasadams.com/creations/hhgg.html)<br>[Dirk Gently Series](https://douglasadams.com/creations/dirk.html)| |
 |[Terry Pratchett](https://www.terrypratchettbooks.com/books/) books in general, too<br>[Discworld Series](https://www.terrypratchettbooks.com/book-series/discworld/)<br>[Good Omens](https://www.terrypratchettbooks.com/books/good-omens/)||
+|[The Dinosaur Feather](https://www.fantasticfiction.com/g/sissel-jo-gazan/dinosaur-feather.htm)<br>and<br>[The Arc of the Swallow](https://www.fantasticfiction.com/g/sissel-jo-gazan/arc-of-the-swallow.htm)|Thrillers set in the world of academia, whats not to love?|
+|
+
+## <u>Mathematics</u>
+Title and Author | Description and/or Extra Material
+---|---
+[Calculus 9th ed.](https://www.pearson.com/us/higher-education/product/Thomas-Calculus-9th-Edition/9780201531749.html)<br>By Thomas and Finney|Wonderfully lucid exposition of calculus|
+|[Intro. to Linear Algebra](https://math.mit.edu/~gs/linearalgebra/)<br>by Gilbert Strang|Might be best paired with the [MIT OCW Course](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)|
+|[Calculus](https://www.maa.org/press/maa-reviews/calculus-4)<br>by Spivak||
+|
+
+## <u>Physics</u>
+Title and Author | Description and/or Extra Material
+---|---
+
+## <u>Chemistry</u>
+Title and Author | Description and/or Extra Material
+---|---
+[Biochemistry](https://www.pearson.com/us/higher-education/program/Mathews-Biochemistry-4th-Edition/PGM39253.html)<br>by Matthews and Van holde|Best Intro Biochem book, and better than Lehninger IMO|
+|[Biochemistry](https://www.wiley.com/en-us/Biochemistry%2C+4th+Edition-p-9780470570951)<br>by Voet and Voet|The tome; side note: I got to meet Drs. Voet and Voet and have my 3rd Ed signed|
+|[Organic Chemistry](https://www.macmillanlearning.com/college/us/product/Organic-Chemistry/p/1936221349)<br>by Marc Loudon|Better than McMurray and Fay in my opinion. There great great corresponding review sheets [here](https://orgchemboulder.com/Lectures/Reviews/Reviews.shtml)|
+|
+
+## <u>Biology</u>
+Title and Author | Description and/or Extra Material
+---|---
+[Molecular Biology of the Cell](https://www.ncbi.nlm.nih.gov/books/NBK21054/)<br>by Bruce Alberts|I used the 4th ed. (linked) but Im sure the [5th]() & [6th](https://www.crcpress.com/Molecular-Biology-of-the-Cell/Alberts/p/book/9781315735368) eds. are great too!|
+|[Physical Biology of the Cell](https://www.crcpress.com/Physical-Biology-of-the-Cell/Phillips-Kondev-Theriot-Garcia-Phillips-Kondev-Theriot-Garcia/p/book/9780815344506)<br>by Philips <i>et al.<i>||
+|[Molecular Cell Biology](https://www.macmillanlearning.com/college/us/product/Molecular-Cell-Biology/p/1464183392)<br>by Lodish and Baltimore||
+|[Karp's Cell and Molecular Biology: Concepts and Experiments](https://www.wiley.com/en-us/Karp%27s+Cell+and+Molecular+Biology%3A+Concepts+and+Experiments%2C+8th+Edition-p-9781118886144)|I used this as my into cell bio book and loved it; was a great intro book.|
+|
 
     
 ...more to come
