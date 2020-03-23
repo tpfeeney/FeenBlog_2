@@ -1,20 +1,23 @@
 ---
-title: List of my favorite books
-author: TF
+title: "List of my favorite books"
+author: "TF"
 date: '2020-03-12'
-slug: list-of-my-favorite-books
-categories: []
-tags: []
-subtitle: ''
-summary: 'This is a list of my favorite books across all categories'
-authors: []
-lastmod: '2020-03-12T18:32:22-04:00'
+output:
+  html_document:
+    df_print: paged
 featured: yes
 image:
   caption: ''
   focal_point: ''
   preview_only: no
+lastmod: '2020-03-12T18:32:22-04:00'
+categories: []
 projects: []
+slug: list-of-my-favorite-books
+subtitle: ''
+summary: This is a list of my favorite books across all categories
+tags: []
+authors: []
 ---
 This is pretty self explanatory, but these are my fav books that Ive used throughout my education. I think they are spectacular resources for learning and in addition to sharing them with readers, it is nice to keep a list all in one place. What better place than on my web site?
 

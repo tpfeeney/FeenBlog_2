@@ -11,8 +11,8 @@ Reference this:https://github.com/gcushen/hugo-academic/issues/146
 
 #first convert based on updated .bib files
 ```{r}
-bib2academic::bib2acad("/Users/timf/Dropbox/CVs/bibtex\ files/First_authors.bib",overwrite = TRUE)
-bib2academic::bib2acad("/Users/timf/Dropbox/CVs/bibtex\ files/Coauthors.bib", overwrite = TRUE)
+bib2academic::bib2acad("/Users/timf/Dropbox/CVs/CV_master/First_authors.bib",overwrite = TRUE)
+bib2academic::bib2acad("/Users/timf/Dropbox/CVs/CV_master/Coauthors.bib", overwrite = TRUE)
 ```
 
 ##In terminal

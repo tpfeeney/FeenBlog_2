@@ -42,6 +42,9 @@ organizations:
   url: "http://www.bumc.bu.edu/surgery/"
 role: Post-doctoral Research Fellow in Surgery
 social:
+- icon: "cv"
+  icon_pack: "ai"
+  link: https://github.com/tpfeeney/CV/blob/master/CV.pdf
 - icon: envelope
   icon_pack: fas
   link: '#contact'
