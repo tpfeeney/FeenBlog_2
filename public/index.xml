@@ -105,6 +105,13 @@
 &lt;td&gt;A wonderful package for making table 1 in medical/epi papers, does unvariate calcs automatically and is exportable to excel. A total must use. The Github Page also lists some other packages that I like to use too, but all are nice for different reasons&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;
+&lt;a href=&#34;https://cran.r-project.org/web/packages/mgcv/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mgcv&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;A package for GAMs. Some explanations 
+&lt;a href=&#34;https://people.maths.bris.ac.uk/~sw15190/mgcv/tampere/mgcv.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and 
+&lt;a href=&#34;https://people.maths.bris.ac.uk/~sw15190/mgcv/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. This package is what I learned GAMs with and Noam Ross&amp;rsquo; course (listed in my fav resources page) uses it too. great stuff.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -212,7 +219,7 @@
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;Probability&lt;br&gt;by Joseph Blitzstein and Jessica Hwang&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://projects.iq.harvard.edu/stat110/home&#34;&gt;Probability&lt;/a&gt;&lt;br&gt;by Joseph Blitzstein and Jessica Hwang&lt;/td&gt;
 &lt;td&gt;Version 1 &lt;a href=&#34;http://dl.rasabourse.com/Harvard%20Statistics.pdf&#34;&gt;PDF&lt;/a&gt;&lt;br&gt;Version 2 &lt;a href=&#34;https://drive.google.com/file/d/1VmkAAGOYCTORq1wxSQqy255qLJjTNvBI/view&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
@@ -234,6 +241,10 @@
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td&gt;&lt;a href=&#34;https://global.oup.com/academic/product/explanation-in-causal-inference-9780199325870?cc=us&amp;amp;lang=en&amp;amp;&#34;&gt;Explanation in Causal Inference&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Great resource for causal analysis, although the book is really written for SAS users and not R users, unfortunately. &lt;a href=&#34;https://global.oup.com/us/companion.websites/9780199325870/&#34;&gt;Companion Website here&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.wiley.com/en-us/Statistical+Issues+in+Drug+Development%2C+2nd+Edition-p-9780470018774&#34;&gt;Statistical Issues in Drug Development&lt;/a&gt;&lt;br&gt;by Stephen Senn&lt;/td&gt;
+&lt;td&gt;Excellent resource for learning about and understanding statistical issues in Clinical Trials and RCTs&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
