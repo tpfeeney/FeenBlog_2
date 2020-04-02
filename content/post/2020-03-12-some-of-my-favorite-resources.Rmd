@@ -15,6 +15,8 @@ subtitle: ''
 summary: My favorite resources for learning and fun from across the internet
 tags: []
 authors: []
+header-includes:
+   - \usepackage{marvosym}
 ---
 
 The internet has a plethora of resources to learn more about science, math, and other interests. I decided to collate all my favorite sites and posts.
@@ -59,6 +61,9 @@ This is an amazing first course covering probability. Not only does it link to h
 You can also follow him on twitter
 [$@$stat110](https://twitter.com/stat110)
 
+## [**Darren Dahly's (EH6124) Clinical Trial Design and Analysis course videos**](https://www.youtube.com/watch?v=dnfXsqwTrE0&list=PL1TlcXRy7yCsRWza4xtKoir2KEvYcYkHz)
+This is a fantastic set of videos introducing the theroy and practice of clinical trials. You can also follow Darren on twitter for added value: [$@$statsepi](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjytJH5_8noAhVpj3IEHbu3ApUQ6F56BAgBEAI&url=https%3A%2F%2Ftwitter.com%2Fstatsepi%3Fref_src%3Dtwsrc%255Egoogle%257Ctwcamp%255Eserp%257Ctwgr%255Eauthor&usg=AOvVaw1mxCaF3VMVv5BF3oq46Q5J)
+
 ## [**Petersen and Balzer's Causal Inference Site**](https://www.ucbbiostat.com/)
 
 ## [**Noam Ross' GAMs in R tutorial**](https://noamross.github.io/gams-in-r-course/)
@@ -74,18 +79,49 @@ You can also follow him on twitter
 
 ## [**MIT Open Courseware**](https://ocw.mit.edu/index.htm)
 
+## [**Khan Academy**](https://www.khanacademy.org/)
+[Youtube site here](https://www.youtube.com/user/khanacademy)
+
+## [**3Blue1Brown Youtube Videos**](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+Site descirption: 3blue1brown, by Grant Sanderson, is some combination of math and entertainment, depending on your disposition. The goal is for explanations to be driven by animations and for difficult problems to be made simple with changes in perspective. 
+
 ## [**StatQuest by Josh Starmer**](https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw)
 
+## [**Vanderbilt Biostatistics Resources**](http://biostat.mc.vanderbilt.edu/wiki/)
+
+## [**Stats Notes in the BMJ**](https://www-users.york.ac.uk/~mb55/pubs/pbstnote.htm)
+Wonderful list of papers in the BMJ that were written by Doug Altman and Martin Bland.
+
+## [**Jama Guide to Stats and Medicine**](https://jamanetwork.com/collections/44042/guide-to-statistics-and-medicine)
+*this isnt free, but it quite a good resource particularly is you have institutional or personal JAMA access.
+
+## [**Univ. of Bristol Online Multilevel Modeling Site**](http://www.bristol.ac.uk/cmm/) 
+The [Online course is here](https://www.bristol.ac.uk/cmm/learning/online-course/) The course requires free registration but is absolutely fantastic for learning multilevel modeling.
+
 ## **Directed Acyclic Graph (DAG) Resources:**
+Stuff to help you learn DAGs.
 
-[Ellie Murray's DAGs in LaTex](https://github.com/eleanormurray/causalgraphs_latex)
+Title | Description
+---|---
+[Ellie Murray's DAGs in LaTex](https://github.com/eleanormurray/causalgraphs_latex)||
+|[Maria Glymour's Paper on DAGs](/files/glymourdags.pdf)||
+|[Malcom Barrett's DAGTEX](https://github.com/malcolmbarrett/dagtex)<br>and<br> [GGDAG](https://ggdag.malco.io/) packages||
+|[Miguel Hernan's Causal Diagrams: Draw You Assumptions Before Your Conclusions Course](https://online-learning.harvard.edu/course/causal-diagrams-draw-your-assumptions-your-conclusions)|(note this is on EdX and requires signing up, which is free)|
+|
 
-[Maria Glymour's Paper on DAGs](/files/glymourdags.pdf)
+## **R Resources**
+Stuff to help you learn R, the greatest statistical "package."
 
-Malcom Barrett's [DAGTEX](https://github.com/malcolmbarrett/dagtex)  and [GGDAG](https://ggdag.malco.io/) packages
+Title | Description
+---|---
+[R for Data Science](https://r4ds.had.co.nz/)<br>by Wickham and Grolemund|Free online book by Hadley, not much else to say|
+|[Stat 454](https://stat545.com/)<br>by Jenny Bryan|Prime intro to using R for data analysis|
+|[Introduction to Data Science Data Analysis and Prediction Algorithms with R](https://rafalab.github.io/dsbook/)<br>by Rafael Irizarry||
+|[Applied Statistics with R](https://daviddalpiaz.github.io/appliedstats/)| [PDF Version](http://daviddalpiaz.github.io/appliedstats/applied_statistics.pdf) for local use|
+|[RMarkdown intro](https://ourcodingclub.github.io/tutorials/rmarkdown/)||
+|[RBasics Tutorial](https://r-statistics.co/R-Tutorial.html)||
+|Xaringan Tutorials [here](https://apreshill.github.io/data-vis-labs-2018/slides/06-slides_xaringan.html#64), [here](https://arm.rbind.io/slides/xaringan.html#16) and [here](https://xaringantutorial.netlify.com/#1)|These are great sources to get started using Xaringan for making slide presentations in R|
 
-[Miguel Hernan's Causal Diagrams: Draw You Assumptions Before Your Conclusions Course](https://online-learning.harvard.edu/course/causal-diagrams-draw-your-assumptions-your-conclusions)
-(note this is on EdX and requires signing up, which is free)
 
 ## **Git Resources**
 Stuff to help you learn git, which is something I didn't find easy.
@@ -96,6 +132,21 @@ Title | Description
 |[List of Git Commands](https://git-scm.com/docs)|Reference for all Git Commands|
 |[Git Visual Cheatsheet](https://ndpsoftware.com/git-cheatsheet.html#loc=workspace;)|Visual refence to help understand  the git commands|
 |[Git cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)|Classic cheatsheet of commands|
+
+## **Bash Resources**
+Stuff to help you learn BASH, which is something I also didn't find easy.
+
+Title | Description
+---|---
+[BASH intro video](https://www.youtube.com/watch?v=oxuRxtrO2Ag)||
+|[Regex tutorial](https://www.regular-expressions.info/tutorial.html)|tutorials in how to use regular expressions|
+
+## **$\LaTeX$ Resources**
+Stuff to help you learn $\LaTeX$, which can be quite a slog at times.
+
+Title | Description
+---|---
+[Comprehensive Symbol Sheet](http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf)||
 
 
 ...More to come.
