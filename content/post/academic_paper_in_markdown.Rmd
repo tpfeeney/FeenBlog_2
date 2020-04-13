@@ -28,7 +28,10 @@ For this you will need to have a $LaTeX$ distribution installed, pandoc, and be 
 ## Basic YAML
 
 ### Here is a sample of the output.
-![Basic YAML](/Users/timf/Documents/GitHub/academic_abstract_in_markdown/basic.png)
+
+```{r echo = F, out.width="75%"}
+knitr::include_graphics("/Users/timf/Documents/GitHub/academic_abstract_in_markdown/basic.png")
+```
 
 This is called basic YAML because other than a `.csl` file for your references formatting, and a `.bib` file for your references, you wont need anything special other than Markdown know how to write a paper.
 
@@ -93,7 +96,10 @@ and to knit to word I used:
 These files can all be obtained at in my [Git Repo](https://github.com/tpfeeney/academic_paper_in_markdown/tree/master/augmented_yaml)
 
 ### Here is a sample of the output.
-![Augmented YAML](/Users/timf/Documents/GitHub/academic_abstract_in_markdown/augmented.png)
+
+```{r echo = F, out.width="75%"}
+knitr::include_graphics("/Users/timf/Documents/GitHub/academic_abstract_in_markdown/augmented.png")
+```
 
     ---
     title: |
