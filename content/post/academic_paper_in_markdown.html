@@ -1,0 +1,165 @@
+---
+title: Writing an Academic Paper in RMarkdown
+author: TF
+date: '2020-04-13'
+slug: academic_paper_in_markdown
+categories: []
+tags: []
+subtitle: ''
+summary: 'Some simple instructions for writing a paper in RMarkdown'
+authors: []
+lastmod: '2020-04-13T12:53:56-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="background" class="section level2">
+<h2>Background:</h2>
+<p>I was interested in writing an academic paper in RMarkdown, but I am a n00b and it wasnt immediately obvious to me how to format everything. So I did a little searching around and have found two solutions, which I think are pretty good. One solution, which I’ll call the basic YAML version, requires only some moderate reformatting of YAML header in an RMarkdown file. The other solution, which I call augemented YAML, requires some extra files called <code>.lua</code> files, which add extra features but end up making it look nicer in the end. My goal here was to end up with a document with a reasonable title page, a single spaced abstract section with Keywords at the end, and a two colum paper that I could insert figures into. Also, I needed it to have line numbers.</p>
+<p>For this you will need to have a <span class="math inline">\(LaTeX\)</span> distribution installed, pandoc, and be able to at least knit to PDF. I use RStudio for all of this. Knowing some HTML doesnt hurt either.</p>
+</div>
+<div id="basic-yaml" class="section level2">
+<h2>Basic YAML</h2>
+<p>This is called basic YAML because other than a <code>.csl</code> file for your references formatting, and a <code>.bib</code> file for your references, you wont need anything special other than Markdown know how to write a paper.</p>
+<pre><code>---
+title: |-
+  This is a wonderful Title
+author: 
+- Author 1^1,2^
+- Author 2^1,2^
+- Etc.^1,3^
+date: \scriptsize^1^ University of Somewhere ^2^ Imaginary College ^3^ Mans Greatest Hospital
+output:
+  pdf_document:
+  word_document: default
+  html_document:
+    df_print: paged
+#classoption:
+#- twocolumn #allows for double column
+bibliography:
+- all_the_best_refs.bib
+header-includes: 
+- \usepackage{setspace}\doublespacing # makes for double spacing
+- \usepackage[switch, pagewise, running]{lineno} #switch allows it to be used with double column
+- \linenumbers # adds line numbers
+- \renewcommand\linenumberfont{\normalfont\small} #changes size of line numbers
+keywords: &#39;Keywords: first, Second, Third&#39;
+csl: journal-of-the-american-college-of-surgeons.csl #citation format, in this case makes in text numbers, and numbers the ref section.
+abstract: |-
+ \singlespacing This is my dream abstract. 
+
+
+ **Keywords: first, second, third**
+
+---</code></pre>
+<p>Then after the YAML use:</p>
+<pre><code>\twocolumn
+\doublespacing
+&lt;!--\newpage--&gt;
+\pagewiselinenumbers</code></pre>
+<p>To start double spacing, double column, and line numbers</p>
+<p>And then at the end near references, to return to single spacing and single column</p>
+<pre><code>\newpage
+\singlespacing
+\onecolumn
+# References</code></pre>
+</div>
+<div id="augemented-yaml" class="section level2">
+<h2>Augemented YAML</h2>
+<p>This is ‘augmented’ because additional formatting <code>.lua</code> files are need, which if you can just keep in the same directory as the <code>.Rmd</code> file you are writing.
+For this you will need:</p>
+<ul>
+<li><code>author-info-blocks.lua</code></li>
+<li><code>scholarly-metadata.lua</code></li>
+</ul>
+<p>and to knit to word I used:</p>
+<ul>
+<li><code>Reference_Document.docx</code></li>
+</ul>
+<p>These files can all be obtained at in my <a href="https://github.com/tpfeeney/academic_paper_in_markdown/tree/master/augmented_yaml">Git Repo</a></p>
+<pre><code>---
+title: |
+  **A most wonderful title.**
+subtitle: |
+    _and a nice subtitle_
+author:
+- First Author:
+    correspondence: yes
+    email: email@mail.com
+    institute:
+    - CoM
+    - IU
+- Second Author:
+    correspondence: no
+    institute:
+    - IU
+date: &#39;&#39;
+output:
+  pdf_document:
+    pandoc_args:
+    - --filter=pandoc-crossref
+    - --lua-filter=scholarly-metadata.lua
+    - --lua-filter=author-info-blocks.lua
+  word_document: default
+  bookdown::word_document2:
+    pandoc_args:
+    - --filter=pandoc-crossref
+    - --lua-filter=scholarly-metadata.lua
+    - --lua-filter=author-info-blocks.lua
+    - --reference-doc=Reference_Document.docx
+bibliography:
+- all_the_best_refs.bib
+header-includes:
+- \usepackage{setspace}\doublespacing
+- \usepackage[switch, pagewise, running]{lineno}
+- \linenumbers
+- \renewcommand\linenumberfont{\normalfont\small}
+- \usepackage{rotating}
+- \usepackage{float}
+institute:
+- IU: Imaginary University
+- CoM: College of Magic
+csl: journal-of-the-american-college-of-surgeons.csl #include your reference format of    choice here.
+abstract: |-
+ \singlespacing This is my dream abstract. 
+  
+  
+  **Keywords: first, second, third**
+Keywords: Incidental Adrenal Mass, Endocrinology,
+---</code></pre>
+<p>And include the beginning:</p>
+<pre><code>\twocolumn
+\doublespacing
+&lt;!--\newpage--&gt;
+\pagewiselinenumbers
+\begin{center}
+\textbf{Introduction:}
+\end{center}</code></pre>
+<p>And ending as before.</p>
+<pre><code>\newpage
+\singlespacing
+\onecolumn
+# References</code></pre>
+<p>To include R code and figures/tables after references include this bit</p>
+<pre><code>&lt;div id=&quot;refs&quot;&gt;&lt;/div&gt;
+
+\newpage</code></pre>
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>I hope this is somewhat helpful. Please see my <a href="https://github.com/tpfeeney/academic_paper_in_markdown">Git repo</a> for output from these and the files needed to make this work.</p>
+</div>
+<div id="future-directions" class="section level2">
+<h2>Future Directions</h2>
+<ul>
+<li>Figure out how to include inline tables</li>
+<li>Figure out how to include Tikz graphics and DAGs; likely will need <code>TikzDevice</code> for this.</li>
+</ul>
+</div>

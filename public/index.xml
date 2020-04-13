@@ -77,6 +77,161 @@
     </item>
     
     <item>
+      <title>Writing an Academic Paper in RMarkdown</title>
+      <link>/post/academic_paper_in_markdown/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/academic_paper_in_markdown/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;background&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Background:&lt;/h2&gt;
+&lt;p&gt;I was interested in writing an academic paper in RMarkdown, but I am a n00b and it wasnt immediately obvious to me how to format everything. So I did a little searching around and have found two solutions, which I think are pretty good. One solution, which I’ll call the basic YAML version, requires only some moderate reformatting of YAML header in an RMarkdown file. The other solution, which I call augemented YAML, requires some extra files called &lt;code&gt;.lua&lt;/code&gt; files, which add extra features but end up making it look nicer in the end. My goal here was to end up with a document with a reasonable title page, a single spaced abstract section with Keywords at the end, and a two colum paper that I could insert figures into. Also, I needed it to have line numbers.&lt;/p&gt;
+&lt;p&gt;For this you will need to have a &lt;span class=&#34;math inline&#34;&gt;\(LaTeX\)&lt;/span&gt; distribution installed, pandoc, and be able to at least knit to PDF. I use RStudio for all of this. Knowing some HTML doesnt hurt either.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;basic-yaml&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Basic YAML&lt;/h2&gt;
+&lt;p&gt;This is called basic YAML because other than a &lt;code&gt;.csl&lt;/code&gt; file for your references formatting, and a &lt;code&gt;.bib&lt;/code&gt; file for your references, you wont need anything special other than Markdown know how to write a paper.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: |-
+  This is a wonderful Title
+author: 
+- Author 1^1,2^
+- Author 2^1,2^
+- Etc.^1,3^
+date: \scriptsize^1^ University of Somewhere ^2^ Imaginary College ^3^ Mans Greatest Hospital
+output:
+  pdf_document:
+  word_document: default
+  html_document:
+    df_print: paged
+#classoption:
+#- twocolumn #allows for double column
+bibliography:
+- all_the_best_refs.bib
+header-includes: 
+- \usepackage{setspace}\doublespacing # makes for double spacing
+- \usepackage[switch, pagewise, running]{lineno} #switch allows it to be used with double column
+- \linenumbers # adds line numbers
+- \renewcommand\linenumberfont{\normalfont\small} #changes size of line numbers
+keywords: &amp;#39;Keywords: first, Second, Third&amp;#39;
+csl: journal-of-the-american-college-of-surgeons.csl #citation format, in this case makes in text numbers, and numbers the ref section.
+abstract: |-
+ \singlespacing This is my dream abstract. 
+
+
+ **Keywords: first, second, third**
+
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then after the YAML use:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\twocolumn
+\doublespacing
+&amp;lt;!--\newpage--&amp;gt;
+\pagewiselinenumbers&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To start double spacing, double column, and line numbers&lt;/p&gt;
+&lt;p&gt;And then at the end near references, to return to single spacing and single column&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\newpage
+\singlespacing
+\onecolumn
+# References&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;augemented-yaml&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Augemented YAML&lt;/h2&gt;
+&lt;p&gt;This is ‘augmented’ because additional formatting &lt;code&gt;.lua&lt;/code&gt; files are need, which if you can just keep in the same directory as the &lt;code&gt;.Rmd&lt;/code&gt; file you are writing.
+For this you will need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;author-info-blocks.lua&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scholarly-metadata.lua&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and to knit to word I used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Reference_Document.docx&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These files can all be obtained at in my &lt;a href=&#34;https://github.com/tpfeeney/academic_paper_in_markdown/tree/master/augmented_yaml&#34;&gt;Git Repo&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: |
+  **A most wonderful title.**
+subtitle: |
+    _and a nice subtitle_
+author:
+- First Author:
+    correspondence: yes
+    email: email@mail.com
+    institute:
+    - CoM
+    - IU
+- Second Author:
+    correspondence: no
+    institute:
+    - IU
+date: &amp;#39;&amp;#39;
+output:
+  pdf_document:
+    pandoc_args:
+    - --filter=pandoc-crossref
+    - --lua-filter=scholarly-metadata.lua
+    - --lua-filter=author-info-blocks.lua
+  word_document: default
+  bookdown::word_document2:
+    pandoc_args:
+    - --filter=pandoc-crossref
+    - --lua-filter=scholarly-metadata.lua
+    - --lua-filter=author-info-blocks.lua
+    - --reference-doc=Reference_Document.docx
+bibliography:
+- all_the_best_refs.bib
+header-includes:
+- \usepackage{setspace}\doublespacing
+- \usepackage[switch, pagewise, running]{lineno}
+- \linenumbers
+- \renewcommand\linenumberfont{\normalfont\small}
+- \usepackage{rotating}
+- \usepackage{float}
+institute:
+- IU: Imaginary University
+- CoM: College of Magic
+csl: journal-of-the-american-college-of-surgeons.csl #include your reference format of    choice here.
+abstract: |-
+ \singlespacing This is my dream abstract. 
+  
+  
+  **Keywords: first, second, third**
+Keywords: Incidental Adrenal Mass, Endocrinology,
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And include the beginning:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\twocolumn
+\doublespacing
+&amp;lt;!--\newpage--&amp;gt;
+\pagewiselinenumbers
+\begin{center}
+\textbf{Introduction:}
+\end{center}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And ending as before.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\newpage
+\singlespacing
+\onecolumn
+# References&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To include R code and figures/tables after references include this bit&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;refs&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+\newpage&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;summary&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;I hope this is somewhat helpful. Please see my &lt;a href=&#34;https://github.com/tpfeeney/academic_paper_in_markdown&#34;&gt;Git repo&lt;/a&gt; for output from these and the files needed to make this work.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;future-directions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Future Directions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Figure out how to include inline tables&lt;/li&gt;
+&lt;li&gt;Figure out how to include Tikz graphics and DAGs; likely will need &lt;code&gt;TikzDevice&lt;/code&gt; for this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>R Packages I Use and Like</title>
       <link>/post/r-packages-i-use-and-like/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
@@ -181,6 +336,7 @@
       <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/list-of-my-favorite-books/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;This is pretty self explanatory, but these are my fav books that Ive used throughout my education. I think they are spectacular resources for learning and in addition to sharing them with readers, it is nice to keep a list all in one place. What better place than on my web site?&lt;/p&gt;
@@ -224,7 +380,7 @@
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td&gt;&lt;a href=&#34;http://biostat.mc.vanderbilt.edu/wiki/Main/RmS&#34;&gt;Regression Modeling Strategies&lt;/a&gt;&lt;br&gt;by Frank Harrell&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;PDF &lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2F978-3-319-19425-7.pdf&#34;&gt;here&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
 &lt;td&gt;&lt;a href=&#34;https://content.sph.harvard.edu/fitzmaur/ala2e/&#34;&gt;Applied Longitudinal Data Analysis&lt;/a&gt;&lt;br&gt;by Fitzmaurice, Laird and Ware&lt;/td&gt;
