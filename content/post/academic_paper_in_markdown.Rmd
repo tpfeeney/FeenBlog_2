@@ -30,7 +30,7 @@ For this you will need to have a $LaTeX$ distribution installed, pandoc, and be 
 ### Here is a sample of the output.
 
 ```{r echo = F, out.width="75%"}
-knitr::include_graphics("/Users/timf/Documents/GitHub/academic_abstract_in_markdown/basic.png")
+knitr::include_graphics("images/basic.png")
 ```
 
 This is called basic YAML because other than a `.csl` file for your references formatting, and a `.bib` file for your references, you wont need anything special other than Markdown know how to write a paper.
@@ -98,7 +98,7 @@ These files can all be obtained at in my [Git Repo](https://github.com/tpfeeney/
 ### Here is a sample of the output.
 
 ```{r echo = F, out.width="75%"}
-knitr::include_graphics("/Users/timf/Documents/GitHub/academic_abstract_in_markdown/augmented.png")
+knitr::include_graphics("images/augmented.png")
 ```
 
     ---
