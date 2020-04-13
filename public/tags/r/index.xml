@@ -18,6 +18,7 @@
       <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       <guid>/post/color-palettes-in-r/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. &lt;code&gt;tidyverse&lt;/code&gt; and &lt;code&gt;ggplot&lt;/code&gt; in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the &lt;code&gt;ggsci&lt;/code&gt; package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.&lt;/p&gt;
@@ -256,6 +257,7 @@ Darjeeling2&lt;/p&gt;
       <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       <guid>/post/misc-functions-in-r/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;This post is VERY in progress. The point is as a reference for myself for small things I want to refer to in the future, for simulating data and working with probability distributions. Its a hodge podge and always being updated&lt;/p&gt;
@@ -286,6 +288,7 @@ start with the &lt;code&gt;dnorm&lt;/code&gt; distribution.&lt;/p&gt;
       <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
       <guid>/post/how-to-visualize-binary-outcomes-in-research/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.&lt;/p&gt;

@@ -28,6 +28,12 @@
 &lt;/div&gt;
 &lt;div id=&#34;basic-yaml&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Basic YAML&lt;/h2&gt;
+&lt;div id=&#34;here-is-a-sample-of-the-output.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Here is a sample of the output.&lt;/h3&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/Users/timf/Documents/GitHub/academic_abstract_in_markdown/basic.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Basic YAML&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;This is called basic YAML because other than a &lt;code&gt;.csl&lt;/code&gt; file for your references formatting, and a &lt;code&gt;.bib&lt;/code&gt; file for your references, you wont need anything special other than Markdown know how to write a paper.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;---
 title: |-
@@ -72,6 +78,7 @@ abstract: |-
 \onecolumn
 # References&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 &lt;div id=&#34;augemented-yaml&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Augemented YAML&lt;/h2&gt;
 &lt;p&gt;This is ‘augmented’ because additional formatting &lt;code&gt;.lua&lt;/code&gt; files are need, which if you can just keep in the same directory as the &lt;code&gt;.Rmd&lt;/code&gt; file you are writing.
@@ -85,6 +92,12 @@ For this you will need:&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;Reference_Document.docx&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These files can all be obtained at in my &lt;a href=&#34;https://github.com/tpfeeney/academic_paper_in_markdown/tree/master/augmented_yaml&#34;&gt;Git Repo&lt;/a&gt;&lt;/p&gt;
+&lt;div id=&#34;here-is-a-sample-of-the-output.-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Here is a sample of the output.&lt;/h3&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/Users/timf/Documents/GitHub/academic_abstract_in_markdown/augmented.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Augmented YAML&lt;/p&gt;
+&lt;/div&gt;
 &lt;pre&gt;&lt;code&gt;---
 title: |
   **A most wonderful title.**
@@ -153,6 +166,7 @@ Keywords: Incidental Adrenal Mass, Endocrinology,
 
 \newpage&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+&lt;/div&gt;
 &lt;div id=&#34;summary&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Summary&lt;/h2&gt;
 &lt;p&gt;I hope this is somewhat helpful. Please see my &lt;a href=&#34;https://github.com/tpfeeney/academic_paper_in_markdown&#34;&gt;Git repo&lt;/a&gt; for output from these and the files needed to make this work.&lt;/p&gt;
@@ -218,6 +232,7 @@ Keywords: Incidental Adrenal Mass, Endocrinology,
       <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/blogs-i-really-like/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;table&gt;
@@ -651,7 +666,7 @@ Keywords: Incidental Adrenal Mass, Endocrinology,
       <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/some-of-my-favorite-resources/</guid>
       <description>
-
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;The internet has a plethora of resources to learn more about science, math, and other interests. I decided to collate all my favorite sites and posts.&lt;/p&gt;
@@ -905,6 +920,7 @@ Keywords: Incidental Adrenal Mass, Endocrinology,
       <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       <guid>/post/color-palettes-in-r/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. &lt;code&gt;tidyverse&lt;/code&gt; and &lt;code&gt;ggplot&lt;/code&gt; in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the &lt;code&gt;ggsci&lt;/code&gt; package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.&lt;/p&gt;
@@ -1143,6 +1159,7 @@ Darjeeling2&lt;/p&gt;
       <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       <guid>/post/misc-functions-in-r/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;This post is VERY in progress. The point is as a reference for myself for small things I want to refer to in the future, for simulating data and working with probability distributions. Its a hodge podge and always being updated&lt;/p&gt;
@@ -1173,6 +1190,7 @@ start with the &lt;code&gt;dnorm&lt;/code&gt; distribution.&lt;/p&gt;
       <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
       <guid>/post/how-to-visualize-binary-outcomes-in-research/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.&lt;/p&gt;
@@ -1297,6 +1315,7 @@ names(x) &amp;lt;- c(&amp;quot;death&amp;quot;, &amp;quot;readmit&amp;quot;, &am
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;

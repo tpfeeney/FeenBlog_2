@@ -1,20 +1,23 @@
 ---
-title: Writing an Academic Paper in RMarkdown
-author: TF
+title: "Writing an Academic Paper in RMarkdown"
+author: "TF"
 date: '2020-04-13'
-slug: academic_paper_in_markdown
-categories: []
-tags: []
-subtitle: ''
-summary: 'Some simple instructions for writing a paper in RMarkdown'
-authors: []
-lastmod: '2020-04-13T12:53:56-04:00'
+output:
+  html_document:
+    df_print: paged
 featured: no
 image:
   caption: ''
   focal_point: ''
   preview_only: no
+lastmod: '2020-04-13T12:53:56-04:00'
+categories: []
 projects: []
+slug: academic_paper_in_markdown
+subtitle: ''
+summary: Some simple instructions for writing a paper in RMarkdown
+tags: []
+authors: []
 ---
 ## Background:
 I was interested in writing an academic paper in RMarkdown, but I am a n00b and it wasnt immediately obvious to me how to format everything. So I did a little searching around and have found two solutions, which I think are pretty good. One solution, which I'll call the basic YAML version, requires only some moderate reformatting of YAML header in an RMarkdown file. The other solution, which I call augemented YAML, requires some extra files called `.lua` files, which add extra features but end up making it look nicer in the end. My goal here was to end up with a document with a reasonable title page, a single spaced abstract section with Keywords at the end, and a two colum paper that I could insert figures into. Also, I needed it to have line numbers.
@@ -23,6 +26,10 @@ For this you will need to have a $LaTeX$ distribution installed, pandoc, and be 
 
 
 ## Basic YAML
+
+### Here is a sample of the output.
+![Basic YAML](/Users/timf/Documents/GitHub/academic_abstract_in_markdown/basic.png)
+
 This is called basic YAML because other than a `.csl` file for your references formatting, and a `.bib` file for your references, you wont need anything special other than Markdown know how to write a paper.
 
     ---
@@ -84,6 +91,9 @@ and to knit to word I used:
 * `Reference_Document.docx`
 
 These files can all be obtained at in my [Git Repo](https://github.com/tpfeeney/academic_paper_in_markdown/tree/master/augmented_yaml)
+
+### Here is a sample of the output.
+![Augmented YAML](/Users/timf/Documents/GitHub/academic_abstract_in_markdown/augmented.png)
 
     ---
     title: |

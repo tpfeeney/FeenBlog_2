@@ -18,6 +18,7 @@
       <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
       <guid>/post/how-to-visualize-binary-outcomes-in-research/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.&lt;/p&gt;
