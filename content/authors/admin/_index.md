@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: My research interests include clinical epidemiology of surgery and critical care outcomes, causal inference, and bayesian statistics.
+bio: My research interests include clinical epidemiology of surgery and critical care outcomes, and causal inference.
 education:
   courses:
   - course: MPH Quantitative Methods (Epi/Biostat)
@@ -27,20 +27,20 @@ interests:
 - Clinical Epidemiology
 - Causal Inference
 - Bayesian Methodology
-- R
+- R, Python
 - Paleontology
 - Astrophysics
 - Marine Biology
-- Real Analysis
+- Philosophy/Epistemology
 - Science and Mathematics Education
 - Broadly, Science and Mathematics
-- SCUBA Diving
+- SCUBA Diving (cave and wreck)
 
 name: Timothy Feeney
 organizations:
-- name: Boston University and Boston Medical Center
-  url: "http://www.bumc.bu.edu/surgery/"
-role: Post-doctoral Research Fellow in Surgery
+- name: Gillings School of Public Health, University of North Carolina-Chapel Hill
+  url: "https://sph.unc.edu"
+role: PhD Student in Epidemiology, Medical Editor
 social:
 #- icon: "cv"
 #  icon_pack: "ai"
@@ -79,9 +79,9 @@ user_groups:
 - Visitors
 ---
 
-Hi! My name is Tim, and I am a Post Doc at Boston University. I have an MD and clinical training in general surgery. My interests are very broad and encompass every corner of STEM fields. I have always wanted to be a scientist in some capacity. Originally when I was very young it was paleontolgy, and then astrophysics, and then an amalgam of other fields. I eventually landed on molecular biology and medicine after falling in love in undergrad--I always loved the combination of physics, physical chem, and chem when combined with biology, which molecular biology does well. During medical training, I developed a love of biostatistics and epidemiology as a way to study disease and combine a bunch of my interests: molecular biology, physiology, mathematics, computer science. 
+Hi! My name is Tim, and I am a PhD student at the Gillings School of Public health at UNC-Chapel Hill. I have an MD and clinical training in general surgery. My interests are very broad and encompass every corner of STEM fields. I have always wanted to be a scientist in some capacity. Originally when I was very young it was paleontology, and then astrophysics, and then an amalgam of other fields. I eventually landed on molecular biology and medicine after falling in love in undergrad--I always loved the combination of physics, physical chem, and chem when combined with biology, which molecular biology does well. During medical training, I developed a love of biostatistics and epidemiology as a way to study disease and combine a bunch of my interests: molecular biology, physiology, mathematics, computer science. 
 
-My broad research interests are outcomes after surgery. I am specifically interested in ways to improve care, and understanding how social determinants of health impact outcomes after surgery. One of my major projects during my post doc has been evaluating how limited english proficiency impacts outcomes after surgery. Another research interest of mine are incidental masses. As such, my other major ongoing project during my post doc has been a prospective study evaluating a mulimodal approach to improving follow up after identification of an incidental adrenal mass.
+My broad research interests are both methods in epidemiology and outcomes after surgery. Methodologically I am interest in causal inference, broadly. Clinically, I am specifically interested in ways to improve care, and understanding how social determinants of health impact outcomes after surgery. I have worked on both disparities in surgical outcomes and process improvements for incidental masses.  My current work is using doubly robust methods to improve inferences, although this will likely change as my dissertation topic develops.
 
 My interests outside of science and math involve SCUBA diving on deep wrecks and in caves. I have also spent a large chunk of my life as a firefighter and an EMT.
 
