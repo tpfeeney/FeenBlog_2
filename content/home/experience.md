@@ -19,13 +19,23 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
+  title = "PhD Student; Epidemiology"
+  company = "University of North Carolina-Chapel Hill"
+  company_url = "https://sph.unc.edu"
+  location = "Chapel Hill, NC"
+  date_start = "2020-08-01"
+  date_end = ""
+  description = """PhD student in the Cole lab. Research focuses on epidemiological methods and clinical outcomes, particularly in surgery.
+  """
+
+[[experience]]
   title = "Research Editor"
   company = "The BMJ (British Medical Journal)"
   company_url = "https://www.bmj.com"
   location = "London, UK"
   date_start = "2019-04-01"
   date_end = ""
-  description = """Screen, review, and make decisions on submitted papers. Additional responsibilities include outreach with authors and universities.
+  description = """Screen, review, and make decisions on submitted papers. Additional responsibilities include outreach with authors and universities, and working to commission for the research methods and reporting section.
   """
   
 [[experience]]
@@ -34,13 +44,13 @@ date_format = "Jan 2006"
   company_url = "https://www.bumc.bu.edu/surgery/"
   location = "Boston, MA"
   date_start = "2018-01-01"
-  date_end = ""
+  date_end = "2020-05-15"
   description = """
-  Responsibilities include:
+  Responsibilities included:
   
   * Epidemiologic Study design
   * Statistical Analysis
-  * Consultation
+  * Epi/Stat Consultation
   """
 
 +++
