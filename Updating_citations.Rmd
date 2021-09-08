@@ -44,4 +44,5 @@ rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/; rm -r /Users/timf/D
 
 ##cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/static/files/citations/; cp -a /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/. /Users/timf/Documents/GitHub/FeenBlog_2/content/publication; rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-md-folder/; rm -r /Users/timf/Documents/GitHub/FeenBlog_2/my-bib-folder/
 
-
+#Copy new cv over
+cp /Users/timf/Dropbox/CVs/CV_master/CV.pdf /Users/timf/Documents/GitHub/FeenBlog_2/static/files/
