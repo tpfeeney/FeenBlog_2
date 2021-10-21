@@ -20,7 +20,7 @@ bibliography: ['refs.bib']
 ---
 
 Load the req packages
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(gmodels)
 ```
@@ -132,9 +132,49 @@ This method, to me, seems a little more of a pain since you need to remake the t
 
 Now Lets to some analysis. The second chapter is 2x2 tables.
 
-## 2x2 Tables
+## Chp2: 2x2 Tables
 
 Mantel-Haenszel chi-square statistic test
+
+
+## In SAS
+
+```{r eval=FALSE}
+PROC FREQ data=exdata order=data;
+weight count;
+tables center*treat*outcome/cmh chisq; 
+#for marginal without accounting for center, remove center from 
+#tables statement
+run;
+```
+
+
+For reference the SAS output, below, shows for non corrected version:
+
+Marginal (ie not adjusted for center):
+
+```{r}
+
+ Statistic                     DF       Value      Prob
+     ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+     Mantel-Haenszel Chi-Square     1      7.8555    0.0051
+```
+
+
+And Adjusted for Center:
+
+```{r eval=FALSE}
+   Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+ 
+ Statistic    Alternative Hypothesis    DF       Value      Prob
+ ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+     1        Nonzero Correlation        1      7.8307    0.0051
+     2        Row Mean Scores Differ     1      7.8307    0.0051
+     3        General Association        1      7.8307    0.0051
+```
+
+
+## in R 
 
 marginal:
 
@@ -157,8 +197,18 @@ mantelhaen.test(newexdata$treat,
                 newexdata$outcome,
                 newexdata$center, correct=TRUE)
 ```
-For reference the SAS output shows for non corrected version
 
+And we see we can do this easily in R
 
+```{r}
+sI<-sessionInfo()
+
+sI$R.version$version.string
+sI$R.version$platform
+sI$basePkgs#packages used
+names(sI$otherPkgs) #packages used
+```
 
 # References
+
+
