@@ -157,11 +157,12 @@ tables center*treat*outcome/cmh chisq;
 #tables statement
 run;</code></pre>
 <p>For reference the SAS output, below, shows for non corrected version:</p>
-<p>Marginal:</p>
-<p>Statistic DF Value Prob
-ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
-Mantel-Haenszel Chi-Square 1 7.8555 0.0051</p>
-<pre class="r"><code>   Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+<p>Marginal (ie not adjusted for center):</p>
+<pre class="r"><code> Statistic                     DF       Value      Prob
+     ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+     Mantel-Haenszel Chi-Square     1      7.8555    0.0051</code></pre>
+<p>And Adjusted for Center:</p>
+<pre class="r"><code>  Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
  
  Statistic    Alternative Hypothesis    DF       Value      Prob
  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ

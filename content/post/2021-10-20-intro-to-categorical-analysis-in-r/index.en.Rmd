@@ -153,8 +153,7 @@ For reference the SAS output, below, shows for non corrected version:
 
 Marginal (ie not adjusted for center):
 
-```{r}
-
+```{r eval=FALSE}
  Statistic                     DF       Value      Prob
      ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
      Mantel-Haenszel Chi-Square     1      7.8555    0.0051
@@ -164,7 +163,7 @@ Marginal (ie not adjusted for center):
 And Adjusted for Center:
 
 ```{r eval=FALSE}
-   Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+  Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
  
  Statistic    Alternative Hypothesis    DF       Value      Prob
  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
