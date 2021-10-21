@@ -1,0 +1,209 @@
+---
+title: Intro to Categorical Analysis in R
+author: R package build
+date: '2021-10-20'
+slug: []
+categories:
+  - R
+tags: []
+subtitle: ''
+summary: 'Categorical Data Analysis in SAS....in R'
+authors: []
+lastmod: '2021-10-20T19:24:09-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: ['refs.bib']
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+
+<p>Load the req packages</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+## ✓ tibble  3.1.5     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.4     ✓ stringr 1.4.0
+## ✓ readr   2.0.2     ✓ forcats 0.5.1</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(gmodels)</code></pre>
+<p>This is a first post of (hopefully) many that works through some of ‘Categorical Data Analysis in SAS’ 3rd ed. by Stokes et al.<span class="citation">(<a href="#ref-stokes_categorical_2012" role="doc-biblioref">Stokes, Davis, and Koch 2012</a>)</span> Since that book is obviously written in SAS for SAS, there is no R code. So for people interested in using R to perform the same tests that book covers, there is this post. I hope it is useful.</p>
+<p>First make data. We are working to emulate loading summary data. In SAS it would load in like this:</p>
+<pre class="r"><code>data exdata;
+input center $ treat $ outcome $ count @@;
+datalines;
+1 new fav 64 1 new unfav 36
+1 std fav 53 1 std unfav 47
+2 new fav 35 2 new unfav 15
+2 std fav 22 2 std unfav 28
+;
+run;</code></pre>
+<p>but in R we need to make data like this:</p>
+<pre class="r"><code>exdata&lt;-data.frame(center=c(1,1,1,1,2,2,2,2),
+                 treat=c(&quot;new&quot;,&quot;new&quot;,&quot;std&quot;,&quot;std&quot;,
+                         &quot;new&quot;,&quot;new&quot;,&quot;std&quot;,&quot;std&quot;),
+                 outcome=c(&quot;fav&quot;,&quot;unfav&quot;,&quot;fav&quot;,&quot;unfav&quot;,
+                           &quot;fav&quot;,&quot;unfav&quot;,&quot;fav&quot;,&quot;unfav&quot;),
+                 count=c(64,36,53,47,35,15,22,28))</code></pre>
+<p>And the data frame looks like this:</p>
+<pre class="r"><code>print(exdata)</code></pre>
+<pre><code>##   center treat outcome count
+## 1      1   new     fav    64
+## 2      1   new   unfav    36
+## 3      1   std     fav    53
+## 4      1   std   unfav    47
+## 5      2   new     fav    35
+## 6      2   new   unfav    15
+## 7      2   std     fav    22
+## 8      2   std   unfav    28</code></pre>
+<p>However, as far as I know there is no easy way to use this moving forward. In <code>SAS</code> you would use a <code>weight</code> statement that would let <code>SAS</code> know you want to weight the data, but <code>R</code> doesnt have a similar function that I can tell, so I made a rudimentary one. This function makes a dataframe that has the correct number of observations for each combination of variables so we dont need to rely on a weight statement.</p>
+<p>First a function to load in the data.frame. This will skirt the need to use <code>weight</code> in <code>PROC</code>s in SAS.</p>
+<pre class="r"><code>sassy_summary_data &lt;- function(data,#data to use should be a dataframe
+                               var1,#variables other than number of counts to be considered
+                               var2,
+                               var3,
+                               var4,
+                               var5,
+                               var_num,#number of variables
+                               weight){
+    df&lt;-vector()
+    print(data)
+    #testpre&lt;-dplyr::count(data,data[,1],
+                          #data[,2],
+                          #data[,3],
+                          #wt=data[,4])
+    reps&lt;-2^var_num
+    library(tidyverse)
+    for (i in 1:reps){
+        test&lt;-data[i,] %&gt;% slice(rep(1:n(),
+                                        each=data$count[i]))
+        df&lt;-rbind(df,test)
+    }
+    return(df)
+}</code></pre>
+<p>Then if we call that function:</p>
+<pre class="r"><code>newexdata&lt;-sassy_summary_data(data=exdata,
+                              &quot;outcome&quot;,
+                              &quot;treat&quot;,
+                              &quot;center&quot;,
+                              weight=&quot;count&quot;,
+                              var_num=3)#three vars outcome, treat, and center</code></pre>
+<pre><code>##   center treat outcome count
+## 1      1   new     fav    64
+## 2      1   new   unfav    36
+## 3      1   std     fav    53
+## 4      1   std   unfav    47
+## 5      2   new     fav    35
+## 6      2   new   unfav    15
+## 7      2   std     fav    22
+## 8      2   std   unfav    28</code></pre>
+<p>We can see we have a new data frame with the same summary numbers for each combination of variables, but now it can be used by R to do some categorical analysis.</p>
+<pre class="r"><code>newexdata %&gt;% group_by_all() %&gt;%  count()</code></pre>
+<pre><code>## # A tibble: 8 × 5
+## # Groups:   center, treat, outcome, count [8]
+##   center treat outcome count     n
+##    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt; &lt;int&gt;
+## 1      1 new   fav        64    64
+## 2      1 new   unfav      36    36
+## 3      1 std   fav        53    53
+## 4      1 std   unfav      47    47
+## 5      2 new   fav        35    35
+## 6      2 new   unfav      15    15
+## 7      2 std   fav        22    22
+## 8      2 std   unfav      28    28</code></pre>
+<p>There are other ways to load the data too, that dont require my work around above. For instance you can load the load as reported first and then use <code>xtabs</code> and <code>ftable</code> to make an analyzable table too.</p>
+<p>Load data again</p>
+<pre class="r"><code>exdata2&lt;-data.frame(center=c(1,1,1,1,2,2,2,2),
+                 treat=c(&quot;new&quot;,&quot;new&quot;,&quot;std&quot;,&quot;std&quot;,
+                         &quot;new&quot;,&quot;new&quot;,&quot;std&quot;,&quot;std&quot;),
+                 outcome=c(&quot;fav&quot;,&quot;unfav&quot;,&quot;fav&quot;,&quot;unfav&quot;,
+                           &quot;fav&quot;,&quot;unfav&quot;,&quot;fav&quot;,&quot;unfav&quot;),
+                 count=c(64,36,53,47,35,15,22,28))</code></pre>
+<p>use xtabs to make crosstabulation</p>
+<pre class="r"><code>xtabs(data=exdata2, count~center +treat+outcome)</code></pre>
+<pre><code>## , , outcome = fav
+## 
+##       treat
+## center new std
+##      1  64  53
+##      2  35  22
+## 
+## , , outcome = unfav
+## 
+##       treat
+## center new std
+##      1  36  47
+##      2  15  28</code></pre>
+<p>and use ftable to flatten it</p>
+<pre class="r"><code>flat_table&lt;-ftable(xtabs(data=exdata2, count~center +treat+outcome))
+print(flat_table)</code></pre>
+<pre><code>##              outcome fav unfav
+## center treat                  
+## 1      new            64    36
+##        std            53    47
+## 2      new            35    15
+##        std            22    28</code></pre>
+<p>the above would make a table similar to <code>SAS</code> in <code>PROC FREQ</code> if you had the following statment: <code>tables center*treat*outcome</code></p>
+<p>This method, to me, seems a little more of a pain since you need to remake the tables for different analysis</p>
+<p>Now Lets to some analysis. The second chapter is 2x2 tables.</p>
+<div id="x2-tables" class="section level2">
+<h2>2x2 Tables</h2>
+<p>Mantel-Haenszel chi-square statistic test</p>
+<p>marginal:</p>
+<pre class="r"><code>table(newexdata$outcome, newexdata$treat) %&gt;%  DescTools::MHChisqTest()</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;DescTools&#39;:
+##   method         from 
+##   reorder.factor gdata</code></pre>
+<pre><code>## 
+##  Mantel-Haenszel Chi-Square
+## 
+## data:  .
+## X-squared = 7.8555, df = 1, p-value = 0.005067</code></pre>
+<p>and adjusting for center:</p>
+<pre class="r"><code>#can pass it a 3-dimensional array
+table(newexdata$treat,
+      newexdata$outcome,
+      newexdata$center) %&gt;%#center listed last because it is the strata
+  mantelhaen.test(correct=FALSE) </code></pre>
+<pre><code>## 
+##  Mantel-Haenszel chi-squared test without continuity correction
+## 
+## data:  .
+## Mantel-Haenszel X-squared = 7.8307, df = 1, p-value = 0.005137
+## alternative hypothesis: true common odds ratio is not equal to 1
+## 95 percent confidence interval:
+##  1.216213 3.077254
+## sample estimates:
+## common odds ratio 
+##          1.934579</code></pre>
+<pre class="r"><code>#or can pass it factors
+mantelhaen.test(newexdata$treat,
+                newexdata$outcome,
+                newexdata$center, correct=TRUE)</code></pre>
+<pre><code>## 
+##  Mantel-Haenszel chi-squared test with continuity correction
+## 
+## data:  newexdata$treat and newexdata$outcome and newexdata$center
+## Mantel-Haenszel X-squared = 7.1917, df = 1, p-value = 0.007324
+## alternative hypothesis: true common odds ratio is not equal to 1
+## 95 percent confidence interval:
+##  1.216213 3.077254
+## sample estimates:
+## common odds ratio 
+##          1.934579</code></pre>
+<p>For reference the SAS output shows for non corrected version</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-stokes_categorical_2012" class="csl-entry">
+Stokes, Maura Ellen, Charles S Davis, and Gary G Koch. 2012. <em>Categorical Data Analysis Using <span>SAS</span></em>. 3rd ed. <span>Cary, N.C.</span>: <span>SAS Instute</span>.
+</div>
+</div>
+</div>

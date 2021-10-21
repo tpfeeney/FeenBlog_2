@@ -1,0 +1,164 @@
+---
+title: Intro to Categorical Analysis in R
+author: R package build
+date: '2021-10-20'
+slug: []
+categories:
+  - R
+tags: []
+subtitle: ''
+summary: 'Categorical Data Analysis in SAS....in R'
+authors: []
+lastmod: '2021-10-20T19:24:09-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+bibliography: ['refs.bib']
+---
+
+Load the req packages
+```{r}
+library(tidyverse)
+library(gmodels)
+```
+This is a first post of (hopefully) many that works through some of 'Categorical Data Analysis in SAS' 3rd ed. by Stokes et al.[@stokes_categorical_2012] Since that book is obviously written in SAS for SAS, there is no R code. So for people interested in using R to perform the same tests that book covers, there is this post. I hope it is useful.
+
+First make data. We are working to emulate loading summary data. In SAS it would load in like this:
+```{r, eval=FALSE}
+data exdata;
+input center $ treat $ outcome $ count @@;
+datalines;
+1 new fav 64 1 new unfav 36
+1 std fav 53 1 std unfav 47
+2 new fav 35 2 new unfav 15
+2 std fav 22 2 std unfav 28
+;
+run;
+```
+
+but in R we need to make data like this:
+```{r}
+exdata<-data.frame(center=c(1,1,1,1,2,2,2,2),
+                 treat=c("new","new","std","std",
+                         "new","new","std","std"),
+                 outcome=c("fav","unfav","fav","unfav",
+                           "fav","unfav","fav","unfav"),
+                 count=c(64,36,53,47,35,15,22,28))
+
+```
+ 
+And the data frame looks like this:
+
+```{r}
+print(exdata)
+```
+However, as far as I know there is no easy way to use this moving forward. In `SAS` you would use a `weight` statement that would let `SAS` know you want to weight the data, but `R` doesnt have a similar function that I can tell, so I made a rudimentary one. This  function makes a dataframe that has the correct number of observations for each combination of variables so we dont need to rely on a weight statement.
+
+First a function to load in the data.frame. This will skirt the need to use `weight` in `PROC`s in SAS.
+```{r}
+
+sassy_summary_data <- function(data,#data to use should be a dataframe
+                               var1,#variables other than number of counts to be considered
+                               var2,
+                               var3,
+                               var4,
+                               var5,
+                               var_num,#number of variables
+                               weight){
+    df<-vector()
+    print(data)
+    #testpre<-dplyr::count(data,data[,1],
+                          #data[,2],
+                          #data[,3],
+                          #wt=data[,4])
+    reps<-2^var_num
+    library(tidyverse)
+    for (i in 1:reps){
+        test<-data[i,] %>% slice(rep(1:n(),
+                                        each=data$count[i]))
+        df<-rbind(df,test)
+    }
+    return(df)
+}
+```
+
+Then if we call that function:
+```{r}
+newexdata<-sassy_summary_data(data=exdata,
+                              "outcome",
+                              "treat",
+                              "center",
+                              weight="count",
+                              var_num=3)#three vars outcome, treat, and center
+```
+
+We can see we have a new data frame with the same summary numbers for each combination of variables, but now it can be used by R to do some categorical analysis.
+
+```{r}
+newexdata %>% group_by_all() %>%  count()
+```
+
+There are other ways to load the data too, that dont require my work around above. For instance you can load the load as reported first and then use `xtabs` and `ftable` to make an analyzable table too.
+
+Load data again
+```{r}
+exdata2<-data.frame(center=c(1,1,1,1,2,2,2,2),
+                 treat=c("new","new","std","std",
+                         "new","new","std","std"),
+                 outcome=c("fav","unfav","fav","unfav",
+                           "fav","unfav","fav","unfav"),
+                 count=c(64,36,53,47,35,15,22,28))
+```
+
+
+use xtabs to make crosstabulation
+```{r}
+xtabs(data=exdata2, count~center +treat+outcome)
+```
+
+and use ftable to flatten it
+```{r}
+flat_table<-ftable(xtabs(data=exdata2, count~center +treat+outcome))
+print(flat_table)
+```
+
+the above would make a table similar to `SAS` in `PROC FREQ` if you had the following statment: `tables center*treat*outcome`
+
+This method, to me, seems a little more of a pain since you need to remake the tables for different analysis
+
+
+Now Lets to some analysis. The second chapter is 2x2 tables.
+
+## 2x2 Tables
+
+Mantel-Haenszel chi-square statistic test
+
+marginal:
+
+```{r}
+table(newexdata$outcome, newexdata$treat) %>%  DescTools::MHChisqTest()
+```
+and adjusting for center:
+
+```{r}
+#can pass it a 3-dimensional array
+table(newexdata$treat,
+      newexdata$outcome,
+      newexdata$center) %>%#center listed last because it is the strata
+  mantelhaen.test(correct=FALSE) 
+```
+
+```{r}
+#or can pass it factors
+mantelhaen.test(newexdata$treat,
+                newexdata$outcome,
+                newexdata$center, correct=TRUE)
+```
+For reference the SAS output shows for non corrected version
+
+
+
+# References
