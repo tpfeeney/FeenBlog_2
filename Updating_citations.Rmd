@@ -8,6 +8,7 @@ output: html_document
 Citations have been added using bib2acadmic
 
 Reference this:https://github.com/gcushen/hugo-academic/issues/146
+devtools::install_github("petzi53/bib2academic", build_vignettes = TRUE)
 
 #first convert based on updated .bib files
 ```{r}

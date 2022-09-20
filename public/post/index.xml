@@ -5,12 +5,238 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2020 Tim Feeney</copyright><lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018-2022 Tim Feeney</copyright><lastBuildDate>Wed, 20 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Intro to Categorical Analysis in R</title>
+      <link>/post/2021-10-20-intro-to-categorical-analysis-in-r/</link>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>/post/2021-10-20-intro-to-categorical-analysis-in-r/</guid>
+      <description>
+&lt;script src=&#34;/post/2021-10-20-intro-to-categorical-analysis-in-r/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Load the req packages&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(gmodels)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is a first post of (hopefully) many that works through some of ‘Categorical Data Analysis in SAS’ 3rd ed. by Stokes et al.&lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-stokes_categorical_2012&#34; role=&#34;doc-biblioref&#34;&gt;Stokes, Davis, and Koch 2012&lt;/a&gt;)&lt;/span&gt; Since that book is obviously written in SAS for SAS, there is no R code. So for people interested in using R to perform the same tests that book covers, there is this post. I hope it is useful.&lt;/p&gt;
+&lt;p&gt;First make data. We are working to emulate loading summary data. In SAS it would load in like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data exdata;
+input center $ treat $ outcome $ count @@;
+datalines;
+1 new fav 64 1 new unfav 36
+1 std fav 53 1 std unfav 47
+2 new fav 35 2 new unfav 15
+2 std fav 22 2 std unfav 28
+;
+run;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;but in R we need to make data like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;exdata&amp;lt;-data.frame(center=c(1,1,1,1,2,2,2,2),
+                 treat=c(&amp;quot;new&amp;quot;,&amp;quot;new&amp;quot;,&amp;quot;std&amp;quot;,&amp;quot;std&amp;quot;,
+                         &amp;quot;new&amp;quot;,&amp;quot;new&amp;quot;,&amp;quot;std&amp;quot;,&amp;quot;std&amp;quot;),
+                 outcome=c(&amp;quot;fav&amp;quot;,&amp;quot;unfav&amp;quot;,&amp;quot;fav&amp;quot;,&amp;quot;unfav&amp;quot;,
+                           &amp;quot;fav&amp;quot;,&amp;quot;unfav&amp;quot;,&amp;quot;fav&amp;quot;,&amp;quot;unfav&amp;quot;),
+                 count=c(64,36,53,47,35,15,22,28))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the data frame looks like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;print(exdata)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   center treat outcome count
+## 1      1   new     fav    64
+## 2      1   new   unfav    36
+## 3      1   std     fav    53
+## 4      1   std   unfav    47
+## 5      2   new     fav    35
+## 6      2   new   unfav    15
+## 7      2   std     fav    22
+## 8      2   std   unfav    28&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, as far as I know there is no easy way to use this moving forward. In &lt;code&gt;SAS&lt;/code&gt; you would use a &lt;code&gt;weight&lt;/code&gt; statement that would let &lt;code&gt;SAS&lt;/code&gt; know you want to weight the data, but &lt;code&gt;R&lt;/code&gt; doesnt have a similar function that I can tell, so I made a rudimentary one. This function makes a dataframe that has the correct number of observations for each combination of variables so we dont need to rely on a weight statement.&lt;/p&gt;
+&lt;p&gt;First a function to load in the data.frame. This will skirt the need to use &lt;code&gt;weight&lt;/code&gt; in &lt;code&gt;PROC&lt;/code&gt;s in SAS.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sassy_summary_data &amp;lt;- function(data,#data to use should be a dataframe
+                               var1,#variables other than number of counts to be considered
+                               var2,
+                               var3,
+                               var4,
+                               var5,
+                               var_num,#number of variables
+                               weight){
+    df&amp;lt;-vector()
+    print(data)
+    #testpre&amp;lt;-dplyr::count(data,data[,1],
+                          #data[,2],
+                          #data[,3],
+                          #wt=data[,4])
+    reps&amp;lt;-2^var_num
+    library(tidyverse)
+    for (i in 1:reps){
+        test&amp;lt;-data[i,] %&amp;gt;% slice(rep(1:n(),
+                                        each=data$count[i]))
+        df&amp;lt;-rbind(df,test)
+    }
+    return(df)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then if we call that function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;newexdata&amp;lt;-sassy_summary_data(data=exdata,
+                              &amp;quot;outcome&amp;quot;,
+                              &amp;quot;treat&amp;quot;,
+                              &amp;quot;center&amp;quot;,
+                              weight=&amp;quot;count&amp;quot;,
+                              var_num=3)#three vars outcome, treat, and center&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   center treat outcome count
+## 1      1   new     fav    64
+## 2      1   new   unfav    36
+## 3      1   std     fav    53
+## 4      1   std   unfav    47
+## 5      2   new     fav    35
+## 6      2   new   unfav    15
+## 7      2   std     fav    22
+## 8      2   std   unfav    28&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can see we have a new data frame with the same summary numbers for each combination of variables, but now it can be used by R to do some categorical analysis.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;newexdata %&amp;gt;% group_by_all() %&amp;gt;%  count()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 8 × 5
+## # Groups:   center, treat, outcome, count [8]
+##   center treat outcome count     n
+##    &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;
+## 1      1 new   fav        64    64
+## 2      1 new   unfav      36    36
+## 3      1 std   fav        53    53
+## 4      1 std   unfav      47    47
+## 5      2 new   fav        35    35
+## 6      2 new   unfav      15    15
+## 7      2 std   fav        22    22
+## 8      2 std   unfav      28    28&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are other ways to load the data too, that dont require my work around above. For instance you can load the load as reported first and then use &lt;code&gt;xtabs&lt;/code&gt; and &lt;code&gt;ftable&lt;/code&gt; to make an analyzable table too.&lt;/p&gt;
+&lt;p&gt;Load data again&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;exdata2&amp;lt;-data.frame(center=c(1,1,1,1,2,2,2,2),
+                 treat=c(&amp;quot;new&amp;quot;,&amp;quot;new&amp;quot;,&amp;quot;std&amp;quot;,&amp;quot;std&amp;quot;,
+                         &amp;quot;new&amp;quot;,&amp;quot;new&amp;quot;,&amp;quot;std&amp;quot;,&amp;quot;std&amp;quot;),
+                 outcome=c(&amp;quot;fav&amp;quot;,&amp;quot;unfav&amp;quot;,&amp;quot;fav&amp;quot;,&amp;quot;unfav&amp;quot;,
+                           &amp;quot;fav&amp;quot;,&amp;quot;unfav&amp;quot;,&amp;quot;fav&amp;quot;,&amp;quot;unfav&amp;quot;),
+                 count=c(64,36,53,47,35,15,22,28))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;use xtabs to make crosstabulation&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;xtabs(data=exdata2, count~center +treat+outcome)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## , , outcome = fav
+## 
+##       treat
+## center new std
+##      1  64  53
+##      2  35  22
+## 
+## , , outcome = unfav
+## 
+##       treat
+## center new std
+##      1  36  47
+##      2  15  28&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and use ftable to flatten it&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;flat_table&amp;lt;-ftable(xtabs(data=exdata2, count~center +treat+outcome))
+print(flat_table)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##              outcome fav unfav
+## center treat                  
+## 1      new            64    36
+##        std            53    47
+## 2      new            35    15
+##        std            22    28&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;the above would make a table similar to &lt;code&gt;SAS&lt;/code&gt; in &lt;code&gt;PROC FREQ&lt;/code&gt; if you had the following statment: &lt;code&gt;tables center*treat*outcome&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This method, to me, seems a little more of a pain since you need to remake the tables for different analysis&lt;/p&gt;
+&lt;p&gt;Now Lets to some analysis. The second chapter is 2x2 tables.&lt;/p&gt;
+&lt;div id=&#34;chp2-2x2-tables&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chp2: 2x2 Tables&lt;/h2&gt;
+&lt;p&gt;Mantel-Haenszel chi-square statistic test&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;in-sas&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;In SAS&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;PROC FREQ data=exdata order=data;
+weight count;
+tables center*treat*outcome/cmh chisq; 
+#for marginal without accounting for center, remove center from 
+#tables statement
+run;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For reference the SAS output, below, shows for non corrected version:&lt;/p&gt;
+&lt;p&gt;Marginal (ie not adjusted for center):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt; Statistic                     DF       Value      Prob
+     ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+     Mantel-Haenszel Chi-Square     1      7.8555    0.0051&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And Adjusted for Center:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;  Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+ 
+ Statistic    Alternative Hypothesis    DF       Value      Prob
+ ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+     1        Nonzero Correlation        1      7.8307    0.0051
+     2        Row Mean Scores Differ     1      7.8307    0.0051
+     3        General Association        1      7.8307    0.0051&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;in-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;in R&lt;/h2&gt;
+&lt;p&gt;marginal:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;table(newexdata$outcome, newexdata$treat) %&amp;gt;%  DescTools::MHChisqTest()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Registered S3 method overwritten by &amp;#39;DescTools&amp;#39;:
+##   method         from 
+##   reorder.factor gdata&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Mantel-Haenszel Chi-Square
+## 
+## data:  .
+## X-squared = 7.8555, df = 1, p-value = 0.005067&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and adjusting for center:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#can pass it a 3-dimensional array
+table(newexdata$treat,
+      newexdata$outcome,
+      newexdata$center) %&amp;gt;%#center listed last because it is the strata
+  mantelhaen.test(correct=FALSE) &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Mantel-Haenszel chi-squared test without continuity correction
+## 
+## data:  .
+## Mantel-Haenszel X-squared = 7.8307, df = 1, p-value = 0.005137
+## alternative hypothesis: true common odds ratio is not equal to 1
+## 95 percent confidence interval:
+##  1.216213 3.077254
+## sample estimates:
+## common odds ratio 
+##          1.934579&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#or can pass it factors
+mantelhaen.test(newexdata$treat,
+                newexdata$outcome,
+                newexdata$center, correct=TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Mantel-Haenszel chi-squared test with continuity correction
+## 
+## data:  newexdata$treat and newexdata$outcome and newexdata$center
+## Mantel-Haenszel X-squared = 7.1917, df = 1, p-value = 0.007324
+## alternative hypothesis: true common odds ratio is not equal to 1
+## 95 percent confidence interval:
+##  1.216213 3.077254
+## sample estimates:
+## common odds ratio 
+##          1.934579&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And we see we can do this easily in R&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sI&amp;lt;-sessionInfo()
+
+sI$R.version$version.string&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;R version 4.1.1 (2021-08-10)&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sI$R.version$platform&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;x86_64-apple-darwin17.0&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sI$basePkgs#packages used&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;stats&amp;quot;     &amp;quot;graphics&amp;quot;  &amp;quot;grDevices&amp;quot; &amp;quot;utils&amp;quot;     &amp;quot;datasets&amp;quot;  &amp;quot;methods&amp;quot;  
+## [7] &amp;quot;base&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;names(sI$otherPkgs) #packages used&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;gmodels&amp;quot;   &amp;quot;forcats&amp;quot;   &amp;quot;stringr&amp;quot;   &amp;quot;dplyr&amp;quot;     &amp;quot;purrr&amp;quot;     &amp;quot;readr&amp;quot;    
+##  [7] &amp;quot;tidyr&amp;quot;     &amp;quot;tibble&amp;quot;    &amp;quot;ggplot2&amp;quot;   &amp;quot;tidyverse&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-stokes_categorical_2012&#34; class=&#34;csl-entry&#34;&gt;
+Stokes, Maura Ellen, Charles S Davis, and Gary G Koch. 2012. &lt;em&gt;Categorical Data Analysis Using &lt;span&gt;SAS&lt;/span&gt;&lt;/em&gt;. 3rd ed. &lt;span&gt;Cary, N.C.&lt;/span&gt;: &lt;span&gt;SAS Instute&lt;/span&gt;.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Writing an Academic Paper in RMarkdown</title>
@@ -214,7 +440,7 @@ Keywords: Incidental Adrenal Mass, Endocrinology,
 &lt;a href=&#34;https://cran.r-project.org/web/packages/mgcv/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mgcv&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;A package for GAMs. Some explanations 
 &lt;a href=&#34;https://people.maths.bris.ac.uk/~sw15190/mgcv/tampere/mgcv.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and 
-&lt;a href=&#34;https://people.maths.bris.ac.uk/~sw15190/mgcv/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. This package is what I learned GAMs with and Noam Ross&amp;rsquo; course (listed in my fav resources page) uses it too. great stuff.&lt;/td&gt;
+&lt;a href=&#34;https://people.maths.bris.ac.uk/~sw15190/mgcv/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. This package is what I learned GAMs with and Noam Ross&#39; course (listed in my fav resources page) uses it too. great stuff.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -1251,7 +1477,7 @@ names(x) &amp;lt;- c(&amp;quot;death&amp;quot;, &amp;quot;readmit&amp;quot;, &am
 &lt;p&gt;Through this time I have developed a very strong position on the different stats packages and I thought I would go through my thoughts on them now. In short, R is the best, Stata is OK, and SAS should just be avoided.&lt;/p&gt;
 &lt;p&gt;Stata: this was the first stats program I was exposed to, and it was used to help me learn basic biostatistics. It is a good package. It is really easy to learn, particularly for someone without any programming background (like myself). The interface is instuitive, running tests and regressions are strightforward and tend to use natural language syntax instead of more complex syntax of SAS and R. Oh, and it allows for additional pakcages to be added on. I have use these packages for things like multiple testing adjustments and graphing quantile regression output. In essence Stata offers simple straightforward analysis that is advanced, easy to get going in, and with at least some upgradability.&lt;/p&gt;
 &lt;p&gt;SAS. Oh SAS. How I hate thee. I understand that there was a time when SAS was THE SOFTWARE to use to analyze data. R wasnt nearly as developed, Stata didnt exist, and doing things by hand wasnt really an option. So, I understand why previous generations used it, and since they have all this experience with it they continue to hold on. BUT, times have changed, and for a newcomer SAS is terrible. First, its hard as hell to get a hold of. You can get a free education version, but that is severely limited. It isnt native to a unix environment, so those with linux and macs need to virtualize, and it is EXPENSIVE. Couple these &amp;ldquo;features&amp;rdquo; with its steep learning curve, and you have a conflagration of awful. I remember how hard it was to learn SAS AND learn regression&amp;ndash;it was atrocious. The learning curve is just too high for minimal payoff above Stata. If you are going to sacrifice ease of use you might as well just use R.&lt;/p&gt;
-&lt;p&gt;R is an open source (read: free) software package built for data analysis. It is by no means easy to use; far from it in fact. The learning curve is steep, which is similar to SAS. BUT, R is infinitely expandable and VERY powerful. Not to mention it comes with a huge community of users that are helpful, great visualization packages, and tha ability to actually program your own additional functions. Moreover, it can be used for more than just data analysis. I am writing this blog using R and it is a wonderful experience. Last, a feature of R that is often overlooked is that it FORCES you to know what you are doing. In stata, things happen behind the scenes and outputs are given to you without much user thought. For instance, after running a regression you can use the postestimation command: lroc, and voila&amp;rsquo; you get a ROC with a calculated AUROC. It&amp;rsquo;s nice and convenient, but in R you have to do a bit more. You have to run the regression, and then understand that you need to predict the output for each individual and then compare that to the actual outcome in the individual to get and ROC. In that way R teaches while you perform functions, because there is more to success than a simple command.&lt;/p&gt;
+&lt;p&gt;R is an open source (read: free) software package built for data analysis. It is by no means easy to use; far from it in fact. The learning curve is steep, which is similar to SAS. BUT, R is infinitely expandable and VERY powerful. Not to mention it comes with a huge community of users that are helpful, great visualization packages, and tha ability to actually program your own additional functions. Moreover, it can be used for more than just data analysis. I am writing this blog using R and it is a wonderful experience. Last, a feature of R that is often overlooked is that it FORCES you to know what you are doing. In stata, things happen behind the scenes and outputs are given to you without much user thought. For instance, after running a regression you can use the postestimation command: lroc, and voila&#39; you get a ROC with a calculated AUROC. It&amp;rsquo;s nice and convenient, but in R you have to do a bit more. You have to run the regression, and then understand that you need to predict the output for each individual and then compare that to the actual outcome in the individual to get and ROC. In that way R teaches while you perform functions, because there is more to success than a simple command.&lt;/p&gt;
 &lt;p&gt;In the end, getting away from SAS will be benefitial for everyone. Start and stick with Stata, and learn R if you want to do more and be even better, but dont even bother with SAS since the cost effectivness of what you can do given time to learn is just not worth it. I have made a little table below to summarize my opinions.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
