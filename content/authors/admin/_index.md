@@ -22,17 +22,11 @@ education:
   
 email: ""
 interests:
-- Surgery
-- Critical Care
-- Clinical Epidemiology
+- Epidemiology and Biostatistics
 - Causal Inference
 - Bayesian Methodology
-- R, Python
-- Paleontology
-- Astrophysics
-- Marine Biology
-- Philosophy/Epistemology
-- Science and Mathematics Education
+- Philosophy of Science/Epistemology
+- Surgery and Critical Care
 - Broadly, Science and Mathematics
 - SCUBA Diving (cave and wreck)
 
@@ -79,10 +73,10 @@ user_groups:
 - Visitors
 ---
 
-Hi! My name is Tim, and I am a PhD student at the Gillings School of Public health at UNC-Chapel Hill. I have an MD and clinical training in general surgery. My interests are very broad and encompass every corner of STEM fields. I have always wanted to be a scientist in some capacity. Originally when I was very young it was paleontology, and then astrophysics, and then an amalgam of other fields. I eventually landed on molecular biology and medicine after falling in love in undergrad--I always loved the combination of physics, physical chem, and chem when combined with biology, which molecular biology does well. During medical training, I developed a love of biostatistics and epidemiology as a way to study disease and combine a bunch of my interests: molecular biology, physiology, mathematics, computer science. 
+Hi! My name is Tim, and I am a reserach editor for the [**The BMJ**](https://www.bmj.com/) and a PhD student in the [**Department of Epidemiology**](https://sph.unc.edu/epid/epidemiology-landing/) at the [**Gillings School of Public health at UNC-Chapel Hill**](https://sph.unc.edu/). I have an MD and clinical training in general surgery. My interests are very broad and encompass every corner of STEM fields. I have always wanted to be a scientist in some capacity. Originally when I was very young it was paleontology, and then astrophysics, and then an amalgam of other fields. I eventually landed on molecular biology and medicine after falling in love in undergrad--I always loved the combination of physics, physical chem, and chem when combined with biology, which molecular biology does well. During surgery training, I developed a love of epidemiology and biostatistics as a way to study disease and combine a bunch of my interests: molecular biology, physiology, mathematics, computer science. 
 
-My broad research interests are both methods in epidemiology and outcomes after surgery. Methodologically I am interest in causal inference, broadly. Clinically, I am specifically interested in ways to improve care, and understanding how social determinants of health impact outcomes after surgery. I have worked on both disparities in surgical outcomes and process improvements for incidental masses.  My current work is using doubly robust methods to improve inferences, although this will likely change as my dissertation topic develops.
+Methodologically I am interest in causal inference and how to obtain reliable answers to clinical questions using observational data. Clinically, I am specifically interested in ways to improve care, and understanding how social determinants of health impact outcomes after surgery. Prior to my graduate work, I have worked on both disparities in surgical outcomes and process improvements for incidental masses. My research is on using doubly robust methods and using observational methods to estimate per protocol effects. I am also interested in data fusion as a way to obtain answers that we might not be able to obtain otherwise.
 
-My interests outside of science and math involve SCUBA diving on deep wrecks and in caves. I have also spent a large chunk of my life as a firefighter and an EMT.
+My interests outside of science and math involve spending time with family, reading and book hunting (love a used bookstore), and when time permits SCUBA diving on deep wrecks and in caves. I have also spent a large chunk of my life as a firefighter and an EMT.
 
 Disclaimer: This website is a work in progress. All typos and grammatical errors are intentional ;-)
