@@ -28,6 +28,7 @@ Title and Author | Description and/or Extra Material
 [**The Harrell-verse**](https://hbiostat.org/)| The Frank Harrell Jr. universe for stats education. Included gems like [Biostatistic for Biomedical Researchers](https://hbiostat.org/bbr/), links to his frequented sites, rec'd blogs, etc.|
 [**Interactive Linear Algebra Book**](https://textbooks.math.gatech.edu/ila/index.html) [**Understanding Linear Algebra**](https://understandinglinearalgebra.org/preface-1.html) and [**Immersive Linear Algebra**](http://immersivemath.com/ila/index.html)| Interested in learning linear algebra? Want to have an interactive textbook the allow manipulation of 3-d objects? These are the best resources I've found.|
 [**Linear Algebra for Data Science**](https://shainarace.github.io/LinearAlgebra/index.html)| By a UNC graduate in Stat and Operations Research, Shaina Race Bennett. It's a fantastic introduction to linear algebra and the immediate relevance for statistics.|
+[**Math Basics**](https://tutorial.math.lamar.edu/)|Online Calc 1-3 and differential equations textbook with review of algebra and trig. Nice because it is fairly in depth and included proofs (where other books fail)|
 [**R-Universe**](https://r-universe.dev/search/)|Searchable database of R packages. Nice and visually appealing, and nice to search than CRAN|
 [**Draw Data**](https://drawdata.xyz/)|Have data in mind, and want a dataset to exist with data in a specific pattern? Well here you can draw the pattern and output a dataset to correspond with that pattern.|
 [**UNC Causal Inference Research Group**](https://causal.unc.edu/)|The research group of which I am a member. Has monthly talks.|
@@ -51,6 +52,8 @@ Title and Author | Description and/or Extra Material
 |[**R Bloggers**](https://www.r-bloggers.com/)|Great blog that highlights posts that cover new R packages, analysis methods, etc.|
 |[**Frank Harrell's Blog Posts**](https://www.fharrell.com/post/)||
 |[**Doing Bayesian Data Analysis**](http://doingbayesiandataanalysis.blogspot.com/)|Great blog but hasnt been updated in awhile|
+[**Solomon Kurtz's Blog**](https://solomonkurz.netlify.app/blog/)| Fantastic blog, bayesian heavy. With R code works through different analyses.|
+[**datamethods**](https://discourse.datamethods.org/)|Not really a blog, but a discussion board where epi/biostat issues are discussed. Really fantastic rabbit hole.|
 
 
 Societies Worth Joining (i.e., I am a member of)
