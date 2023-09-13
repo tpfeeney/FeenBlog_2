@@ -40,6 +40,9 @@ Stephen Senn's [**Blog Post list**](http://www.senns.uk/Blogs.html) and [**Stati
 [**DAGs from Hernan and Robins**](https://sgfin.github.io/2019/06/19/Causal-Inference-Book-All-DAGs/) and [**Causal Inference Book Part I -- Glossary and Notes**](https://sgfin.github.io/2019/06/19/Causal-Inference-Book-Glossary-and-Notes/)|Put together by Sam Finlayson, this is a nice collated list of DAGs and concepts from Hernan and Robins textbook. The rest of the posts are quite good too, but I found these most useful.|
 R coding of Statistical Rethinking [**First Edition**](https://bookdown.org/content/3890) and [**Second Edition**](https://bookdown.org/content/4857)|Coding of Richard McElreaths statistical Rethinkgin book using `brms` package in R. Its fantastic.|
  [**Hernan and Robins in R and/or stata exercises**](https://remlapmot.github.io/cibookex-r/)|Want to follow along with the book and avoid SAS, this is a resource for you!|
+ [**Statistical Proofs**](https://statproofbook.github.io/)|Cool open source repository of statistical proofs. Nice resource for sure. Cannot vouch for validity of each of the proofs though since I haven't looked at them all|
+ [**Real Analysis Online Textbook**](https://www.jirka.org/ra/html/frontmatter-1.html)|I haven't take real analysis, but am interested in learning and this is a nice resource I am working through. Recommended!|
+[**Mathematical Statistics**](https://bookdown.org/cmecklin/sta440/)|Nice online source for a first pass math stat course. Not fully comprehensive, but a nice explanation regardless.|
 
 Blogs
 ---
